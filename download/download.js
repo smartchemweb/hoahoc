@@ -1,11 +1,17 @@
 var versions = [
     {
+        version: '2025.2',
+        date: '05-11-2025',
+        name: 'SmartChem2',
+        os: 'Android',
+        app: '../app-versions/smartchem-2025-2.apk'
+    }, {
         version: '2025.1',
         date: '16-10-2025',
-        name: 'SmartChem',
+        name: 'SmartChem1',
         os: 'Android',
         app: '../app-versions/smartchem-2025-1.apk'
-    }
+    },
 ];
 
 html = `

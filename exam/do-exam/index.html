@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="top-section">
+            <div class="turn-back">
+                <img src="../../assets/images/turn-back.svg" alt="back">
+            </div>
+            <div class="point time"></div>
+            <div style="display:flex;gap:8px;align-items:center">
+                <button class="submit-btn" onclick="showAskForSubmit();">
+                    <img src="../../assets/images/submit-icon.svg" alt="">
+                    Nộp bài
+                </button>
+
+
+                <!-- Toggle button: hidden until after submit -->
+                <button id="toggle-ans-btn" class="submit-btn hide" onclick="toggleExamAnswer();">
+                    Xem đáp án
+                </button>
+            </div>
+        </div>
+        <div class="exam">
+            <iframe id="main-iframe" src="" frameborder="0"></iframe>
+        </div>
+        <div class="user-answers">
+            <h1>Trắc nghiệm</h1>
+            <div class="ex1-answer"></div>
+
+
+            <h1>Đúng / Sai</h1>
+            <div class="ex2-answer"></div>
+
+
+            <h1>Tự luận trả lời ngắn</h1>
+            <div class="ex3-answer"></div>
+        </div>
+
+
+        <div class="ask-for-submit hide">
+            <div class="background"></div>
+            <div class="ask-container">
+                <div class="ask">Bạn chắc chắn nộp bài chứ</div><br>
+                <div class="double-btn">
+                    <div class="continue" onclick="hideAskForSubmit();">Tiếp tục làm</div>
+                    <div class="submit" onclick="hideAskForSubmit(); submitExam();">Nộp bài</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cancel-exam hide">
+            <div class="background"></div>
+            <div class="ask-container">
+                <div class="ask">Bạn chắc chắn muốn thoát chứ, bài thi sẽ bị huỷ</div><br>
+                <div class="double-btn">
+                    <div class="continue" onclick="hideCancelExam();">Tiếp tục làm</div>
+                    <div class="submit" onclick="hideCancelExam(); document.location.href = '../index.html';">Thoát
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

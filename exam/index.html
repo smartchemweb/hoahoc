@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Làm đề thi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <h1 class="brand">Làm đề thi</h1>
+      <nav class="toc" aria-label="Mục lục"></nav>
+    </div>
+
+    <div class="header-right">
+      <div class="controls">
+        <select id="filterSelect" title="Bộ lọc trạng thái">
+          <option value="all">Tất cả</option>
+          <option value="done">Đã hoàn thành</option>
+          <option value="undone">Chưa làm</option>
+          <option value="fav">Chỉ yêu thích</option>
+        </select>
+
+        <select id="sortSelect" title="Sắp xếp">
+          <option value="name-asc">Tên A → Z</option>
+          <option value="name-desc">Tên Z → A</option>
+          <option value="done-first">Đã hoàn thành lên đầu</option>
+          <option value="undone-first">Chưa làm lên đầu</option>
+        </select>
+
+        <!-- dark mode removed -->
+      </div>
+    </div>
+  </header>
+
+  <main class="mid-section" id="mainContent">
+    <!-- Rendered by JS -->
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 — Làm đề thi • Demo</small>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

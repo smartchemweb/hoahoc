@@ -1,5 +1,5 @@
-let units = JSON.parse(localStorage.getItem('units')) || [
-// let units = [
+// let units = JSON.parse(localStorage.getItem('units')) || [
+let units = [
     { /*ester*/
         id: 1,
         name: "Ester",
