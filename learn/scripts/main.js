@@ -1,1327 +1,1782 @@
-// let units = JSON.parse(localStorage.getItem('units')) || [
-let units = [
-    { /*ester*/
-        id: 1,
-        name: "Ester",
-        levels: [
-            {
-                name: "Dạng 1. Khái niệm, Danh pháp, Tính chất vật lí",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Luyện tập dạng 1 (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Luyện tập dạng 1 (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Luyện tập dạng 1 (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "Dạng 2. Tính chất hóa học",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Luyện tập dạng 2 (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Luyện tập dạng 2 (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Luyện tập dạng 2 (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "Dạng 3. Ứng dụng, Điều chế",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Luyện tập dạng 3 (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Luyện tập dạng 3 (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Luyện tập dạng 3 (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "Phần Lipid",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Luyện tập phần Lipid (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Luyện tập phần Lipid (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Luyện tập phần Lipid (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "Lý thuyết xà phòng và chất giặt rửa",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Luyện tập (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Luyện tập (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Luyện tập (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
+// scripts/main.js — Roadmap renderer (fixed)
+// Sửa lỗi: tránh mix '&&' với '??' không có ngoặc (TypeScript/ESLint error).
+// Giữ nguyên tất cả tính năng: normalize, video/theory/other handling, progress, flat index, storage events, scroll memory.
 
-        ],
-    }, { /*Carbonhydrate*/
-        id: 2,
-        name: "Carbonhydrate",
-        levels: [
-            {
-                name: "Giới thiệu về CARBOHYDRATE. GLUCOSE VÀ FRUCTOSE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "SACCHAROSE VÀ MALTOSE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "TINH BỘT VÀ CELLULOSE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "BÀI TẬP PHẢN ỨNG TRÁNG GƯƠNG GLUCOSE (FRUCTOSE)",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "BÀI TẬP PHẢN ỨNG THỦY PHÂN CARBOHYDRATE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "BÀI TẬP PHẢN ỨNG THỦY PHÂN - TRÁNG GƯƠNG CARBOHYDRATE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "BÀI TẬP PHẢN ỨNG LÊN MEN CARBOHYDRATE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Phương pháp giải",
-                isDone: 'done',
-                type: "theory",
-                partName: "BÀI TẬP PHẢN ỨNG CELLULOSE TÁC DỤNG HNO3"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                name: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                isDone: 'done',
-                type: "name",
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ],
-    }, { /*HỢP CHẤT CHỨA NITROGEN*/
-        id: 3,
-        name: "HỢP CHẤT CHỨA NITROGEN",
-        levels: [
-            {
-                name: "AMINE",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "AMNO ACID",
-                name: "Lí thuyết Amno Acid",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "PEPTIDE",
-                name: "Lí thuyết Peptide",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "PROTEIN VÀ ENZYME",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "BÀI TẬP: AMINE TÁC DỤNG VỚI ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI BASE",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI ACID – BASE (TÍNH LƯỠNG TÍNH)",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: HỖN HỢP AMINO ACID VÀ ACID VÔ CƠ TÁC DỤNG VỚI BASE",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: HỖN HỢP AMINO ACID VÀ BASE VÔ CƠ TÁC DỤNG VỚI ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: DẠNG TOÁN ESTER CỦA AMINO ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: THUỶ PHÂN PEPTIDE",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: THUỶ PHÂN PEPTIDE TRONG MÔI TRƯỜNG ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
-    }, { /* Polymer */        
-        id: 4,
-        name: "POLYMER",
-        levels: [
-            {
-                partName: "ĐẠI CƯƠNG VỀ POLYMER",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "VẬT LIỆU POLYMER",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "BÀI TẬP: XÁC ĐỊNH HỆ SỐ POLYMER HÓA",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "BÀI TẬP: BÀI TẬP CAO SU",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
-    }, { /* PIN ĐIỆN VÀ ĐIỆN PHÂN */
-        id: 5,
-        name: "PIN ĐIỆN VÀ ĐIỆN PHÂN",
-        levels: [
-            {
-                partName: "THẾ ĐIỆN CỰC VÀ NGUỒN ĐIỆN HÓA HỌC",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (cặp oxi hóa – khử; thế điện cực)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (ý nghĩa thế điện cực)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (pin điện hóa)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai (cặp oxi hóa – khử; thế điện cực)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm đúng – sai (pin điện hóa)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Tự luận trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐIỆN PHÂN",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "DẠNG 1: XÁC ĐỊNH SỨC ĐIỆN ĐỘNG CHUẨN CỦA PIN ĐIỆN HÓA",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 2: BÀI TẬP TÍNH THẾ ĐIỆN CỰC CHUẨN",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 3: BÀI TẬP 1 KIM LOẠI TÁC DỤNG VỚI 1 DUNG DỊCH MUỐI",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 4: BÀI TẬP 2 KIM LOẠI TÁC DỤNG VỚI 1 DUNG DỊCH MUỐI",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 5: BÀI TẬP 1 KIM LOẠI TÁC DỤNG VỚI 2 DUNG DỊCH MUỐI",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 6: BÀI TẬP ĐIỆN PHÂN 1 CHẤT (NÓNG CHẢY – DUNG DỊCH)",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 7: BÀI TẬP ĐIỆN PHÂN HỖN HỢP 2 CHẤT TRONG DUNG DỊCH",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
-    }, { /* ĐẠI CƯƠNG VỀ KIM LOẠI */
-        id: 6,
-        name: "ĐẠI CƯƠNG VỀ KIM LOẠI",
-        levels: [
-            {
-                partName: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (CẤU TẠO KIM LOẠI)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (TÍNH CHẤT VẬT LÍ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "TÍNH CHẤT HÓA HỌC CỦA KIM LOẠI",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "KIM LOẠI TRONG TỰ NHIÊN VÀ PHƯƠNG PHÁP TÁCH KIM LOẠI",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI TRONG TỰ NHIÊN)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (PHƯƠNG PHÁP TÁCH KIM LOẠI)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "HỢP KIM – SỰ ĂN MÒN KIM LOẠI",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP KIM)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (SỰ ĂN MÒN KIM LOẠI)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "DẠNG 1: KIM LOẠI TÁC DỤNG VỚI PHI KIM",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 2: BASIC OXIDE TÁC DỤNG VỚI ACID",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 3: KIM LOẠI TÁC DỤNG VỚI ACID HCl, H2SO4 LOÃNG",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 4: KIM LOẠI TÁC DỤNG VỚI ACID H2SO4 ĐẶC",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 5: KHỬ OXIDE KIM LOẠI BẰNG KHÍ CO",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
-    }, { /* NGUYÊN TỐ NHÓM IA VÀ NHÓM IIA */
-        id: 7,
-        name: "NGUYÊN TỐ NHÓM IA VÀ NHÓM IIA ",
-        levels: [
-            {
-                partName: "NGUYÊN TỐ NHÓM IA",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (ĐƠN CHẤT KIM LOẠI KIỀM)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP CHẤT KIM LOẠI KIỀM)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "NGUYÊN TỐ NHÓM IIA",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP CHẤT KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (NƯỚC CỨNG)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "DẠNG 1: SƠ ĐỒ - CHUỔI PHẢN ỨNG",
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 2: KIM LOẠI KIỀM, KIỀM THỔ TÁC DỤNG VỚI NƯỚC",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 3: DẠNG TOÁN CO2 TÁC DỤNG VỚI DUNG DỊCH KIỀM",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 4: MUỐI CARBONATE TÁC DỤNG VỚI ACID",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "DẠNG 5: BÀI TOÁN TỔNG HỢP MUỐI CARBONATE",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                name: "Phương pháp",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
-    }, { /* SƠ LƯỢC VỀ KIM LOẠI CHUYỂN TIẾP THỨ NHẤT VÀ PHỨC CHẤT */ 
-        id: 8,
-        name: "SƠ LƯỢC VỀ KIM LOẠI CHUYỂN TIẾP THỨ NHẤT VÀ PHỨC CHẤT",
-        levels: [
-            {
-                partName: "ĐẠI CƯƠNG VỀ KIM LOẠI CHUYỂN TIẾP THỨ NHẤT",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "SƠ LƯỢC VỀ PHỨC CHẤT",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "MỘT SỐ TÍNH CHẤT VÀ ỨNG DỤNG CỦA PHỨC CHẤT",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "theory"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            }, {
-                partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
-                name: "Lí thuyết",
-                isDone: 'done',
-                type: "name"
-            }, {
-                name: "Trắc nghiệm nhiều phương án lựa chọn",
-                isDone: 'notdone',
-                type: "ex1"
-            }, {
-                name: "Trắc nghiệm đúng – sai",
-                isDone: 'notdone',
-                type: "ex2"
-            }, {
-                name: "Trắc nghiệm trả lời ngắn",
-                isDone: 'notdone',
-                type: "ex3"
-            },
-        ]
+(() => {
+  'use strict';
+
+  /* ============================
+     Small DOM & storage helpers
+     ============================ */
+  const $ = (sel, root = document) => (root || document).querySelector(sel)
+  const $$ = (sel, root = document) => Array.from((root || document).querySelectorAll(sel))
+
+  function safeGetJSON(key, fallback = null) {
+    try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback } catch (e) { console.warn('safeGetJSON', e); return fallback }
+  }
+  function safeSetJSON(key, val) {
+    try { localStorage.setItem(key, JSON.stringify(val)); return true } catch (e) { console.warn('safeSetJSON', e); return false }
+  }
+
+  /* ============================
+     Icon helper
+     ============================ */
+  function iconForType(type) {
+    const t = (type || '').toString().trim().toLowerCase()
+    const map = {
+      'theory': '../../assets/images/theory-logo.svg',
+      'video': '../../assets/images/video-logo.svg',
+      'other': '../../assets/images/other-logo.svg',
+      'ex1': '../../assets/images/ex1-logo.svg',
+      'ex2': '../../assets/images/ex2-logo.svg',
+      'ex3': '../../assets/images/ex3-logo.svg',
+      'name': '../../assets/images/theory-logo.svg'
     }
+    return map[t] || '../../assets/images/lesson-logo.svg'
+  }
+
+  /* ============================
+     Load raw units (from localStorage or window.units fallback)
+     ============================ */
+  let rawUnits = safeGetJSON('units', null)
+  if (!rawUnits && window.units) rawUnits = window.units;
+
+  // fallback sample (replace with your data if needed)
+  rawUnits = [
+    { id: 1, name: "Ester", levels: [
+        {
+            name: "Dạng 1. Khái niệm, Danh pháp, Tính chất vật lí",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Luyện tập dạng 1 (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Luyện tập dạng 1 (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Luyện tập dạng 1 (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "Dạng 2. Tính chất hóa học",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Luyện tập dạng 2 (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Luyện tập dạng 2 (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Luyện tập dạng 2 (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "Dạng 3. Ứng dụng, Điều chế",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Luyện tập dạng 3 (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Luyện tập dạng 3 (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Luyện tập dạng 3 (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "Phần Lipid",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Luyện tập phần Lipid (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Luyện tập phần Lipid (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Luyện tập phần Lipid (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "Lý thuyết xà phòng và chất giặt rửa",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Luyện tập (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Luyện tập (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Luyện tập (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 2, name: "Carbonhydrate", levels: [
+        {
+            name: "Giới thiệu về CARBOHYDRATE. GLUCOSE VÀ FRUCTOSE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM GLUCOSE VỚI COPPERII HYDROXIDE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM CELLULOSE TAN TRONG NƯỚC SCHWEIZER",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM PHẢN ỨNG CỦA CELLULOSE VỚI NITRIC ACID",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "SACCHAROSE VÀ MALTOSE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM SACCHAROSE VỚI COPPER(II) HYDROXIDE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "TINH BỘT VÀ CELLULOSE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM PHẢN ỨNG HỒ TINH BỘT VỚI IODINE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM PHẢN ỨNG THỦY PHÂN TINH BỘT VÀ CELLULOSE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "BÀI TẬP PHẢN ỨNG TRÁNG GƯƠNG GLUCOSE (FRUCTOSE)",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "BÀI TẬP PHẢN ỨNG THỦY PHÂN CARBOHYDRATE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "BÀI TẬP PHẢN ỨNG THỦY PHÂN - TRÁNG GƯƠNG CARBOHYDRATE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "BÀI TẬP PHẢN ỨNG LÊN MEN CARBOHYDRATE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Phương pháp giải",
+            isDone: 'notdone',
+            type: "theory",
+            partName: "BÀI TẬP PHẢN ỨNG CELLULOSE TÁC DỤNG HNO3"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            name: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 3, name: "HỢP CHẤT CHỨA NITROGEN", levels: [
+        {
+            name: "AMINE",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "AMNO ACID",
+            name: "Lí thuyết Amno Acid",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "PEPTIDE",
+            name: "Lí thuyết Peptide",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "PROTEIN VÀ ENZYME",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "BÀI TẬP: AMINE TÁC DỤNG VỚI ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI BASE",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: AMINO ACID TÁC DỤNG VỚI ACID – BASE (TÍNH LƯỠNG TÍNH)",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: HỖN HỢP AMINO ACID VÀ ACID VÔ CƠ TÁC DỤNG VỚI BASE",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: HỖN HỢP AMINO ACID VÀ BASE VÔ CƠ TÁC DỤNG VỚI ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: DẠNG TOÁN ESTER CỦA AMINO ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: THUỶ PHÂN PEPTIDE",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: THUỶ PHÂN PEPTIDE TRONG MÔI TRƯỜNG ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 4, name: "POLYMER", levels: [
+        {
+            partName: "ĐẠI CƯƠNG VỀ POLYMER",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "VẬT LIỆU POLYMER",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "BÀI TẬP: XÁC ĐỊNH HỆ SỐ POLYMER HÓA",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "BÀI TẬP: BÀI TẬP CAO SU",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 5, name: "PIN ĐIỆN VÀ ĐIỆN PHÂN", levels: [
+        {
+            partName: "THẾ ĐIỆN CỰC VÀ NGUỒN ĐIỆN HÓA HỌC",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THẾ ĐIỆN CỰC VÀ NGUỒN ĐIỆN HÓA HỌC",
+            isDone: 'notdone',
+            type: "other"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (cặp oxi hóa – khử; thế điện cực)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (ý nghĩa thế điện cực)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (pin điện hóa)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai (cặp oxi hóa – khử; thế điện cực)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm đúng – sai (pin điện hóa)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Tự luận trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐIỆN PHÂN",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "ĐIỆN PHÂN",
+            isDone: 'notdone',
+            type: "other"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "DẠNG 1: XÁC ĐỊNH SỨC ĐIỆN ĐỘNG CHUẨN CỦA PIN ĐIỆN HÓA",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 2: BÀI TẬP TÍNH THẾ ĐIỆN CỰC CHUẨN",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 3: BÀI TẬP 1 KIM LOẠI TÁC DỤNG VỚI 1 DUNG DỊCH MUỐI",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 4: BÀI TẬP 2 KIM LOẠI TÁC DỤNG VỚI 1 DUNG DỊCH MUỐI",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 5: BÀI TẬP 1 KIM LOẠI TÁC DỤNG VỚI 2 DUNG DỊCH MUỐI",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 6: BÀI TẬP ĐIỆN PHÂN 1 CHẤT (NÓNG CHẢY – DUNG DỊCH)",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 7: BÀI TẬP ĐIỆN PHÂN HỖN HỢP 2 CHẤT TRONG DUNG DỊCH",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 6, name: "ĐẠI CƯƠNG VỀ KIM LOẠI", levels: [
+        {
+            partName: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM XÁC ĐỊNH HÀM LƯỢNG MUỐI Fe(II) BẰNG DUNG DỊCH THUỐC TÍM",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (CẤU TẠO KIM LOẠI)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (TÍNH CHẤT VẬT LÍ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "TÍNH CHẤT HÓA HỌC CỦA KIM LOẠI",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI PHI KIM",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI DUNG DỊCH MUỐI",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI DUNG DỊCH ACID LOÃNG",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "KIM LOẠI TRONG TỰ NHIÊN VÀ PHƯƠNG PHÁP TÁCH KIM LOẠI",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI TRONG TỰ NHIÊN)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (PHƯƠNG PHÁP TÁCH KIM LOẠI)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "HỢP KIM – SỰ ĂN MÒN KIM LOẠI",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP KIM)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (SỰ ĂN MÒN KIM LOẠI)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "DẠNG 1: KIM LOẠI TÁC DỤNG VỚI PHI KIM",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 2: BASIC OXIDE TÁC DỤNG VỚI ACID",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 3: KIM LOẠI TÁC DỤNG VỚI ACID HCl, H2SO4 LOÃNG",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 4: KIM LOẠI TÁC DỤNG VỚI ACID H2SO4 ĐẶC",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 5: KHỬ OXIDE KIM LOẠI BẰNG KHÍ CO",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 7, name: "NGUYÊN TỐ NHÓM IA VÀ NHÓM IIA", levels: [
+        {
+            partName: "NGUYÊN TỐ NHÓM IA",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI KHÍ OXYGEN",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI KHÍ CHLORINE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI NƯỚC",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (ĐƠN CHẤT KIM LOẠI KIỀM)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP CHẤT KIM LOẠI KIỀM)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "NGUYÊN TỐ NHÓM IIA",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "THÍ NGHIỆM THỬ MÀU NGỌN LỬA KIM LOẠI KIỀM",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM SO SÁNH ĐỘ TAN GIỮA CALCIUM SULFATE VÀ BARIUM SULFATE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "THÍ NGHIỆM NHẬN BIẾT ION CALCIUM, BARIUM, CARBONATE VÀ SULFATE",
+            isDone: 'notdone',
+            type: "video"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (HỢP CHẤT KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (NƯỚC CỨNG)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "DẠNG 1: SƠ ĐỒ - CHUỔI PHẢN ỨNG",
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 2: KIM LOẠI KIỀM, KIỀM THỔ TÁC DỤNG VỚI NƯỚC",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 3: DẠNG TOÁN CO2 TÁC DỤNG VỚI DUNG DỊCH KIỀM",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 4: MUỐI CARBONATE TÁC DỤNG VỚI ACID",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "DẠNG 5: BÀI TOÁN TỔNG HỢP MUỐI CARBONATE",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn (KIM LOẠI KIỀM THỔ)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            name: "Phương pháp",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm lựa chọn)",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Bài tập vận dụng (Trắc nghiệm đúng sai)",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Bài tập vận dụng (Tự luận trả lời ngắn)",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] },
+    { id: 8, name: "SƠ LƯỢC VỀ KIM LOẠI CHUYỂN TIẾP THỨ NHẤT VÀ PHỨC CHẤT", levels: [
+        {
+            partName: "ĐẠI CƯƠNG VỀ KIM LOẠI CHUYỂN TIẾP THỨ NHẤT",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "SƠ LƯỢC VỀ PHỨC CHẤT",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "MỘT SỐ TÍNH CHẤT VÀ ỨNG DỤNG CỦA PHỨC CHẤT",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "theory"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 01",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }, {
+            partName: "ĐỀ ÔN TẬP CHƯƠNG SỐ 02",
+            name: "Lí thuyết",
+            isDone: 'notdone',
+            type: "name"
+        }, {
+            name: "Trắc nghiệm nhiều phương án lựa chọn",
+            isDone: 'notdone',
+            type: "ex1"
+        }, {
+            name: "Trắc nghiệm đúng – sai",
+            isDone: 'notdone',
+            type: "ex2"
+        }, {
+            name: "Trắc nghiệm trả lời ngắn",
+            isDone: 'notdone',
+            type: "ex3"
+        }
+    ] }
 ];
 
-localStorage.setItem('units', JSON.stringify(units));
+  /* ============================
+     Normalization => units[].topics[].lessons[]
+     each lesson: { id, name, type, isDone }
+     ============================ */
+  function normalizeUnits(raw) {
+    if (!Array.isArray(raw)) return []
+    return raw.map((u, ui) => {
+      // topics present
+      if (Array.isArray(u.topics)) {
+        const topics = u.topics.map((t, ti) => ({
+          id: t.id ?? `${u.id}-t-${ti}`,
+          name: t.name ?? `Chủ đề ${ti + 1}`,
+          lessons: Array.isArray(t.lessons) ? t.lessons.map((l, li) => ({
+            id: l.id ?? `${u.id}-t-${ti}-l-${li}`,
+            name: l.name ?? `Bài ${li + 1}`,
+            type: (l.type || '').toString().trim(),
+            // normalize isDone => boolean true only if explicitly true or the string 'done'
+            isDone: (l.isDone === true) || (typeof l.isDone === 'string' && l.isDone.trim().toLowerCase() === 'done')
+          })) : []
+        }))
+        return { id: u.id ?? (ui + 1), name: u.name ?? `Chương ${ui + 1}`, topics }
+      }
 
-const params = new URLSearchParams(window.location.search);
-const mark_pr = params.get('mark');
-const unit_pr = params.get('unit');
-const level_pr = params.get('level');
+      // lessons at unit level
+      if (Array.isArray(u.lessons)) {
+        const lessons = u.lessons.map((l, li) => ({
+          id: l.id ?? `${u.id}-l-${li}`,
+          name: l.name ?? `Bài ${li + 1}`,
+          type: (l.type || '').toString().trim(),
+          isDone: (l.isDone === true) || (typeof l.isDone === 'string' && l.isDone.trim().toLowerCase() === 'done')
+        }))
+        return { id: u.id ?? (ui + 1), name: u.name ?? `Chương ${ui + 1}`, topics: [{ id: `${u.id}-t-0`, name: 'Chủ đề', lessons }] }
+      }
 
-if (mark_pr === 'true') {
-    units[unit_pr - 1].levels[Number(level_pr)].isDone = 'done';
-    localStorage.setItem('units', JSON.stringify(units));
-}
+      // legacy levels
+      if (Array.isArray(u.levels)) {
+        const lessons = u.levels.map((lv, li) => ({
+          id: lv.id ?? `${u.id}-l-${li}`,
+          name: lv.partName ?? lv.name ?? `Bài ${li + 1}`,
+          type: (lv.type || '').toString().trim(),
+          isDone: (lv.isDone === true) || (typeof lv.isDone === 'string' && lv.isDone.trim().toLowerCase() === 'done')
+        }))
+        return { id: u.id ?? (ui + 1), name: u.name ?? `Chương ${ui + 1}`, topics: [{ id: `${u.id}-t-0`, name: 'Chủ đề', lessons }] }
+      }
 
-// --- RENDER MID LAYOUT ONCE ---
-// Call this once before rendering units to create columns (content + toc)
-function renderMidLayout() {
-    const mid = document.querySelector('.mid-section');
+      // fallback empty
+      return { id: u.id ?? (ui + 1), name: u.name ?? `Chương ${ui + 1}`, topics: [{ id: `${u.id}-t-0`, name: 'Chủ đề', lessons: [] }] }
+    })
+  }
+
+  let units = normalizeUnits(rawUnits)
+  // persist normalized shape for later loads
+  safeSetJSON('units', units)
+
+  /* ============================
+     Theory & video & other viewed sets
+     ============================ */
+  function loadTheoryViewed() { const arr = safeGetJSON('smartchem_theory_viewed', []); return Array.isArray(arr) ? arr.map(String) : [] }
+  function saveTheoryViewed(arr) { return safeSetJSON('smartchem_theory_viewed', arr) }
+  let theoryViewed = loadTheoryViewed()
+
+  function loadVideoViewed() { const arr = safeGetJSON('smartchem_video_viewed', []); return Array.isArray(arr) ? arr.map(String) : [] }
+  function saveVideoViewed(arr) { return safeSetJSON('smartchem_video_viewed', arr) }
+  let videoViewed = loadVideoViewed()
+
+  // other viewed set (new)
+  function loadOtherViewed() { const arr = safeGetJSON('smartchem_other_viewed', []); return Array.isArray(arr) ? arr.map(String) : [] }
+  function saveOtherViewed(arr) { return safeSetJSON('smartchem_other_viewed', arr) }
+  let otherViewed = loadOtherViewed()
+
+  /* ============================
+     isLessonDone helper (handles boolean/string)
+     ============================ */
+  function isLessonDone(lesson) {
+    if (!lesson) return false
+    if (lesson === true) return true
+    if (typeof lesson === 'object' && lesson.isDone !== undefined) {
+      const v = lesson.isDone
+      if (v === true) return true
+      if (typeof v === 'string') {
+        const s = v.trim().toLowerCase()
+        return s === 'done'
+      }
+      return false
+    }
+    if (typeof lesson === 'string') {
+      const s = lesson.trim().toLowerCase()
+      return s === 'done'
+    }
+    return !!lesson
+  }
+
+  /* ============================
+     Progress helpers
+     - Count all lesson types into progress (theory/video/other/exercise)
+     ============================ */
+  function topicProgress(topic) {
+    const lessons = Array.isArray(topic.lessons) ? topic.lessons : []
+    let total = 0, done = 0
+    lessons.forEach(l => {
+      const id = String(l?.id ?? '')
+      // include all lessons into denominator
+      total += 1
+      if (isLessonDone(l)) done += 1
+    })
+    const pct = total === 0 ? 0 : Math.round((done / total) * 100)
+    return { total, done, pct }
+  }
+
+  function unitProgress(unit) {
+    const topics = Array.isArray(unit.topics) ? unit.topics : []
+    const acc = topics.reduce((s, t) => {
+      const p = topicProgress(t)
+      s.total += p.total; s.done += p.done
+      return s
+    }, { total: 0, done: 0 })
+    acc.pct = acc.total === 0 ? 0 : Math.round((acc.done / acc.total) * 100)
+    return acc
+  }
+
+  /* ============================
+     Locators & flat index computation
+     ============================ */
+  function resolveUnitIndex(unitIdOrIndex) {
+    if (typeof unitIdOrIndex === 'number') {
+      const found = units.findIndex(u => u.id === unitIdOrIndex || String(u.id) === String(unitIdOrIndex))
+      if (found >= 0) return found
+      return unitIdOrIndex
+    }
+    if (typeof unitIdOrIndex === 'string' && /^\d+$/.test(unitIdOrIndex)) {
+      const found = units.findIndex(u => String(u.id) === unitIdOrIndex)
+      if (found >= 0) return found
+      return Number(unitIdOrIndex) - 1
+    }
+    return units.findIndex(u => String(u.id) === String(unitIdOrIndex))
+  }
+
+  function findLessonLocator(unitIdOrIndex, lessonIdOrIndex) {
+    const uIndex = resolveUnitIndex(unitIdOrIndex)
+    const unit = units[uIndex]
+    if (!unit) return null
+    const topics = Array.isArray(unit.topics) ? unit.topics : []
+
+    if (typeof lessonIdOrIndex === 'number') {
+      // flat index -> locate topic & relative index inside topic
+      let count = 0
+      for (let t = 0; t < topics.length; t++) {
+        const lessons = Array.isArray(topics[t].lessons) ? topics[t].lessons : []
+        if (lessonIdOrIndex < count + lessons.length) {
+          return { unitIndex: uIndex, topicIndex: t, lessonIndex: lessonIdOrIndex - count }
+        }
+        count += lessons.length
+      }
+      return null
+    }
+
+    // lessonId (string)
+    for (let t = 0; t < topics.length; t++) {
+      const lessons = Array.isArray(topics[t].lessons) ? topics[t].lessons : []
+      const li = lessons.findIndex(l => String(l?.id ?? '') === String(lessonIdOrIndex))
+      if (li >= 0) return { unitIndex: uIndex, topicIndex: t, lessonIndex: li }
+    }
+    return null
+  }
+
+  // compute flat index for a lesson (sum lengths of previous topics + lessonIndex)
+  function computeFlatIndex(unit, topicIndex, lessonIndex) {
+    const topics = Array.isArray(unit.topics) ? unit.topics : []
+    let flat = 0
+    for (let t = 0; t < topicIndex; t++) {
+      const lessons = Array.isArray(topics[t].lessons) ? topics[t].lessons : []
+      flat += lessons.length
+    }
+    flat += lessonIndex
+    return flat
+  }
+
+  function createLessonNav(unitId, locator) {
+    const uIndex = resolveUnitIndex(unitId)
+    const unit = units[uIndex]
+    if (!unit || !locator) return null
+    const flatIndex = computeFlatIndex(unit, locator.topicIndex, locator.lessonIndex)
+    return { unitId: unit.id, flatLevelIndex: flatIndex, lessonId: locator.lessonId ?? null }
+  }
+
+  /* ============================
+     Mark done API
+     ============================ */
+  function markLessonDone({ unitId, lessonIndex = undefined, lessonId = undefined }) {
+    let locator = null
+    if (lessonId !== undefined) locator = findLessonLocator(unitId, lessonId)
+    else if (lessonIndex !== undefined) locator = findLessonLocator(unitId, Number(lessonIndex))
+    if (!locator) { console.warn('markLessonDone: cannot locate', { unitId, lessonIndex, lessonId }); return false }
+    const { unitIndex, topicIndex, lessonIndex: lIdx } = locator
+    const lesson = units[unitIndex] && units[unitIndex].topics && units[unitIndex].topics[topicIndex] && Array.isArray(units[unitIndex].topics[topicIndex].lessons) ? units[unitIndex].topics[topicIndex].lessons[lIdx] : null
+    if (!lesson) return false
+    if (isLessonDone(lesson)) return false
+    // set to boolean true
+    lesson.isDone = true
+    safeSetJSON('units', units)
+    renderRoadmap()
+    focusLanding(units[unitIndex].id)
+    return true
+  }
+
+  /* ============================
+     Theory & Video & Other viewed API
+     ============================ */
+  function addTheoryViewed(lessonId) {
+    if (!lessonId) return
+    const sId = String(lessonId)
+    if (theoryViewed.indexOf(sId) === -1) {
+      theoryViewed.push(sId)
+      saveTheoryViewed(theoryViewed)
+      try { localStorage.setItem('smartchem_theory_viewed', JSON.stringify(theoryViewed)) } catch (e) {}
+      renderRoadmap()
+    }
+  }
+  function addVideoViewed(lessonId) {
+    if (!lessonId) return
+    const sId = String(lessonId)
+    if (videoViewed.indexOf(sId) === -1) {
+      videoViewed.push(sId)
+      saveVideoViewed(videoViewed)
+      try { localStorage.setItem('smartchem_video_viewed', JSON.stringify(videoViewed)) } catch (e) {}
+      renderRoadmap()
+    }
+  }
+  function addOtherViewed(lessonId) {
+    if (!lessonId) return
+    const sId = String(lessonId)
+    if (otherViewed.indexOf(sId) === -1) {
+      otherViewed.push(sId)
+      saveOtherViewed(otherViewed)
+      try { localStorage.setItem('smartchem_other_viewed', JSON.stringify(otherViewed)) } catch (e) {}
+      renderRoadmap()
+    }
+  }
+
+  /* ============================
+     Pending events (query params / localStorage)
+     ============================ */
+  function processPendingEvents() {
+    try {
+      const params = new URLSearchParams(window.location.search)
+      if (params.get('mark') === 'true') {
+        const unitParam = params.get('unit')
+        const levelParam = params.get('level')
+        const lessonIdParam = params.get('lessonId')
+        if (lessonIdParam) markLessonDone({ unitId: unitParam, lessonId: lessonIdParam })
+        else if (levelParam != null) markLessonDone({ unitId: unitParam, lessonIndex: Number(levelParam) })
+        const url = new URL(window.location.href)
+        url.searchParams.delete('mark'); url.searchParams.delete('unit'); url.searchParams.delete('level'); url.searchParams.delete('lessonId')
+        window.history.replaceState({}, document.title, url.pathname + url.search)
+      }
+
+      if (params.get('theory_viewed') === 'true') {
+        const lessonIdParam = params.get('lessonId')
+        if (lessonIdParam) addTheoryViewed(lessonIdParam)
+        const url = new URL(window.location.href)
+        url.searchParams.delete('theory_viewed'); url.searchParams.delete('lessonId')
+        window.history.replaceState({}, document.title, url.pathname + url.search)
+      }
+
+      if (params.get('video_viewed') === 'true') {
+        const lessonIdParam = params.get('lessonId')
+        if (lessonIdParam) addVideoViewed(lessonIdParam)
+        const url = new URL(window.location.href)
+        url.searchParams.delete('video_viewed'); url.searchParams.delete('lessonId')
+        window.history.replaceState({}, document.title, url.pathname + url.search)
+      }
+
+      if (params.get('other_viewed') === 'true') {
+        const lessonIdParam = params.get('lessonId')
+        if (lessonIdParam) addOtherViewed(lessonIdParam)
+        const url = new URL(window.location.href)
+        url.searchParams.delete('other_viewed'); url.searchParams.delete('lessonId')
+        window.history.replaceState({}, document.title, url.pathname + url.search)
+      }
+    } catch (e) { console.warn('processPendingEvents(query) error', e) }
+
+    // localStorage pending mark (lesson page may set this before redirect)
+    try {
+      const pendingRaw = localStorage.getItem('smartchem_mark_pending')
+      if (pendingRaw) {
+        const pending = JSON.parse(pendingRaw)
+        if (pending) {
+          if (pending.lessonId) markLessonDone({ unitId: pending.unit, lessonId: pending.lessonId })
+          else if (pending.level != null) markLessonDone({ unitId: pending.unit, lessonIndex: Number(pending.level) })
+        }
+        localStorage.removeItem('smartchem_mark_pending')
+      }
+    } catch (e) { /* ignore */ }
+  }
+
+  /* ============================
+     Storage listener for cross-tab events
+     ============================ */
+  window.addEventListener('storage', (ev) => {
+    if (!ev.key) return
+    if (ev.key === 'smartchem_mark' || ev.key === 'smartchem_mark_pending') {
+      try {
+        const payload = JSON.parse(ev.newValue)
+        if (!payload) return
+        if (payload.lessonId) markLessonDone({ unitId: payload.unit, lessonId: payload.lessonId })
+        else if (payload.level != null) markLessonDone({ unitId: payload.unit, lessonIndex: Number(payload.level) })
+      } catch (e) { /* ignore */ }
+    }
+    if (ev.key === 'smartchem_theory_viewed') {
+      try {
+        const arr = JSON.parse(ev.newValue) || []
+        theoryViewed = Array.isArray(arr) ? arr.map(String) : theoryViewed
+        renderRoadmap()
+      } catch (e) { /* ignore */ }
+    }
+    if (ev.key === 'smartchem_video_viewed') {
+      try {
+        const arr = JSON.parse(ev.newValue) || []
+        videoViewed = Array.isArray(arr) ? arr.map(String) : videoViewed
+        renderRoadmap()
+      } catch (e) { /* ignore */ }
+    }
+    if (ev.key === 'smartchem_other_viewed') {
+      try {
+        const arr = JSON.parse(ev.newValue) || []
+        otherViewed = Array.isArray(arr) ? arr.map(String) : otherViewed
+        renderRoadmap()
+      } catch (e) { /* ignore */ }
+    }
+  })
+
+  // run pending events once
+  processPendingEvents()
+
+  /* ============================
+     UI: render layout
+     ============================ */
+  function renderLayout() {
+    const mid = document.querySelector('.mid-section')
+    if (!mid) return
     mid.innerHTML = `
       <div class="mid-wrap">
-        <main class="mid-content" aria-live="polite"></main>
-        <aside class="toc sticky" aria-label="Mục lục chương học">
-          <div class="toc-title">Mục lục</div>
-          <div class="toc-list" role="list"></div>
-        </aside>
+        <div class="header-panel">
+          <div class="header-left">
+            <h1>Roadmap khoá học</h1>
+            <div class="muted">Nhấp vào chương để mở/đóng. Tiến độ tính tất cả loại nội dung (Lý thuyết/Video/Tài nguyên/Bài tập).</div>
+          </div>
+          <div class="global-progress" id="globalProgress">Tổng: 0%</div>
+        </div>
+        <div class="roadmap" id="roadmapRoot"></div>
       </div>
-    `;
-    // if mid-section should be scroll container for scroll memory, add class
-    // If mid content taller than viewport, we want mid-section to scroll
-    // (scroll memory script will auto-detect .mid-section)
-    // Optionally: mid.classList.add('has-scroll');
-}
+    `
+  }
 
-// --- DISPLAY UNITS INTO .mid-content (units array is global) ---
-function displayUnits() {
-    // ensure layout exists
-    if (!document.querySelector('.mid-wrap')) renderMidLayout();
+  /* ============================
+     Small animation helper for open/close (clean)
+     ============================ */
+  function animateToggle(el, open) {
+    const ANIM_MS = 220
+    el.style.overflow = 'hidden'
+    if (open) {
+      el.style.display = 'flex'
+      el.style.flexDirection = 'column'
+      const target = el.scrollHeight
+      el.style.height = '0px'
+      requestAnimationFrame(() => {
+        el.style.transition = `height ${ANIM_MS}ms cubic-bezier(.2,.9,.2,1)`
+        el.style.height = target + 'px'
+      })
+      const onEnd = () => { el.style.height = 'auto'; el.style.transition = ''; el.style.overflow = ''; el.removeEventListener('transitionend', onEnd) }
+      el.addEventListener('transitionend', onEnd)
+    } else {
+      const start = el.scrollHeight
+      el.style.height = start + 'px'
+      el.getBoundingClientRect()
+      requestAnimationFrame(() => {
+        el.style.transition = `height ${ANIM_MS}ms cubic-bezier(.2,.9,.2,1)`
+        el.style.height = '0px'
+      })
+      const onEnd = () => { el.style.display = 'none'; el.style.height = ''; el.style.transition = ''; el.style.overflow = ''; el.removeEventListener('transitionend', onEnd) }
+      el.addEventListener('transitionend', onEnd)
+    }
+  }
 
-    const content = document.querySelector('.mid-content');
-    content.innerHTML = ''; // reset
+  /* ============================
+     Render roadmap
+     ============================ */
+  function renderRoadmap() {
+    renderLayout()
+    const root = document.getElementById('roadmapRoot')
+    if (!root) return
+    root.innerHTML = ''
 
-    units.forEach((unit, index) => {
-        const { id, name, levels } = unit;
-        // create container with id for scrolling target
-        const unitEl = document.createElement('section');
-        unitEl.className = 'unit';
-        unitEl.id = `unit-${id}`;
-        unitEl.setAttribute('data-unit-index', index);
-        unitEl.setAttribute('tabindex', '-1'); // allow focus on scroll
+    let globalTotal = 0, globalDone = 0
+    const safeUnits = Array.isArray(units) ? units : []
 
-        // unit header
-        const header = document.createElement('div');
-        header.className = 'unit-line';
-        header.innerHTML = `
-            <div class="unit-name">
-                ${id}: ${name}
-            </div>
-        `;
+    safeUnits.forEach((unit) => {
+      const up = unitProgress(unit)
+      globalTotal += up.total; globalDone += up.done
 
-        // levels list
-        const levelsWrap = document.createElement('div');
-        levelsWrap.className = 'unit-levels';
+      const chap = document.createElement('div'); chap.className = 'chapter'; chap.id = `unit-${unit.id}`
 
-        levels.forEach((level, idx) => {
-            const levelEl = document.createElement('div');
-            levelEl.className = 'level';
+      const head = document.createElement('div'); head.className = 'chapter-head'; head.setAttribute('role','button'); head.tabIndex = 0
+      const left = document.createElement('div'); left.className = 'chapter-left'
+      const idx = document.createElement('div'); idx.className = 'chapter-index'; idx.textContent = unit.id
+      const title = document.createElement('div'); title.className = 'chapter-title'; title.textContent = unit.name
+      left.appendChild(idx); left.appendChild(title)
 
-            // part-name (if theory/name)
-            const partHtml = (level.type === "theory" || level.type === "name") ? 
-                `<div class="part-name">${level.partName ?? level.name}</div>` : '';
+      const right = document.createElement('div'); right.className = 'pct-badge'; right.textContent = `${up.pct}%`
+      head.appendChild(left); head.appendChild(right)
+      chap.appendChild(head)
 
-            levelEl.innerHTML = `
-                ${partHtml}
-                ${level.type !== "name" ? `
-                    <div class="level-row" style="display:flex;align-items:center;gap:12px;">
-                        <div class="level-btn ${level.isDone}-level" role="button" aria-pressed="false" data-unit="${id}" data-level="${idx}">
-                            <img src="../assets/images/${level.type}-logo.svg" class="level-logo" alt="${level.type}">
-                        </div>
-                        <div class="intro-level" style="display:flex;flex-direction:column;align-items:flex-start;">
-                            <span class="level-name">${level.name}</span>
-                            <a class="start-btn" href="lesson/lesson.html?unit=${id}&level=${idx}&type=${level.type}">Bắt đầu</a>
-                        </div>
-                    </div>
-                ` : ''
+      const body = document.createElement('div'); body.className = 'chapter-body'; body.style.display = 'none'
+
+      const topics = Array.isArray(unit.topics) ? unit.topics : []
+      topics.forEach((topic, tIdx) => {
+        // topic title (if provided)
+        if (topic && topic.name) {
+          const tTitle = document.createElement('div'); tTitle.className = 'topic-title'; tTitle.textContent = topic.name
+          body.appendChild(tTitle)
+        }
+        const topicWrap = document.createElement('div'); topicWrap.className = 'topic'
+
+        const lessons = Array.isArray(topic && topic.lessons) ? topic.lessons : []
+        lessons.forEach((lesson, lIdx) => {
+          const locator = { topicIndex: tIdx, lessonIndex: lIdx, lessonId: lesson && lesson.id }
+          const row = document.createElement('div'); row.className = 'lesson-row'
+          row.setAttribute('role','button'); row.tabIndex = 0; row.style.cursor = 'pointer'
+
+          const rawType = (lesson && lesson.type) ? lesson.type.toString() : ''
+          const lType = rawType.trim().toLowerCase()
+
+          // permissive classification
+          const isVideo = /video/.test(lType)
+          const isTheory = /theor/.test(lType) || /lí ?thuyết|lý ?thuyết/.test(lType)
+          const isOther = /other/.test(lType)
+          const isName = lType === 'name' || /chủ ?đề|topic/i.test(lType)
+          const isExercise = /^ex\d+/.test(lType) || /bài ?tập/.test(lType)
+
+          row.setAttribute('data-type', lType)
+          row.setAttribute('type', lType)
+          if (lType) row.classList.add(`lesson-${lType.replace(/\s+/g,'-')}`)
+
+          const iconWrap = document.createElement('div'); iconWrap.className = 'lesson-icon'
+          const img = document.createElement('img'); img.className = 'lesson-icon-img'; img.alt = ''
+          const iconKey = isVideo ? 'video' : (isTheory ? 'theory' : (isOther ? 'other' : (isExercise ? (lType || 'ex') : (lType || 'name'))))
+          img.src = iconForType(iconKey)
+          iconWrap.appendChild(img)
+
+          const name = document.createElement('div'); name.className = 'lesson-name'; name.textContent = (lesson && lesson.name) || 'Không có tên'
+
+          const typeBadge = document.createElement('span'); typeBadge.className = 'lesson-type-badge'
+          if (isVideo) typeBadge.textContent = 'Video'
+          else if (isTheory) typeBadge.textContent = 'Lý thuyết'
+          else if (isOther) typeBadge.textContent = 'Tài nguyên'
+          else if (isName) typeBadge.textContent = 'Chủ đề'
+          else if (isExercise) typeBadge.textContent = 'Bài tập'
+          else typeBadge.textContent = lType || ''
+
+          const rightCol = document.createElement('div'); rightCol.className = 'lesson-right'
+          const statusSpan = document.createElement('span')
+
+          if (isTheory) {
+            const viewed = theoryViewed.indexOf(String(lesson?.id ?? '')) >= 0
+            statusSpan.className = viewed ? 'status-viewed' : 'status-unviewed'
+            statusSpan.textContent = viewed ? 'Đã xem' : 'Chưa xem'
+          } else if (isVideo) {
+            const viewed = videoViewed.indexOf(String(lesson?.id ?? '')) >= 0
+            statusSpan.className = viewed ? 'status-viewed' : 'status-unviewed'
+            statusSpan.textContent = viewed ? 'Đã xem' : 'Chưa xem'
+          } else if (isOther) {
+            const viewed = otherViewed.indexOf(String(lesson?.id ?? '')) >= 0
+            statusSpan.className = viewed ? 'status-viewed' : 'status-unviewed'
+            statusSpan.textContent = viewed ? 'Đã xem' : 'Chưa xem'
+          } else {
+            // use isLessonDone helper (correctly handles strings like 'notdone' and booleans)
+            const done = isLessonDone(lesson)
+            statusSpan.className = done ? 'status-complete' : 'status-pending'
+            statusSpan.textContent = done ? 'Hoàn thành' : 'Chưa hoàn thành'
+          }
+
+          const leftInner = document.createElement('div'); leftInner.style.display = 'flex'; leftInner.style.alignItems = 'center'; leftInner.style.gap = '12px'
+          const nameWrap = document.createElement('div'); nameWrap.style.display = 'flex'; nameWrap.style.alignItems = 'center'; nameWrap.style.gap = '8px'
+          nameWrap.appendChild(name); nameWrap.appendChild(typeBadge)
+          leftInner.appendChild(iconWrap); leftInner.appendChild(nameWrap)
+
+          row.appendChild(leftInner); row.appendChild(rightCol)
+          rightCol.appendChild(statusSpan)
+          topicWrap.appendChild(row)
+
+          // activation handler (click or Enter/Space)
+          const activate = () => {
+            row.style.pointerEvents = 'none'
+            setTimeout(() => row.style.pointerEvents = '', 600)
+
+            const loc = findLessonLocator(unit.id, lesson && lesson.id)
+            const nav = createLessonNav(unit.id, loc || { topicIndex: tIdx, lessonIndex: lIdx, lessonId: lesson && lesson.id })
+            if (!nav) return
+
+            if (isTheory) {
+              try {
+                const viewed = loadTheoryViewed() || []
+                const idStr = String(lesson?.id ?? '')
+                if (viewed.indexOf(idStr) === -1) {
+                  viewed.push(idStr); saveTheoryViewed(viewed)
+                  try { localStorage.setItem('smartchem_theory_viewed', JSON.stringify(viewed)) } catch (e) {}
+                  theoryViewed = viewed
                 }
-            `;
-            levelsWrap.appendChild(levelEl);
-        });
-
-        unitEl.appendChild(header);
-        unitEl.appendChild(levelsWrap);
-        content.appendChild(unitEl);
-    });
-
-    // after DOM built, attach existing click behaviors for .level-btn
-    attachLevelBtnEvents();
-}
-
-// --- attachLevelBtnEvents : reuse existing UI behavior for level-btn click show intro ---
-function attachLevelBtnEvents() {
-    const levelButtons = document.querySelectorAll('.level-btn');
-
-    levelButtons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            // hide other intros
-            document.querySelectorAll('.intro-level').forEach(intro => {
-                intro.classList.remove('show');
-                intro.style.display = 'none';
-            });
-
-            // show this intro
-            const introLevel = btn.parentElement.querySelector('.intro-level') || btn.nextElementSibling;
-            if (introLevel) {
-                introLevel.style.display = 'flex';
-                requestAnimationFrame(() => introLevel.classList.add('show'));
+              } catch (e) {}
+              window.location.href = `lesson/lesson.html?unit=${encodeURIComponent(nav.unitId)}&lesson=${encodeURIComponent(String(lesson?.id ?? ''))}&type=theory`
+              return
             }
-        });
-    });
-}
 
-// --- CREATE TOC ---
-// Build the TOC from units[] and insert into .toc-list
-function createTOC() {
-    const tocList = document.querySelector('.toc-list');
-    if (!tocList) return;
-
-    tocList.innerHTML = ''; // reset
-    units.forEach((unit) => {
-        const btn = document.createElement('button');
-        btn.className = 'toc-item';
-        btn.setAttribute('role', 'listitem');
-        btn.setAttribute('data-target', `unit-${unit.id}`);
-        btn.innerHTML = `<span class="index">${unit.id}</span><span class="title">${unit.name}</span>`;
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = btn.getAttribute('data-target');
-            const targetEl = document.getElementById(targetId);
-            if (!targetEl) return;
-
-            // Determine scroll container (mid-section or window)
-            const mid = document.querySelector('.mid-section');
-            const isMidScrollable = mid && mid.scrollHeight > mid.clientHeight;
-
-            if (isMidScrollable) {
-                // compute position of targetEl relative to mid
-                const rect = targetEl.getBoundingClientRect();
-                const midRect = mid.getBoundingClientRect();
-                const offset = rect.top - midRect.top + mid.scrollTop - 24; // 24px padding offset
-                mid.scrollTo({ top: offset, behavior: 'smooth' });
-                // focus for accessibility
-                targetEl.focus({ preventScroll: true });
-            } else {
-                // use window scroll, adjust 110px for header/top-section height
-                const rect = targetEl.getBoundingClientRect();
-                const top = window.scrollY + rect.top - 110;
-                window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-                targetEl.focus({ preventScroll: true });
+            if (isVideo) {
+              try {
+                const v = loadVideoViewed() || []
+                const idStr = String(lesson?.id ?? '')
+                if (v.indexOf(idStr) === -1) {
+                  v.push(idStr); saveVideoViewed(v)
+                  try { localStorage.setItem('smartchem_video_viewed', JSON.stringify(v)) } catch (e) {}
+                  videoViewed = v
+                }
+              } catch (e) {}
+              window.location.href = `lesson/lesson.html?unit=${encodeURIComponent(nav.unitId)}&lesson=${encodeURIComponent(String(lesson?.id ?? ''))}&type=video`
+              return
             }
-        });
-        tocList.appendChild(btn);
-    });
-}
 
-// --- Highlight active TOC item on scroll using IntersectionObserver ---
-function initTocObserver() {
-    const mid = document.querySelector('.mid-section');
-    const root = (mid && mid.scrollHeight > mid.clientHeight) ? mid : null; // null -> viewport
-    const options = {
-        root: root,
-        rootMargin: '0px 0px -40% 0px', // triggers when element crosses ~60% from top
-        threshold: 0.2
-    };
-    const tocItems = document.querySelectorAll('.toc-item');
-
-    function clearActive() {
-        tocItems.forEach(it => it.classList.remove('active'));
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
-                clearActive();
-                const activeBtn = document.querySelector(`.toc-item[data-target="${id}"]`);
-                if (activeBtn) activeBtn.classList.add('active');
+            if (isOther) {
+              try {
+                const arr = loadOtherViewed() || []
+                const idStr = String(lesson?.id ?? '')
+                if (arr.indexOf(idStr) === -1) {
+                  arr.push(idStr); saveOtherViewed(arr)
+                  try { localStorage.setItem('smartchem_other_viewed', JSON.stringify(arr)) } catch (e) {}
+                  otherViewed = arr
+                }
+              } catch (e) {}
+              window.location.href = `lesson/lesson.html?unit=${encodeURIComponent(nav.unitId)}&lesson=${encodeURIComponent(String(lesson?.id ?? ''))}&type=other`
+              return
             }
-        });
-    }, options);
 
-    // observe each .unit
-    document.querySelectorAll('.unit').forEach(unitEl => observer.observe(unitEl));
-}
+            // default: exercise or name -> use flat level index + type
+            window.location.href = `lesson/lesson.html?unit=${encodeURIComponent(nav.unitId)}&level=${encodeURIComponent(nav.flatLevelIndex)}&type=${encodeURIComponent(lType)}`
+          }
 
-// --- Initialize everything: render, display, toc, observer ---
-function initUnitsWithTOC() {
-    renderMidLayout();
-    displayUnits();
-    createTOC();
-    initTocObserver();
-}
+          row.addEventListener('click', activate)
+          row.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); activate() } })
+        }) // lessons
 
-// call this once (instead of previous displayUnits(); addEvent();)
-initUnitsWithTOC();
+        body.appendChild(topicWrap)
+      }) // topics
 
+      chap.appendChild(body)
 
-
-/* ===== Scroll memory: lưu & khôi phục Y liên tục (dùng cho file hiện tại) ===== */
-(function () {
-    const pageKey = 'scrollY_' + window.location.pathname; // key lưu vào localStorage
-
-    // debounce nhỏ để không spam localStorage
-    function debounce(fn, wait = 120) {
-        let t = null;
-        return (...args) => {
-            clearTimeout(t);
-            t = setTimeout(() => fn(...args), wait);
+      // toggle open/close (with small animation)
+      const toggle = () => {
+        const isOpen = body.classList.contains('is-open')
+        if (!isOpen) {
+          body.classList.add('is-open')
+          animateToggle(body, true)
+          setTimeout(() => { try { chap.scrollIntoView({ behavior: 'smooth', block: 'center' }) } catch (e) {} }, 90)
+        } else {
+          body.classList.remove('is-open')
+          animateToggle(body, false)
         }
-    }
+      }
 
-    // Tìm element scroll chính: ưu tiên .mid-section nếu có scroll
-    function getScrollTarget() {
-        const mid = document.querySelector('.mid-section');
-        if (mid && mid.scrollHeight > mid.clientHeight) return mid;
-        return window;
-    }
+      head.addEventListener('click', toggle)
+      head.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle() } })
 
-    // Lưu vị trí (tự phát hiện target)
-    function savePosition() {
-        const target = getScrollTarget();
-        const y = (target === window) ? (window.scrollY || window.pageYOffset || 0) : target.scrollTop;
-        try {
-            localStorage.setItem(pageKey, String(Math.floor(y)));
-        } catch (e) {
-            // nếu private mode/localStorage bị chặn, bỏ qua
-        }
-    }
-    const savePositionDebounced = debounce(savePosition, 100);
+      root.appendChild(chap)
+    }) // units loop
 
-    // Gắn listeners scroll (window + mid nếu có)
-    function attachScrollListeners() {
-        window.addEventListener('scroll', savePositionDebounced, { passive: true });
-        const mid = document.querySelector('.mid-section');
-        if (mid) mid.addEventListener('scroll', savePositionDebounced, { passive: true });
-    }
+    // global progress
+    const gp = document.getElementById('globalProgress')
+    const globalPct = globalTotal === 0 ? 0 : Math.round(globalDone / globalTotal * 100)
+    if (gp) gp.textContent = `Tổng: ${globalPct}%`
+  }
 
-    // Thử restore một lần, trả về true nếu đã restore
+  /* ============================
+     focusLanding highlight
+     ============================ */
+  function focusLanding(unitId) {
+    try {
+      const el = document.getElementById(`unit-${unitId}`)
+      if (!el) return
+      el.classList.add('focus-landing')
+      setTimeout(() => el.classList.remove('focus-landing'), 1200)
+    } catch (e) { /* ignore */ }
+  }
+
+  /* ============================
+     Scroll memory for .mid-section
+     ============================ */
+  (function initScrollMemory() {
+    const pageKey = 'scrollY_' + window.location.pathname
+    function debounce(fn, wait = 120) { let t = null; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait) } }
+    function getScrollTarget() { const mid = document.querySelector('.mid-section'); if (mid && mid.scrollHeight > mid.clientHeight) return mid; return window }
+    function savePosition() { const target = getScrollTarget(); const y = (target === window) ? (window.scrollY || window.pageYOffset || 0) : target.scrollTop; try { localStorage.setItem(pageKey, String(Math.floor(y))) } catch (e) {} }
+    const savePositionDebounced = debounce(savePosition, 100)
+    function attachScrollListeners() { window.addEventListener('scroll', savePositionDebounced, { passive: true }); const mid = document.querySelector('.mid-section'); if (mid) mid.addEventListener('scroll', savePositionDebounced, { passive: true }) }
     function tryRestoreOnce() {
-        const saved = localStorage.getItem(pageKey);
-        if (!saved) return true; // không có gì để restore -> coi là xong
-
-        const val = parseInt(saved, 10) || 0;
-        const mid = document.querySelector('.mid-section');
-
-        // Nếu mid tồn tại và có thanh cuộn -> restore ở mid
-        if (mid && mid.scrollHeight > mid.clientHeight) {
-            mid.scrollTop = val;
-            return true;
-        }
-
-        // Nếu document đủ dài để scroll window -> restore window
-        if (document.body.scrollHeight > window.innerHeight) {
-            window.scrollTo(0, val);
-            return true;
-        }
-
-        // Chưa restore được (nội dung chưa render đủ)
-        return false;
+      const saved = localStorage.getItem(pageKey); if (!saved) return true; const val = parseInt(saved, 10) || 0; const mid = document.querySelector('.mid-section')
+      if (mid && mid.scrollHeight > mid.clientHeight) { mid.scrollTop = val; return true }
+      if (document.body.scrollHeight > window.innerHeight) { window.scrollTo(0, val); return true }
+      return false
     }
-
-    // Restore khi sẵn sàng: thử nhiều lần + observer
     function restoreWhenReady({ maxAttempts = 60, intervalMs = 100 } = {}) {
-        const saved = localStorage.getItem(pageKey);
-        if (!saved) return; // không có dữ liệu -> không cần làm gì
-
-        // 1) MutationObserver trên .mid-section: restore ngay khi children xuất hiện
-        const mid = document.querySelector('.mid-section');
-        if (mid) {
-            const obs = new MutationObserver((mutations, observer) => {
-                const ok = tryRestoreOnce();
-                if (ok) observer.disconnect();
-            });
-            obs.observe(mid, { childList: true, subtree: true });
-        }
-
-        // 2) Vòng thử lại phòng khi observer không bắt được (ví dụ render chậm)
-        let attempts = 0;
-        const id = setInterval(() => {
-            attempts++;
-            const ok = tryRestoreOnce();
-            if (ok || attempts >= maxAttempts) {
-                clearInterval(id);
-            }
-        }, intervalMs);
+      const saved = localStorage.getItem(pageKey); if (!saved) return; const mid = document.querySelector('.mid-section'); if (mid) {
+        const obs = new MutationObserver((mutations, observer) => { const ok = tryRestoreOnce(); if (ok) observer.disconnect() })
+        obs.observe(mid, { childList: true, subtree: true })
+      }
+      let attempts = 0; const id = setInterval(() => { attempts++; const ok = tryRestoreOnce(); if (ok || attempts >= maxAttempts) clearInterval(id) }, intervalMs)
     }
+    function init() { attachScrollListeners(); window.addEventListener('load', () => { restoreWhenReady({ maxAttempts: 80, intervalMs: 80 }); setTimeout(() => restoreWhenReady({ maxAttempts: 40, intervalMs: 120 }), 200) }); setTimeout(() => restoreWhenReady(), 50) }
+    init()
+  })()
 
-    // Khởi tạo: gắn listener + gọi restore khi load
-    function initScrollMemory() {
-        attachScrollListeners();
+  /* ============================
+     Reset all progress helper
+     - set all lessons to not done (boolean false)
+     - clear theory/video/other viewed lists
+     - persist and rerender
+     ============================ */
+  function resetAllProgress() {
+    try {
+      // clear viewed arrays
+      theoryViewed = []
+      videoViewed = []
+      otherViewed = []
+      saveTheoryViewed(theoryViewed)
+      saveVideoViewed(videoViewed)
+      saveOtherViewed(otherViewed)
+      try { localStorage.setItem('smartchem_theory_viewed', JSON.stringify(theoryViewed)) } catch (e) {}
+      try { localStorage.setItem('smartchem_video_viewed', JSON.stringify(videoViewed)) } catch (e) {}
+      try { localStorage.setItem('smartchem_other_viewed', JSON.stringify(otherViewed)) } catch (e) {}
 
-        // restore khi window load (nếu nội dung đã render trước đó)
-        window.addEventListener('load', () => {
-            // thử restore nhiều lần nếu render muộn
-            restoreWhenReady({ maxAttempts: 80, intervalMs: 80 });
-            // làm thêm 1 lần sau 200ms để chắc chắn
-            setTimeout(() => restoreWhenReady({ maxAttempts: 40, intervalMs: 120 }), 200);
-        });
-
-        // Nếu nội dung đã được render (bạn gọi displayUnits() trước khi init) -> thử khôi phục ngay
-        // (không bắt buộc; an toàn nếu mid-section đã có nội dung)
-        setTimeout(() => restoreWhenReady(), 50);
+      // set all lessons isDone => false (boolean)
+      if (Array.isArray(units)) {
+        units.forEach(u => {
+          (Array.isArray(u.topics) ? u.topics : []).forEach(t => {
+            (Array.isArray(t.lessons) ? t.lessons : []).forEach(les => {
+              // set to boolean false to avoid truthy 'notdone' strings
+              les.isDone = false
+            })
+          })
+        })
+      }
+      safeSetJSON('units', units)
+      renderRoadmap()
+      console.info('All progress reset.')
+      return true
+    } catch (e) {
+      console.warn('resetAllProgress error', e)
+      return false
     }
+  }
 
-    // Gọi init (nếu bạn dán khối này ngay sau displayUnits() / addEvent())
-    initScrollMemory();
-})();
+  /* ============================
+     Public debug API & initial render
+     ============================ */
+  renderRoadmap()
+
+  window.__SmartChem = window.__SmartChem || {}
+  window.__SmartChem.units = units
+  window.__SmartChem.markLessonDone = markLessonDone
+  window.__SmartChem.addTheoryViewed = addTheoryViewed
+  window.__SmartChem.addVideoViewed = addVideoViewed
+  window.__SmartChem.addOtherViewed = addOtherViewed
+  window.__SmartChem.findLessonLocator = findLessonLocator
+  window.__SmartChem.refresh = () => { units = normalizeUnits(safeGetJSON('units', units)); safeSetJSON('units', units); renderRoadmap() }
+  window.__SmartChem.theoryViewed = theoryViewed
+  window.__SmartChem.videoViewed = videoViewed
+  window.__SmartChem.otherViewed = otherViewed
+  window.__SmartChem.topicProgress = topicProgress
+  window.__SmartChem.unitProgress = unitProgress
+  window.__SmartChem.resetAllProgress = resetAllProgress
+
+})(); // end IIFE

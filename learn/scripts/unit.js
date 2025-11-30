@@ -9,381 +9,375 @@ export let lessons = [
             }, /*the*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Este nào sau đây là este no, đơn chức, mạch hở?",
-                        img: "none",
-                        answers: [
-                            "CH<sub>3</sub>COOCH<sub>3</sub>",
-                            "CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>",
-                            "HCOOCH=CH<sub>2</sub>",
-                            "(HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>"
-                        ],
-                        explain: "CH₃COOCH₃ là este no, đơn chức, mạch hở (methyl acetate)."
-                    },
-                    {
-                        question: "Este X được tìm thấy trong quả cam, có công thức cấu tạo thu gọn được đưa ra như hình bên. Số nguyên tử C trong X là:",
-                        img: "1.2.1-cam.png",
-                        answers: [
-                            "10",
-                            "11",
-                            "9",
-                            "8"
-                        ],
-                        explain: "Este tạo mùi cam thường là isoamyl acetate (C₇H₁₄O₂), có 10 nguyên tử C trong công thức mở rộng."
-                    },
-                    {
-                        question: "Tên gọi của este HCOOC<sub>2</sub>H<sub>5</sub> là:",
-                        img: "none",
-                        answers: [
-                            "Ethyl formate",
-                            "Methyl formate",
-                            "Methyl acetate",
-                            "Ethyl acetate"
-                        ],
-                        explain: "HCOOC₂H₅ → gốc ancol ethyl + gốc acid formic → ethyl formate."
-                    },
-                    {
-                        question: "Este HCOOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> có tên là:",
-                        img: "none",
-                        answers: [
-                            "Propyl formate",
-                            "Isopropyl formate",
-                            "Ethyl acetate",
-                            "Propyl acetate"
-                        ],
-                        explain: "HCOOCH₂CH₂CH₃ → gốc ancol propyl + gốc acid formic → propyl formate."
-                    },
-                    {
-                        question: "Tên gọi của este CH<sub>3</sub>COOCH<sub>3</sub> là:",
-                        img: "none",
-                        answers: [
-                            "Methyl acetate",
-                            "Methyl propionate",
-                            "Ethyl formate",
-                            "Ethyl acetate"
-                        ],
-                        explain: "CH₃COOCH₃ là este tạo từ acetic acid và methanol → methyl acetate."
-                    },
-                    {
-                        question: "Ethyl acetate có công thức là:",
-                        img: "none",
-                        answers: [
-                            "CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>",
-                            "C<sub>2</sub>H<sub>5</sub>COOCH<sub>3</sub>",
-                            "CH<sub>3</sub>COOCH<sub>3</sub>",
-                            "C<sub>2</sub>H<sub>3</sub>COOCH<sub>3</sub>"
-                        ],
-                        explain: "Ethyl acetate = CH₃COOC₂H₅ (gốc ethyl từ ancol, gốc acetate từ acetic acid)."
-                    },
-                    {
-                        question: "Chất X có cấu tạo CH<sub>3</sub>CH<sub>2</sub>COOCH<sub>3</sub>. Tên gọi của X là:",
-                        img: "none",
-                        answers: [
-                            "Methyl propionate",
-                            "Ethyl acetate",
-                            "Methyl acetate",
-                            "Propyl acetate"
-                        ],
-                        explain: "CH₃CH₂COOCH₃ = methyl propionate (gốc acid propionic, gốc methanol)."
-                    },
-                    {
-                        question: "Ethyl propionate là este có mùi thơm của dứa. Công thức của ethyl propionate là:",
-                        img: "none",
-                        answers: [
-                            "C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>",
-                            "HCOOC<sub>2</sub>H<sub>5</sub>",
-                            "C<sub>2</sub>H<sub>5</sub>COOCH<sub>3</sub>",
-                            "CH<sub>3</sub>COOCH<sub>3</sub>"
-                        ],
-                        explain: "Ethyl propionate có công thức C₂H₅COOC₂H₅, tạo mùi dứa đặc trưng."
-                    },
-                    {
-                        question: "Este nào sau đây có công thức phân tử C<sub>4</sub>H<sub>6</sub>O<sub>2</sub>?",
-                        img: "none",
-                        answers: [
-                            "Vinyl acetate",
-                            "Phenyl acetate",
-                            "Propyl acetate",
-                            "Ethyl acetate"
-                        ],
-                        explain: "C₄H₆O₂ ứng với vinyl acetate CH₂=CH–O–COCH₃ (một liên kết đôi)."
-                    },
-                    {
-                        question: "Cho các este có công thức cấu tạo như sau:<br>(1) CH<sub>3</sub>COOCH<sub>3</sub>; (2) CH<sub>3</sub>COOCH=CH<sub>2</sub>; (3) (COOCH<sub>3</sub>)<sub>2</sub>; (4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>.<br>Este chỉ chứa 1 liên kết π trong phân tử là:",
-                        img: "none",
-                        answers: [
-                            "(1)",
-                            "(4)",
-                            "(2)",
-                            "(3)"
-                        ],
-                        explain: "Este (1) CH₃COOCH₃ chỉ có 1 liên kết π trong nhóm C=O, các este khác có thêm liên kết C=C."
-                    }, {
-                        question: "Cho các ester có công thức cấu tạo như sau:\n(1) CH3COOCH3; (2) CH3COOCH=CH2; (3) (COOCH3)2; (4) CH2=CHCOOCH3.\nEster chỉ chứa 1 liên kết π trong phân tử là",
-                        img: "none",
-                        answers: [
-                            "(1) CH<sub>3</sub>COOCH<sub>3</sub>",
-                            "(4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>",
-                            "(2) CH<sub>3</sub>COOCH=CH<sub>2</sub>",
-                            "(3) (COOCH<sub>3</sub>)<sub>2</sub>"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Ester X (chứa vòng benzene) có công thức phân tử C<sub>8</sub>H<sub>8</sub>O<sub>2</sub>. Số công thức cấu tạo thỏa mãn của X là",
-                        img: "none",
-                        answers: [
-                            "6",
-                            "4",
-                            "3",
-                            "5"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Ester Q có công thức là CH3CH2COOCH3. Tên gọi của Q và nhiệt độ sôi của Q khi so sánh với butanoic acid là",
-                        img: "none",
-                        answers: [
-                            "Methyl propionate – Thấp hơn",
-                            "Ethyl acetate – Thấp hơn",
-                            "Ethyl acetate – Cao hơn",
-                            "Methyl propionate – Cao hơn"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "So với các acid và alcohol có phân tử khối tương đương thì ester có nhiệt độ sôi",
-                        img: "none",
-                        answers: [
-                            "Thấp hơn do giữa các phân tử ester không có liên kết hydrogen.",
-                            "Thấp hơn do phân tử ester không tạo liên kết hydrogen với nước.",
-                            "Cao hơn do phân tử ester tạo liên kết hydrogen với nước.",
-                            "Cao hơn do giữa các phân tử ester có liên kết hydrogen bền vững."
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Cho 4 chất sau: butan-1-ol (1), butanoic acid (2), ethyl acetate (3) và pentan-2-ol (4). Chất có nhiệt độ sôi thấp nhất là",
-                        img: "none",
-                        answers: [
-                            "(3)",
-                            "(1)",
-                            "(2)",
-                            "(4)"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Cho các chất sau: CH3OH (1); CH3COOH (2); HCOOC2H5 (3). Thứ tự nhiệt độ sôi giảm dần là",
-                        img: "none",
-                        answers: [
-                            "(2); (1); (3)",
-                            "(1); (2); (3)",
-                            "(2); (3); (1)",
-                            "(3); (1); (2)"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Dãy các chất nào sau đây được sắp xếp theo chiều nhiệt độ sôi tăng dần?",
-                        img: "none",
-                        answers: [
-                            "CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOH",
-                            "CH<sub>3</sub>COOH, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>",
-                            "CH<sub>3</sub>COOH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH",
-                            "CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "Có 4 ester no, đơn chức, mạch hở X, Y, Z, T (mỗi este đều tạo bởi acid no không phân nhánh và ethanol). Độ tan (g/100 g nước): X = 8,7; Y = 10,5; Z = 2,2; T = 4,9. Ester có nhiều nguyên tử C nhất là",
-                        img: "none",
-                        answers: [
-                            "Z",
-                            "Y",
-                            "X",
-                            "T"
-                        ],
-                        explain: ""
-                    },
-                    {
-                        question: "X, Y, Z là 3 chất được kí hiệu ngẫu nhiên trong số HCOOCH3, CH3COOH và CH3CH2CH2OH. Nhiệt độ sôi của X, Y, Z (°C) lần lượt là 31,8; 97,0; 118,0. Các chất X, Y lần lượt là",
-                        img: "none",
-                        answers: [
-                            "HCOOCH<sub>3</sub> và CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH",
-                            "HCOOCH<sub>3</sub> và CH<sub>3</sub>COOH",
-                            "CH<sub>3</sub>COOH và HCOOCH<sub>3</sub>",
-                            "CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH và CH<sub>3</sub>COOH"
-                        ],
-                        explain: ""
-                    }
-
-                ]
+{
+question: "Ester nào sau đây là ester no, đơn chức, mạch hở?",
+img: "none",
+answers: [
+"CH<sub>3</sub>COOCH<sub>3</sub>",
+"CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>",
+"HCOOCH=CH<sub>2</sub>",
+"(HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>"
+],
+explain: "CH<sub>3</sub>COOCH<sub>3</sub> (methyl acetate) là ester no, đơn chức, mạch hở."
+},
+{
+question: "Ester X được tìm thấy trong quả cam, có công thức cấu tạo thu gọn được đưa ra như hình bên. Số nguyên tử C trong X là:",
+img: "1.2.1-cam.png",
+answers: [
+"10",
+"11",
+"9",
+"8"
+],
+explain: "Este mùi cam thường là isoamyl acetate; theo đề, số nguyên tử C được xác định từ công thức cấu tạo cho trước."
+},
+{
+question: "Tên gọi của ester HCOOC<sub>2</sub>H<sub>5</sub> là:",
+img: "none",
+answers: [
+"Ethyl formate",
+"Methyl formate",
+"Methyl acetate",
+"Ethyl acetate"
+],
+explain: "HCOO– là gốc formyl và C<sub>2</sub>H<sub>5</sub>– là gốc etyl → tên: ethyl formate."
+},
+{
+question: "Ester HCOOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> có tên là:",
+img: "none",
+answers: [
+"Propyl formate",
+"Isopropyl formate",
+"Ethyl acetate",
+"Propyl acetate"
+],
+explain: "HCOO– (gốc formic) + CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> (gốc propyl) → propyl formate."
+},
+{
+question: "Tên gọi của ester CH<sub>3</sub>COOCH<sub>3</sub> là:",
+img: "none",
+answers: [
+"Methyl acetate",
+"Methyl propionate",
+"Ethyl formate",
+"Ethyl acetate"
+],
+explain: "CH<sub>3</sub>COO– (acetate) + CH<sub>3</sub>– (methyl) → methyl acetate."
+},
+{
+question: "Ethyl acetate có công thức là:",
+img: "none",
+answers: [
+"CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>",
+"C<sub>2</sub>H<sub>5</sub>COOCH<sub>3</sub>",
+"CH<sub>3</sub>COOCH<sub>3</sub>",
+"C<sub>2</sub>H<sub>3</sub>COOCH<sub>3</sub>"
+],
+explain: "Ethyl acetate là CH<sub>3</sub>COO–C<sub>2</sub>H<sub>5</sub>, viết gọn: CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>."
+},
+{
+question: "Chất X có cấu tạo CH<sub>3</sub>CH<sub>2</sub>COOCH<sub>3</sub>. Tên gọi của X là:",
+img: "none",
+answers: [
+"Methyl propionate",
+"Ethyl acetate",
+"Methyl acetate",
+"Propyl acetate"
+],
+explain: "CH<sub>3</sub>CH<sub>2</sub>COO– (propionate) + CH<sub>3</sub>– (methyl) → methyl propionate."
+},
+{
+question: "Ethyl propionate là ester có mùi thơm của dứa. Công thức của ethyl propionate là:",
+img: "none",
+answers: [
+"C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>",
+"HCOOC<sub>2</sub>H<sub>5</sub>",
+"C<sub>2</sub>H<sub>5</sub>COOCH<sub>3</sub>",
+"CH<sub>3</sub>COOCH<sub>3</sub>"
+],
+explain: "Ethyl propionate = C<sub>2</sub>H<sub>5</sub>COO–C<sub>2</sub>H<sub>5</sub> (gốc propionyl + gốc etyl)."
+},
+{
+question: "Ester nào sau đây có công thức phân tử C<sub>4</sub>H<sub>6</sub>O<sub>2</sub>?",
+img: "none",
+answers: [
+"Vinyl acetate",
+"Phenyl acetate",
+"Propyl acetate",
+"Ethyl acetate"
+],
+explain: "C<sub>4</sub>H<sub>6</sub>O<sub>2</sub> tương ứng với vinyl acetate (CH<sub>2</sub>=CH–O–COCH<sub>3</sub>), chứa một liên kết đôi."
+},
+{
+question: "Cho các ester có công thức cấu tạo như sau:<br>(1) CH<sub>3</sub>COOCH<sub>3</sub>; (2) CH<sub>3</sub>COOCH=CH<sub>2</sub>; (3) (COOCH<sub>3</sub>)<sub>2</sub>; (4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>.<br>Ester chỉ chứa 1 liên kết π trong phân tử là:",
+img: "none",
+answers: [
+"(1)",
+"(4)",
+"(2)",
+"(3)"
+],
+explain: "Chỉ (1) CH<sub>3</sub>COOCH<sub>3</sub> có duy nhất liên kết π của nhóm C=O; các ester khác có thêm C=C."
+},
+{
+question: "Cho các ester có công thức cấu tạo như sau:\n(1) CH3COOCH3; (2) CH3COOCH=CH2; (3) (COOCH3)2; (4) CH2=CHCOOCH3.\nEster chỉ chứa 1 liên kết π trong phân tử là",
+img: "none",
+answers: [
+"(1) CH<sub>3</sub>COOCH<sub>3</sub>",
+"(4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>",
+"(2) CH<sub>3</sub>COOCH=CH<sub>2</sub>",
+"(3) (COOCH<sub>3</sub>)<sub>2</sub>"
+],
+explain: "Đáp án (1) vì chỉ có liên kết π của nhóm cacbonyl (C=O)."
+},
+{
+question: "Ester X (chứa vòng benzene) có công thức phân tử C<sub>8</sub>H<sub>8</sub>O<sub>2</sub>. Số công thức cấu tạo thỏa mãn của X là",
+img: "none",
+answers: [
+"6",
+"4",
+"3",
+"5"
+],
+explain: "Các công thức cấu tạo của C<sub>8</sub>H<sub>8</sub>O<sub>2</sub> chứa vòng benzene phụ thuộc vào vị trí thế và gốc ester; số phương án phải được liệt kê từ cấu tạo khả dĩ."
+},
+{
+question: "Ester Q có công thức là CH3CH2COOCH3. Tên gọi của Q và nhiệt độ sôi của Q khi so sánh với butanoic acid là",
+img: "none",
+answers: [
+"Methyl propionate – Thấp hơn",
+"Ethyl acetate – Thấp hơn",
+"Ethyl acetate – Cao hơn",
+"Methyl propionate – Cao hơn"
+],
+explain: "CH<sub>3</sub>CH<sub>2</sub>COOCH<sub>3</sub> là methyl propionate; ester thường có nhiệt độ sôi thấp hơn acid tương ứng do thiếu liên kết hydrogen giữa các phân tử."
+},
+{
+question: "So với các acid và alcohol có phân tử khối tương đương thì ester có nhiệt độ sôi",
+img: "none",
+answers: [
+"Thấp hơn do giữa các phân tử ester không có liên kết hydrogen.",
+"Thấp hơn do phân tử ester không tạo liên kết hydrogen với nước.",
+"Cao hơn do phân tử ester tạo liên kết hydrogen với nước.",
+"Cao hơn do giữa các phân tử ester có liên kết hydrogen bền vững."
+],
+explain: "Đáp án đúng: ester có nhiệt độ sôi thấp hơn vì giữa các phân tử ester không tạo liên kết hydrogen mạnh như acid hoặc alcohol."
+},
+{
+question: "Cho 4 chất sau: butan-1-ol (1), butanoic acid (2), ethyl acetate (3) và pentan-2-ol (4). Chất có nhiệt độ sôi thấp nhất là",
+img: "none",
+answers: [
+"(3)",
+"(1)",
+"(2)",
+"(4)"
+],
+explain: "Ethyl acetate (3) có nhiệt độ sôi thấp nhất do không có liên kết hydrogen phân tử mạnh như alcohol hay acid có khả năng hydrogen bonding."
+},
+{
+question: "Cho các chất sau: CH3OH (1); CH3COOH (2); HCOOC2H5 (3). Thứ tự nhiệt độ sôi giảm dần là",
+img: "none",
+answers: [
+"(2); (1); (3)",
+"(1); (2); (3)",
+"(2); (3); (1)",
+"(3); (1); (2)"
+],
+explain: "Thứ tự: acid (CH<sub>3</sub>COOH) > alcohol (CH<sub>3</sub>OH) > ester (HCOOC<sub>2</sub>H<sub>5</sub>) vì khả năng hydrogen bonding giảm dần."
+},
+{
+question: "Dãy các chất nào sau đây được sắp xếp theo chiều nhiệt độ sôi tăng dần?",
+img: "none",
+answers: [
+"CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOH",
+"CH<sub>3</sub>COOH, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>",
+"CH<sub>3</sub>COOH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>, CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH",
+"CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOH, CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub>"
+],
+explain: "Sắp xếp tăng dần theo nhiệt độ sôi: ester < alcohol < acid, bởi khả năng liên kết hydrogen tăng dần."
+},
+{
+question: "Có 4 ester no, đơn chức, mạch hở X, Y, Z, T (mỗi este đều tạo bởi acid no không phân nhánh và ethanol). Độ tan (g/100 g nước): X = 8,7; Y = 10,5; Z = 2,2; T = 4,9. Ester có nhiều nguyên tử C nhất là",
+img: "none",
+answers: [
+"Z",
+"Y",
+"X",
+"T"
+],
+explain: "Độ tan giảm khi số nguyên tử C tăng; do đó ester có độ tan nhỏ nhất (Z) có nhiều C nhất."
+},
+{
+question: "X, Y, Z là 3 chất được kí hiệu ngẫu nhiên trong số HCOOCH3, CH3COOH và CH3CH2CH2OH. Nhiệt độ sôi của X, Y, Z (°C) lần lượt là 31,8; 97,0; 118,0. Các chất X, Y lần lượt là",
+img: "none",
+answers: [
+"HCOOCH<sub>3</sub> và CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH",
+"HCOOCH<sub>3</sub> và CH<sub>3</sub>COOH",
+"CH<sub>3</sub>COOH và HCOOCH<sub>3</sub>",
+"CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH và CH<sub>3</sub>COOH"
+],
+explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,0°C ứng với CH<sub>3</sub>COOH (acid)."
+}
+]
 
 
 
             }, /*ex1*/ {
                 type: 'ex2',
                 questions: [
-                    {
-                        question: "Câu 1. Mùi thơm của hoa nhài được tạo nên từ este X có tên gọi là benzyl acetate. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Công thức phân tử của este X là C<sub>9</sub>H<sub>12</sub>O<sub>2</sub>.",
-                            "b) Phân tử chất X có độ bất bão hòa bằng 3.",
-                            "c) X có thể gọi tên theo danh pháp thay thế là benzyl ethanoate.",
-                            "d) X là este no, đơn chức."
-                        ],
-                        answers: ["Sai", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: `
-        • Công thức phân tử chính xác của benzyl acetate là <b>C₉H₁₀O₂</b>.<br>
-        • Benzyl acetate có <b>độ bất bão hòa bằng 5</b> do chứa vòng benzene (4) và 1 liên kết π ở nhóm C=O.<br>
-        • Tên thay thế là <b>benzyl ethanoate</b> (benzyl từ alcohol, ethanoate từ acetic acid).<br>
-        • Không phải este no vì chứa vòng benzene, nhưng là este đơn chức.`
-                    },
-                    {
-                        question: "Câu 2. Este X được tìm thấy trong quả cam, có công thức cấu tạo thu gọn được cho như hình bên. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Tên gọi theo danh pháp thay thế của X là octyl acetate.",
-                            "b) Phân tử X có chứa 6 nhóm methylene (–CH<sub>2</sub>–).",
-                            "c) Công thức phân tử của X là C<sub>9</sub>H<sub>18</sub>O<sub>2</sub>.",
-                            "d) X được tạo nên từ alcohol có tên gọi theo danh pháp thay thế là octan-1-ol."
-                        ],
-                        answers: ["Đúng", "Sai", "Sai", "Đúng"],
-                        img: "1.2.1-cam.png",
-                        explain: `
-        • CTCT của X là CH₃COO(CH₂)₇CH₃.<br>
-        • <b>a) Đúng:</b> gốc acid là acetate, gốc alcohol là octyl → octyl acetate.<br>
-        • <b>b) Sai:</b> có <b>7 nhóm –CH₂–</b> chứ không phải 6.<br>
-        • <b>c) Sai:</b> công thức phân tử là <b>C₁₀H₂₀O₂</b>.<br>
-        • <b>d) Đúng:</b> được tạo bởi acetic acid và octan-1-ol.`
-                    }, {
-                        question: "X, Y, Z và T là một trong các chất khác nhau trong số 4 chất: ethyl acetate, propan-1-ol, acetic acid, methyl formate. Nhiệt độ sôi của chúng lần lượt là 31,5°C, 77,1°C, 118,2°C và 97,2°C. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Z, T tạo được liên kết hydrogen liên phân tử.",
-                            "b) X là ethyl acetate.",
-                            "c) Y có phân tử khối lớn nhất trong 4 chất X, Y, Z, T.",
-                            "d) Z có trong giấm ăn với nồng độ từ 2% đến 5%."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Đúng"],
-                        img: "none",
-                        explain: "Z là CH₃COOH và T là C₃H₇OH có thể tạo liên kết hydrogen; X = HCOOCH₃, Y = CH₃COOC₂H₅; acetic acid có trong giấm ăn."
-                    },
-                    {
-                        question: "Phản ứng ester hoá giữa carboxylic acid và alcohol (xúc tác H₂SO₄ đặc) có phương trình tổng quát: RCOOH + R'OH ⇌ RCOOR' + H₂O. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) H₂SO₄ đặc đóng vai trò là chất xúc tác để tăng tốc độ phản ứng.",
-                            "b) Trong phản ứng, nguyên tử H của nhóm –COOH được thay bằng gốc hydrocarbon R'.",
-                            "c) H₂SO₄ đặc làm cân bằng chuyển dịch theo chiều thuận.",
-                            "d) Các ester được gọi tên theo kiểu: tên gốc acid carboxylic + tên gốc R'."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "H₂SO₄ đặc vừa xúc tác vừa hút nước; nhóm –OH của acid bị thay bởi –OR'; tên ester = tên gốc R' + tên gốc acid."
-                    },
-                    {
-                        question: "Cho salicylic acid phản ứng với methyl alcohol có H₂SO₄ đặc làm xúc tác thu được ester X (chất giảm đau). Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Tên gọi thay thế của X là methyl salicylate.",
-                            "b) Công thức phân tử của X là C₈H₈O₂.",
-                            "c) 1 mol X tham gia phản ứng tối đa với 3 mol H₂ (xúc tác Ni, t°).",
-                            "d) Trong phân tử X có 18 liên kết σ."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "Công thức phân tử X là C₈H₈O₃; có thể cộng 3H₂; chứa 15 liên kết σ."
-                    },
-                    {
-                        question: "Cho các chất: HCOOCH₃, CH₃CH₂CH₂OH và CH₃COOH. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) HCOOCH₃ có nhiệt độ sôi thấp nhất do không tạo liên kết hydrogen.",
-                            "b) CH₃COOH có nhiệt độ sôi cao nhất do tạo dimer bền bằng liên kết hydrogen.",
-                            "c) Nhiệt độ sôi tăng dần theo thứ tự: CH₃CH₂CH₂OH < HCOOCH₃ < CH₃COOH.",
-                            "d) Ester có nhiệt độ sôi cao hơn acid và alcohol cùng số C."
-                        ],
-                        answers: ["Đúng", "Đúng", "Sai", "Sai"],
-                        img: "1.6.png",
-                        explain: "Thứ tự nhiệt độ sôi đúng là HCOOCH₃ < CH₃CH₂CH₂OH < CH₃COOH; ester có nhiệt độ sôi thấp hơn."
-                    },
-                    {
-                        question: "Propyl ethanoate có mùi lê, methyl butanoate có mùi táo. Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Tên khác của propyl ethanoate là propyl acetate.",
-                            "b) Công thức cấu tạo lần lượt: CH₃COOCH₂CH₂CH₃ và CH₃CH₂CH₂COOCH₃.",
-                            "c) Cả hai đều là este no, đơn chức, mạch hở.",
-                            "d) Thủy phân trong môi trường kiềm thu được 1 muối và 2 alcohol."
-                        ],
-                        answers: ["Đúng", "Đúng", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "Phản ứng xà phòng hoá mỗi ester tạo 1 muối và 1 alcohol, không phải 2 alcohol."
-                    },
-                    {
-                        question: "Ba hợp chất: butan-1-ol, propanoic acid, methyl acetate có nhiệt độ sôi 57°C, 118°C và 141°C (không theo thứ tự). Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Nhiệt độ sôi các chất là: butan-1-ol (141), propanoic acid (118), methyl acetate (57).",
-                            "b) Methyl acetate có nhiệt độ sôi thấp nhất do không có liên kết hydrogen giữa các phân tử.",
-                            "c) Butan-1-ol có nhiệt độ sôi cao nhất vì liên kết hydrogen bền hơn propanoic acid.",
-                            "d) Với khối lượng phân tử tương đương: hydrocarbon < aldehyde, ketone, ester < alcohol < acid."
-                        ],
-                        answers: ["Sai", "Đúng", "Sai", "Đúng"],
-                        img: "none",
-                        explain: "Thứ tự đúng: HCOOCH₃ (57) < C₄H₉OH (118) < C₂H₅COOH (141); liên kết hydrogen của acid bền hơn alcohol."
-                    },
-                    {
-                        question: "Cho các ester: C₂H₅COOCH₃ (1); CH₃CH₂CH₂COOC₂H₅ (2); CH₃COOCH₃ (3); C₂H₅COOC₂H₅ (4). Xét các phát biểu sau:",
-                        ideas: [
-                            "a) Tên gọi tương ứng: (1) methyl propionate; (2) ethyl butyrate; (3) methyl acetate; (4) ethyl propionate.",
-                            "b) Ester (2) và (4) có mùi dứa chín.",
-                            "c) Độ tan trong nước giảm dần: (2) > (1) > (3) > (4).",
-                            "d) Ester tạo liên kết hydrogen với nước nên tan tốt hơn acid và alcohol cùng số C."
-                        ],
-                        answers: ["Đúng", "Đúng", "Sai", "Sai"],
-                        img: "none",
-                        explain: "Độ tan giảm theo (3) > (1) > (4) > (2); ester không tạo liên kết hydrogen giữa các phân tử hoặc với nước."
-                    }
-                ]
+  {
+    question: "Câu 1. Mùi thơm của hoa nhài được tạo nên từ ester X có tên gọi là benzyl acetate. Xét các phát biểu sau:",
+    ideas: [
+      "a) Công thức phân tử của ester X là C<sub>9</sub>H<sub>12</sub>O<sub>2</sub>.",
+      "b) Phân tử chất X có độ bất bão hòa bằng 3.",
+      "c) X có thể gọi tên theo danh pháp thay thế là benzyl ethanoate.",
+      "d) X là ester no, đơn chức."
+    ],
+    answers: ["Sai", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "Benzyl acetate có công thức C<sub>9</sub>H<sub>10</sub>O<sub>2</sub> và độ bão hòa 5 (vòng benzene =4, C=O =1); tên thay thế đúng là benzyl ethanoate; là ester đơn chức."
+  },
+  {
+    question: "Câu 2. Ester X được tìm thấy trong quả cam, có công thức cấu tạo thu gọn được cho như hình bên. Xét các phát biểu sau:",
+    ideas: [
+      "a) Tên gọi theo danh pháp thay thế của X là octyl acetate.",
+      "b) Phân tử X có chứa 6 nhóm methylene (–CH<sub>2</sub>–).",
+      "c) Công thức phân tử của X là C<sub>9</sub>H<sub>18</sub>O<sub>2</sub>.",
+      "d) X được tạo nên từ alcohol có tên gọi theo danh pháp thay thế là octan-1-ol."
+    ],
+    answers: ["Đúng", "Sai", "Sai", "Đúng"],
+    img: "1.2.1-cam.png",
+    explain: "CTCT: CH<sub>3</sub>COO(CH<sub>2</sub>)<sub>7</sub>CH<sub>3</sub> → tên octyl acetate; có 7 nhóm –CH<sub>2</sub>– và công thức C<sub>10</sub>H<sub>20</sub>O<sub>2</sub>; alcohol là octan-1-ol."
+  },
+  {
+    question: "X, Y, Z và T là một trong các chất khác nhau trong số 4 chất: ethyl acetate, propan-1-ol, acetic acid, methyl formate. Nhiệt độ sôi của chúng lần lượt là 31,5°C, 77,1°C, 118,2°C và 97,2°C. Xét các phát biểu sau:",
+    ideas: [
+      "a) Z, T tạo được liên kết hydrogen liên phân tử.",
+      "b) X là ethyl acetate.",
+      "c) Y có phân tử khối lớn nhất trong 4 chất X, Y, Z, T.",
+      "d) Z có trong giấm ăn với nồng độ từ 2% đến 5%."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Đúng"],
+    img: "none",
+    explain: "Acid (CH<sub>3</sub>COOH) và alcohol (C<sub>3</sub>H<sub>7</sub>OH) tạo hydrogen bond; X tương ứng là HCOOCH<sub>3</sub> không phải ethyl acetate; acetic acid có trong giấm."
+  },
+  {
+    question: "Phản ứng ester hoá giữa carboxylic acid và alcohol (xúc tác H₂SO₄ đặc) có phương trình tổng quát: RCOOH + R'OH ⇌ RCOOR' + H₂O. Xét các phát biểu sau:",
+    ideas: [
+      "a) H₂SO₄ đặc đóng vai trò là chất xúc tác để tăng tốc độ phản ứng.",
+      "b) Trong phản ứng, nguyên tử H của nhóm –COOH được thay bằng gốc hydrocarbon R'.",
+      "c) H₂SO₄ đặc làm cân bằng chuyển dịch theo chiều thuận.",
+      "d) Các ester được gọi tên theo kiểu: tên gốc acid carboxylic + tên gốc R'."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "H₂SO₄ đặc vừa xúc tác vừa hút nước (đẩy cân bằng thuận); thực chất –OH của COOH bị thay bằng –OR' nên tên ester là tên gốc R' + tên gốc acid (acid → anion tác thành '…ate')."
+  },
+  {
+    question: "Cho salicylic acid phản ứng với methyl alcohol có H₂SO₄ đặc làm xúc tác thu được ester X (chất giảm đau). Xét các phát biểu sau:",
+    ideas: [
+      "a) Tên gọi thay thế của X là methyl salicylate.",
+      "b) Công thức phân tử của X là C₈H₈O₂.",
+      "c) 1 mol X tham gia phản ứng tối đa với 3 mol H₂ (xúc tác Ni, t°).",
+      "d) Trong phân tử X có 18 liên kết σ."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "Methyl salicylate có công thức C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>; có thể cộng 3 H₂ (khử vòng và hai nối đôi nếu có); số liên kết σ thực tế khác so với phát biểu."
+  },
+  {
+    question: "Cho các chất: HCOOCH₃, CH₃CH₂CH₂OH và CH₃COOH. Xét các phát biểu sau:",
+    ideas: [
+      "a) HCOOCH₃ có nhiệt độ sôi thấp nhất do không tạo liên kết hydrogen.",
+      "b) CH₃COOH có nhiệt độ sôi cao nhất do tạo dimer bền bằng liên kết hydrogen.",
+      "c) Nhiệt độ sôi tăng dần theo thứ tự: CH₃CH₂CH₂OH < HCOOCH₃ < CH₃COOH.",
+      "d) Ester có nhiệt độ sôi cao hơn acid và alcohol cùng số C."
+    ],
+    answers: ["Đúng", "Đúng", "Sai", "Sai"],
+    img: "1.6.png",
+    explain: "Thứ tự đúng: HCOOCH<sub>3</sub> (ester) < CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH (alcohol) < CH<sub>3</sub>COOH (acid); ester thường có nhiệt độ sôi thấp hơn."
+  },
+  {
+    question: "Propyl ethanoate có mùi lê, methyl butanoate có mùi táo. Xét các phát biểu sau:",
+    ideas: [
+      "a) Tên khác của propyl ethanoate là propyl acetate.",
+      "b) Công thức cấu tạo lần lượt: CH₃COOCH₂CH₂CH₃ và CH₃CH₂CH₂COOCH₃.",
+      "c) Cả hai đều là ester no, đơn chức, mạch hở.",
+      "d) Thủy phân trong môi trường kiềm thu được 1 muối và 2 alcohol."
+    ],
+    answers: ["Đúng", "Đúng", "Đúng", "Sai"],
+    img: "none",
+    explain: "Tên và công thức đúng; cả hai là ester no, đơn chức; xà phòng hóa mỗi ester cho 1 muối và 1 alcohol (không phải 2 alcohol)."
+  },
+  {
+    question: "Ba hợp chất: butan-1-ol, propanoic acid, methyl acetate có nhiệt độ sôi 57°C, 118°C và 141°C (không theo thứ tự). Xét các phát biểu sau:",
+    ideas: [
+      "a) Nhiệt độ sôi các chất là: butan-1-ol (141), propanoic acid (118), methyl acetate (57).",
+      "b) Methyl acetate có nhiệt độ sôi thấp nhất do không có liên kết hydrogen giữa các phân tử.",
+      "c) Butan-1-ol có nhiệt độ sôi cao nhất vì liên kết hydrogen bền hơn propanoic acid.",
+      "d) Với khối lượng phân tử tương đương: hydrocarbon < aldehyde, ketone, ester < alcohol < acid."
+    ],
+    answers: ["Sai", "Đúng", "Sai", "Đúng"],
+    img: "none",
+    explain: "Thứ tự đúng: methyl acetate (57°C) < butan-1-ol (118°C) < propanoic acid (141°C); acid tạo dimer hydrogen bền hơn alcohol."
+  },
+  {
+    question: "Cho các ester: C₂H₅COOCH₃ (1); CH₃CH₂CH₂COOC₂H₅ (2); CH₃COOCH₃ (3); C₂H₅COOC₂H₅ (4). Xét các phát biểu sau:",
+    ideas: [
+      "a) Tên gọi tương ứng: (1) methyl propionate; (2) ethyl butyrate; (3) methyl acetate; (4) ethyl propionate.",
+      "b) Ester (2) và (4) có mùi dứa chín.",
+      "c) Độ tan trong nước giảm dần: (2) > (1) > (3) > (4).",
+      "d) Ester tạo liên kết hydrogen với nước nên tan tốt hơn acid và alcohol cùng số C."
+    ],
+    answers: ["Đúng", "Đúng", "Sai", "Sai"],
+    img: "none",
+    explain: "Tên và mùi đúng; độ tan thực tế giảm theo (3) > (1) > (4) > (2); ester không tạo liên kết hydrogen giữa các phân tử như alcohol/acid."
+  }
+]
+
 
 
             }, /*ex2*/ {
                 type: 'ex3',
                 questions: [
-                    {
-                        question: `Cho các hợp chất: CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A); HCOOCH<sub>3</sub> (B); CH<sub>3</sub>COOH (C); HCOOC<sub>2</sub>H<sub>5</sub> (D); C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> (E) và HOCH<sub>2</sub>CH<sub>2</sub>CHO (F). Số hợp chất este là bao nhiêu?`,
-                        img: 'none',
-                        answer: "4",
-                        explain: "Các este là A, B, D và E → có 4 este."
-                    },
-                    {
-                        question: `Cho các este: etyl axetat, etyl fomat, metyl axetat, metyl acrylat. Có bao nhiêu este no, đơn chức, mạch hở?`,
-                        img: 'none',
-                        answer: "3",
-                        explain: "Các este no, đơn chức, mạch hở là etyl axetat, etyl fomat, metyl axetat."
-                    },
-                    {
-                        question: `Cho các este: HCOOCH<sub>3</sub>; CH<sub>3</sub>COOCH<sub>3</sub>; (COOCH<sub>3</sub>)<sub>2</sub>; (HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>; CH<sub>2</sub>=CHCOOCH<sub>3</sub>; C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>; CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>. Số este no, đơn chức, mạch hở là bao nhiêu?`,
-                        img: 'none',
-                        answer: "3",
-                        explain: "Ba este no, đơn chức, mạch hở là HCOOCH₃, CH₃COOCH₃ và C₂H₅COOC₂H₅."
-                    },
-                    {
-                        question: `Cho các este: metyl fomat, đimetyl oxalat, vinyl axetat, etyl acrylat, etyl propionat, metyl metacrylat, isopropyl fomat. Có bao nhiêu este có hai liên kết π trong phân tử?`,
-                        img: 'none',
-                        answer: "4",
-                        explain: "Bốn este có hai liên kết π là đimetyl oxalat, vinyl axetat, etyl acrylat và metyl metacrylat."
-                    },
-                    {
-                        question: `Số đồng phân este có công thức phân tử C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> là bao nhiêu?`,
-                        img: 'none',
-                        answer: "2",
-                        explain: "Hai đồng phân este của C₃H₆O₂ là HCOOC₂H₅ và CH₃COOCH₃."
-                    },
-                    {
-                        question: `Cho các este có công thức cấu tạo: (1) CH<sub>3</sub>COOCH<sub>3</sub>; (2) CH<sub>3</sub>COOCH=CH<sub>2</sub>; (3) (COOCH<sub>3</sub>)<sub>2</sub>; (4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>. Este chỉ chứa 1 liên kết π trong phân tử là`,
-                        img: 'none',
-                        answer: "Đúng",
-                        explain: "Ester (2) CH₃COOCH=CH₂ có 1 liên kết π → đáp án đúng là (2)."
-                    }
-                ]
+  {
+    question: `Cho các hợp chất: CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A); HCOOCH<sub>3</sub> (B); CH<sub>3</sub>COOH (C); HCOOC<sub>2</sub>H<sub>5</sub> (D); C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> (E) và HOCH<sub>2</sub>CH<sub>2</sub>CHO (F). Số hợp chất ester là bao nhiêu?`,
+    img: 'none',
+    answer: "4",
+    explain: "Các ester trong dãy là A, B, D và E → tổng cộng 4 ester."
+  },
+  {
+    question: `Cho các ester: etyl axetat, etyl fomat, metyl axetat, metyl acrylat. Có bao nhiêu ester no, đơn chức, mạch hở?`,
+    img: 'none',
+    answer: "3",
+    explain: "Các ester no, đơn chức, mạch hở là etyl axetat, etyl fomat và metyl axetat (metyl acrylat có liên kết C=C)."
+  },
+  {
+    question: `Cho các ester: HCOOCH<sub>3</sub>; CH<sub>3</sub>COOCH<sub>3</sub>; (COOCH<sub>3</sub>)<sub>2</sub>; (HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>; CH<sub>2</sub>=CHCOOCH<sub>3</sub>; C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>; CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>. Số ester no, đơn chức, mạch hở là bao nhiêu?`,
+    img: 'none',
+    answer: "3",
+    explain: "Ba ester no, đơn chức, mạch hở là HCOOCH<sub>3</sub>, CH<sub>3</sub>COOCH<sub>3</sub> và C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>."
+  },
+  {
+    question: `Cho các ester: metyl fomat, đimetyl oxalat, vinyl axetat, etyl acrylat, etyl propionat, metyl metacrylat, isopropyl fomat. Có bao nhiêu ester có hai liên kết π trong phân tử?`,
+    img: 'none',
+    answer: "4",
+    explain: "Bốn ester có hai liên kết π là đimetyl oxalat, vinyl axetat, etyl acrylat và metyl metacrylat."
+  },
+  {
+    question: `Số đồng phân ester có công thức phân tử C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> là bao nhiêu?`,
+    img: 'none',
+    answer: "2",
+    explain: "Hai đồng phân ester phổ biến: HCOOCH<sub>2</sub>CH<sub>3</sub> (ethyl formate) và CH<sub>3</sub>COOCH<sub>3</sub> (methyl acetate)."
+  },
+  {
+    question: `Cho các ester có công thức cấu tạo: (1) CH<sub>3</sub>COOCH<sub>3</sub>; (2) CH<sub>3</sub>COOCH=CH<sub>2</sub>; (3) (COOCH<sub>3</sub>)<sub>2</sub>; (4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>. Ester chỉ chứa 1 liên kết π trong phân tử là`,
+    img: 'none',
+    answer: "Đúng",
+    explain: "Ester (2) CH<sub>3</sub>COOCH=CH<sub>2</sub> có một liên kết π (C=O); đáp án theo đề là (2)."
+  }
+]
+
 
 
 
@@ -394,172 +388,173 @@ export let lessons = [
             }, /*the*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Este nào sau đây tác dụng với dung dịch NaOH thu được sodium acetate?",
-                        img: "none",
-                        answers: [
-                            "CH₃COOC₂H₅",
-                            "C₂H₅COOCH₃",
-                            "HCOOCH₃",
-                            "HCOOC₂H₅"
-                        ],
-                        explain: "CH₃COOC₂H₅ (etyl axetat) khi thủy phân trong NaOH cho ra muối CH₃COONa (natri axetat) và ancol etylic."
-                    },
-                    {
-                        question: "Trường hợp nào sau đây xảy ra phản ứng với etyl axetat?",
-                        img: "none",
-                        answers: [
-                            "Dung dịch NaOH (t°)",
-                            "C₂H₅OH",
-                            "Dung dịch [Ag(NH₃)₂]OH",
-                            "Dung dịch NaCl"
-                        ],
-                        explain: "Etyl axetat phản ứng với dung dịch NaOH khi đun nóng (phản ứng xà phòng hóa)."
-                    },
-                    {
-                        question: "Este nào sau đây tác dụng với dung dịch NaOH thu được sodium formate?",
-                        img: "none",
-                        answers: [
-                            "HCOOCH₃",
-                            "CH₃COOC₂H₅",
-                            "CH₃COOCH₃",
-                            "C₂H₅COOC₂H₅"
-                        ],
-                        explain: "HCOOCH₃ (metyl fomat) thủy phân trong NaOH tạo muối HCOONa (natri fomat) và CH₃OH."
-                    },
-                    {
-                        question: "Este nào sau đây tác dụng với NaOH thu được etyl alcohol?",
-                        img: "none",
-                        answers: [
-                            "CH₃COOC₂H₅",
-                            "CH₃COOC₃H₇",
-                            "C₂H₅COOCH₃",
-                            "HCOOCH₃"
-                        ],
-                        explain: "CH₃COOC₂H₅ (etyl axetat) thủy phân tạo CH₃COONa và ancol etylic (C₂H₅OH)."
-                    },
-                    {
-                        question: "Thủy phân hoàn toàn hỗn hợp metyl fomat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
-                        img: "none",
-                        answers: [
-                            "2 muối và 2 ancol",
-                            "1 muối và 1 ancol",
-                            "1 muối và 2 ancol",
-                            "2 muối và 1 ancol"
-                        ],
-                        explain: "Mỗi este tạo 1 muối và 1 ancol → tổng cộng 2 muối (HCOONa) và 2 ancol (CH₃OH, C₂H₅OH)."
-                    },
-                    {
-                        question: "Thủy phân hoàn toàn hỗn hợp etyl propionat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
-                        img: "none",
-                        answers: [
-                            "2 muối và 2 ancol",
-                            "1 muối và 1 ancol",
-                            "1 muối và 2 ancol",
-                            "2 muối và 1 ancol"
-                        ],
-                        explain: "Etyl propionat → C₂H₅COONa + C₂H₅OH; Etyl fomat → HCOONa + C₂H₅OH → 2 muối, 2 ancol."
-                    },
-                    {
-                        question: "Một số este được dùng trong hương liệu, mĩ phẩm, bột giặt là nhờ các este:",
-                        img: "none",
-                        answers: [
-                            "Có mùi thơm, an toàn với người",
-                            "Là chất lỏng dễ bay hơi",
-                            "Có thể bay hơi nhanh sau khi sử dụng",
-                            "Đều có nguồn gốc từ thiên nhiên"
-                        ],
-                        explain: "Các este thường có mùi thơm dễ chịu, an toàn nên được dùng trong hương liệu và mỹ phẩm."
-                    },
-                    {
-                        question: "Este X được tạo bởi metyl alcohol và axit axetic. Công thức của X là:",
-                        img: "none",
-                        answers: [
-                            "CH₃COOCH₃",
-                            "HCOOC₂H₅",
-                            "CH₃COOC₂H₅",
-                            "HCOOCH₃"
-                        ],
-                        explain: "Ancol metylic (CH₃OH) + axit axetic (CH₃COOH) → CH₃COOCH₃ (metyl axetat)."
-                    },
-                    {
-                        question: "Este X có công thức C₄H₈O₂, thủy phân thu được axit propionic và chất hữu cơ Y. Công thức Y là:",
-                        img: "none",
-                        answers: [
-                            "CH₃OH",
-                            "C₂H₅OH",
-                            "CH₃COOH",
-                            "HCOOH"
-                        ],
-                        explain: "Axit propionic (C₂H₅COOH) → phần axit; phần ancol còn lại là CH₃OH → este là CH₃OOCCH₂CH₃."
-                    },
-                    {
-                        question: "Este X có công thức C₄H₈O₂, thủy phân thu được etyl alcohol và chất hữu cơ Y. Công thức của Y là:",
-                        img: "none",
-                        answers: [
-                            "CH₃COOH",
-                            "CH₃OH",
-                            "C₂H₅COOH",
-                            "HCOOH"
-                        ],
-                        explain: "Thủy phân cho etanol → gốc axit là CH₃COOH → este là CH₃COOC₂H₅ (etyl axetat)."
-                    }, {
-                        question: "Công thức nào sau đây có thể là công thức của chất béo?",
-                        img: "none",
-                        answers: [
-                            "C₁₇H₃₅COOC₃H₅",
-                            "(C₁₇H₃₃COO)₂C₂H₄",
-                            "(C₁₅H₃₁COO)₃C₃H₅",
-                            "CH₃COOC₆H₅"
-                        ],
-                        explain: "Chất béo là trieste của glixerol với axit béo mạch dài."
-                    },
-                    {
-                        question: "Công thức phân tử của triglyceride tạo bởi axit linoleic và glixerol là",
-                        img: "none",
-                        answers: [
-                            "C₅₇H₉₈O₆",
-                            "C₅₅H₉₃O₆",
-                            "C₅₃H₉₀O₆",
-                            "C₅₁H₉₈O₆"
-                        ],
-                        explain: "Triglyceride của axit linoleic có công thức C₅₇H₉₈O₆."
-                    },
-                    {
-                        question: "Tripalmitin có công thức là",
-                        img: "none",
-                        answers: [
-                            "(C₁₅H₃₁COO)₃C₃H₅",
-                            "(C₁₅H₂₉COO)₃C₃H₅",
-                            "(C₁₇H₃₅COO)₃C₃H₅",
-                            "(C₁₇H₃₃COO)₃C₃H₅"
-                        ],
-                        explain: "Tripalmitin là trieste của glixerol và axit panmitic."
-                    },
-                    {
-                        question: "Triolein có công thức là",
-                        img: "none",
-                        answers: [
-                            "(C₁₇H₃₃COO)₃C₃H₅",
-                            "(C₁₇H₃₁COO)₃C₃H₅",
-                            "(C₁₅H₃₁COO)₃C₃H₅",
-                            "(C₁₇H₃₅COO)₃C₃H₅"
-                        ],
-                        explain: "Triolein là trieste của glixerol và axit oleic không no."
-                    },
-                    {
-                        question: "Glyceryl trioleate có công thức cấu tạo là",
-                        img: "none",
-                        answers: [
-                            "(CH₃[CH₂]₇CH=CH[CH₂]₇COO)₃C₃H₅",
-                            "(CH₃[CH₂]₈CH=CH[CH₂]₇COO)₃C₃H₅",
-                            "(CH₃[CH₂]₇CH=CH[CH₂]₆COO)₃C₃H₅",
-                            "(CH₃[CH₂]₆CH=CH[CH₂]₈COO)₃C₃H₅"
-                        ],
-                        explain: "Trioleate gồm ba gốc oleat gắn vào glixerol."
-                    }
+  {
+    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium acetate?",
+    img: "none",
+    answers: [
+      "CH₃COOC₂H₅",
+      "C₂H₅COOCH₃",
+      "HCOOCH₃",
+      "HCOOC₂H₅"
+    ],
+    explain: "CH₃COOC₂H₅ (etyl axetat) khi thủy phân trong NaOH cho ra muối CH₃COONa (natri axetat) và ancol etylic."
+  },
+  {
+    question: "Trường hợp nào sau đây xảy ra phản ứng với etyl axetat?",
+    img: "none",
+    answers: [
+      "Dung dịch NaOH (t°)",
+      "C₂H₅OH",
+      "Dung dịch [Ag(NH₃)₂]OH",
+      "Dung dịch NaCl"
+    ],
+    explain: "Etyl axetat phản ứng với dung dịch NaOH khi đun nóng (phản ứng xà phòng hóa)."
+  },
+  {
+    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium formate?",
+    img: "none",
+    answers: [
+      "HCOOCH₃",
+      "CH₃COOC₂H₅",
+      "CH₃COOCH₃",
+      "C₂H₅COOC₂H₅"
+    ],
+    explain: "HCOOCH₃ (metyl fomat) thủy phân trong NaOH tạo muối HCOONa (natri fomat) và CH₃OH."
+  },
+  {
+    question: "Ester nào sau đây tác dụng với NaOH thu được etyl alcohol?",
+    img: "none",
+    answers: [
+      "CH₃COOC₂H₅",
+      "CH₃COOC₃H₇",
+      "C₂H₅COOCH₃",
+      "HCOOCH₃"
+    ],
+    explain: "CH₃COOC₂H₅ (etyl axetat) thủy phân tạo CH₃COONa và ancol etylic (C₂H₅OH)."
+  },
+  {
+    question: "Thủy phân hoàn toàn hỗn hợp metyl fomat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
+    img: "none",
+    answers: [
+      "2 muối và 2 ancol",
+      "1 muối và 1 ancol",
+      "1 muối và 2 ancol",
+      "2 muối và 1 ancol"
+    ],
+    explain: "Mỗi ester tạo 1 muối và 1 ancol → tổng cộng 2 muối (HCOONa) và 2 ancol (CH₃OH, C₂H₅OH)."
+  },
+  {
+    question: "Thủy phân hoàn toàn hỗn hợp etyl propionat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
+    img: "none",
+    answers: [
+      "2 muối và 2 ancol",
+      "1 muối và 1 ancol",
+      "1 muối và 2 ancol",
+      "2 muối và 1 ancol"
+    ],
+    explain: "Etyl propionat → C₂H₅COONa + C₂H₅OH; Etyl fomat → HCOONa + C₂H₅OH → 2 muối, 2 ancol."
+  },
+  {
+    question: "Một số ester được dùng trong hương liệu, mĩ phẩm, bột giặt là nhờ các ester:",
+    img: "none",
+    answers: [
+      "Có mùi thơm, an toàn với người",
+      "Là chất lỏng dễ bay hơi",
+      "Có thể bay hơi nhanh sau khi sử dụng",
+      "Đều có nguồn gốc từ thiên nhiên"
+    ],
+    explain: "Các ester thường có mùi thơm dễ chịu, an toàn nên được dùng trong hương liệu và mỹ phẩm."
+  },
+  {
+    question: "Ester X được tạo bởi metyl alcohol và axit axetic. Công thức của X là:",
+    img: "none",
+    answers: [
+      "CH₃COOCH₃",
+      "HCOOC₂H₅",
+      "CH₃COOC₂H₅",
+      "HCOOCH₃"
+    ],
+    explain: "Ancol metylic (CH₃OH) + axit axetic (CH₃COOH) → CH₃COOCH₃ (metyl axetat)."
+  },
+  {
+    question: "Ester X có công thức C₄H₈O₂, thủy phân thu được axit propionic và chất hữu cơ Y. Công thức Y là:",
+    img: "none",
+    answers: [
+      "CH₃OH",
+      "C₂H₅OH",
+      "CH₃COOH",
+      "HCOOH"
+    ],
+    explain: "Axit propionic (C₂H₅COOH) → phần axit; phần ancol còn lại là CH₃OH → este là CH₃OOCCH₂CH₃."
+  },
+  {
+    question: "Ester X có công thức C₄H₈O₂, thủy phân thu được etyl alcohol và chất hữu cơ Y. Công thức của Y là:",
+    img: "none",
+    answers: [
+      "CH₃COOH",
+      "CH₃OH",
+      "C₂H₅COOH",
+      "HCOOH"
+    ],
+    explain: "Thủy phân cho etanol → gốc axit là CH₃COOH → este là CH₃COOC₂H₅ (etyl axetat)."
+  },
+  {
+    question: "Công thức nào sau đây có thể là công thức của chất béo?",
+    img: "none",
+    answers: [
+      "C₁₇H₃₅COOC₃H₅",
+      "(C₁₇H₃₃COO)₂C₂H₄",
+      "(C₁₅H₃₁COO)₃C₃H₅",
+      "CH₃COOC₆H₅"
+    ],
+    explain: "Chất béo là trieste của glixerol với axit béo mạch dài."
+  },
+  {
+    question: "Công thức phân tử của triglyceride tạo bởi axit linoleic và glixerol là",
+    img: "none",
+    answers: [
+      "C₅₇H₉₈O₆",
+      "C₅₅H₉₃O₆",
+      "C₅₃H₉₀O₆",
+      "C₅₁H₉₈O₆"
+    ],
+    explain: "Triglyceride của axit linoleic có công thức C₅₇H₉₈O₆."
+  },
+  {
+    question: "Tripalmitin có công thức là",
+    img: "none",
+    answers: [
+      "(C₁₅H₃₁COO)₃C₃H₅",
+      "(C₁₅H₂₉COO)₃C₃H₅",
+      "(C₁₇H₃₅COO)₃C₃H₅",
+      "(C₁₇H₃₃COO)₃C₃H₅"
+    ],
+    explain: "Tripalmitin là trieste của glixerol và axit panmitic."
+  },
+  {
+    question: "Triolein có công thức là",
+    img: "none",
+    answers: [
+      "(C₁₇H₃₃COO)₃C₃H₅",
+      "(C₁₇H₃₁COO)₃C₃H₅",
+      "(C₁₅H₃₁COO)₃C₃H₅",
+      "(C₁₇H₃₅COO)₃C₃H₅"
+    ],
+    explain: "Triolein là trieste của glixerol và axit oleic không no."
+  },
+  {
+    question: "Glyceryl trioleate có công thức cấu tạo là",
+    img: "none",
+    answers: [
+      "(CH₃[CH₂]₇CH=CH[CH₂]₇COO)₃C₃H₅",
+      "(CH₃[CH₂]₈CH=CH[CH₂]₇COO)₃C₃H₅",
+      "(CH₃[CH₂]₇CH=CH[CH₂]₆COO)₃C₃H₅",
+      "(CH₃[CH₂]₆CH=CH[CH₂]₈COO)₃C₃H₅"
+    ],
+    explain: "Trioleate gồm ba gốc oleat gắn vào glixerol."
+  }
+]
 
-                ]
 
 
             }, /*ex1*/ {
@@ -924,155 +919,156 @@ export let lessons = [
             }, /*the*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Chất nào sau đây là chất béo?",
-                        img: "none",
-                        answers: [
-                            "C<sub>17</sub>H<sub>35</sub>COOC<sub>2</sub>H<sub>5</sub>",
-                            "(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub>",
-                            "(C<sub>17</sub>H<sub>33</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>"
-                        ],
-                        explain: "Chất béo là trieste của glixerol với axit béo, nên công thức đúng là (C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>."
-                    },
-                    {
-                        question: "Chất nào sau đây có thành phần chính là trieste của glycerol với acid béo?",
-                        img: "none",
-                        answers: [
-                            "Giấm ăn",
-                            "Dầu lạc",
-                            "Dầu bôi trơn",
-                            "Tinh dầu chuối"
-                        ],
-                        explain: "Dầu lạc là hỗn hợp các trieste của glixerol với axit béo."
-                    },
-                    {
-                        question: "Loại dầu, mỡ nào dưới đây không phải là lipid?",
-                        img: "none",
-                        answers: [
-                            "Mỡ động vật",
-                            "Dầu thực vật",
-                            "Dầu cá",
-                            "Dầu sả"
-                        ],
-                        explain: "Dầu sả là tinh dầu, không phải lipid (không phải trieste của glixerol)."
-                    },
-                    {
-                        question: "Phát biểu nào sau đây về acid béo là đúng?",
-                        img: "none",
-                        answers: [
-                            "Acid béo là các dicarboxylic acid trong tự nhiên.",
-                            "Acid béo thường có mạch hydrocarbon dài, phân nhánh.",
-                            "Chuỗi carbon của các acid béo luôn chứa ít nhất một liên kết đôi.",
-                            "Số nguyên tử carbon trong acid béo thường là số chẵn."
-                        ],
-                        explain: "Acid béo có số nguyên tử carbon thường là số chẵn do được tổng hợp từ các đơn vị 2C (acetyl-CoA)."
-                    },
-                    {
-                        question: "Trong thành phần của dầu oliu có bao gồm một số chất béo, trong đó chủ yếu là một triglycerin X có cấu trúc như hình bên. Triglycerin X là trieste của glycerol với các acid béo có tên gọi là:",
-                        img: "1.4.2.1.png",
-                        answers: [
-                            "Stearic acid và oleic acid",
-                            "Stearic acid và linoleic acid",
-                            "Oleic acid và linoleic acid",
-                            "Oleic acid và palmitic acid"
-                        ],
-                        explain: "Dầu oliu chứa chủ yếu trieste của glixerol với oleic acid và palmitic acid."
-                    },
-                    {
-                        question: "Trieste của glycerol với gốc acid nào sau đây là chất béo?",
-                        img: "none",
-                        answers: [
-                            "Formic acid",
-                            "Acetic acid",
-                            "Acrylic acid",
-                            "Oleic acid"
-                        ],
-                        explain: "Chất béo là trieste của glixerol với các axit béo (có mạch dài không phân nhánh) như oleic acid."
-                    },
-                    {
-                        question: "Trieste của glycerol với chất nào sau đây không phải là chất béo?",
-                        img: "none",
-                        answers: [
-                            "Stearic acid",
-                            "Lioleic acid",
-                            "Propanoic acid",
-                            "Palmitic acid"
-                        ],
-                        explain: "Propanoic acid là axit có mạch ngắn → không tạo chất béo."
-                    },
-                    {
-                        question: "Công thức nào sau đây không phải là chất béo?",
-                        img: "none",
-                        answers: [
-                            "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>"
-                        ],
-                        explain: "(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit axetic (mạch ngắn) nên không phải chất béo."
-                    },
-                    {
-                        question: "Công thức nào sau đây có thể là công thức của chất béo?",
-                        img: "none",
-                        answers: [
-                            "(HCOO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "(C<sub>17</sub>H<sub>35</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>",
-                            "(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>"
-                        ],
-                        explain: "(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit béo mạch dài → là chất béo."
-                    },
-                    {
-                        question: "Công thức nào sau đây có thể là công thức của chất béo?",
-                        img: "none",
-                        answers: [
-                            "C<sub>17</sub>H<sub>35</sub>COOC<sub>3</sub>H<sub>5</sub>",
-                            "(C<sub>17</sub>H<sub>33</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>",
-                            "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
-                            "CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>"
-                        ],
-                        explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit panmitic → là chất béo."
-                    }
-                ]
+{
+question: "Chất nào sau đây là chất béo?",
+img: "none",
+answers: [
+"(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"C<sub>17</sub>H<sub>35</sub>COOC<sub>2</sub>H<sub>5</sub>",
+"C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub>",
+"(C<sub>17</sub>H<sub>33</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>"
+],
+explain: "Chất béo là trieste của glixerol với axit béo, nên công thức đúng là (C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>."
+},
+{
+question: "Chất nào sau đây có thành phần chính là trieste của glycerol với acid béo?",
+img: "none",
+answers: [
+"Dầu lạc",
+"Giấm ăn",
+"Dầu bôi trơn",
+"Tinh dầu chuối"
+],
+explain: "Dầu lạc là hỗn hợp các trieste của glixerol với axit béo."
+},
+{
+question: "Loại dầu, mỡ nào dưới đây không phải là lipid?",
+img: "none",
+answers: [
+"Dầu sả",
+"Dầu thực vật",
+"Dầu cá",
+"Mỡ động vật"
+],
+explain: "Dầu sả là tinh dầu, không phải lipid (không phải trieste của glixerol)."
+},
+{
+question: "Phát biểu nào sau đây về acid béo là đúng?",
+img: "none",
+answers: [
+"Số nguyên tử carbon trong acid béo thường là số chẵn.",
+"Acid béo thường có mạch hydrocarbon dài, phân nhánh.",
+"Chuỗi carbon của các acid béo luôn chứa ít nhất một liên kết đôi.",
+"Acid béo là các dicarboxylic acid trong tự nhiên."
+],
+explain: "Acid béo có số nguyên tử carbon thường là số chẵn do được tổng hợp từ các đơn vị 2C (acetyl-CoA)."
+},
+{
+question: "Trong thành phần của dầu oliu có bao gồm một số chất béo, trong đó chủ yếu là một triglycerin X có cấu trúc như hình bên. Triglycerin X là trieste của glycerol với các acid béo có tên gọi là:",
+img: "1.4.2.1.png",
+answers: [
+"Oleic acid và palmitic acid",
+"Stearic acid và linoleic acid",
+"Oleic acid và linoleic acid",
+"Stearic acid và oleic acid"
+],
+explain: "Dầu oliu chứa chủ yếu trieste của glixerol với oleic acid và palmitic acid."
+},
+{
+question: "Trieste của glycerol với gốc acid nào sau đây là chất béo?",
+img: "none",
+answers: [
+"Oleic acid",
+"Acetic acid",
+"Acrylic acid",
+"Formic acid"
+],
+explain: "Chất béo là trieste của glixerol với các axit béo (có mạch dài không phân nhánh) như oleic acid."
+},
+{
+question: "Trieste của glycerol với chất nào sau đây không phải là chất béo?",
+img: "none",
+answers: [
+"Propanoic acid",
+"Lioleic acid",
+"Stearic acid",
+"Palmitic acid"
+],
+explain: "Propanoic acid là axit có mạch ngắn → không tạo chất béo."
+},
+{
+question: "Công thức nào sau đây không phải là chất béo?",
+img: "none",
+answers: [
+"(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>"
+],
+explain: "(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit axetic (mạch ngắn) nên không phải chất béo."
+},
+{
+question: "Công thức nào sau đây có thể là công thức của chất béo?",
+img: "none",
+answers: [
+"(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(C<sub>17</sub>H<sub>35</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>",
+"(HCOO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(CH<sub>3</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>"
+],
+explain: "(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit béo mạch dài → là chất béo."
+},
+{
+question: "Công thức nào sau đây có thể là công thức của chất béo?",
+img: "none",
+answers: [
+"(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>",
+"(C<sub>17</sub>H<sub>33</sub>COO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>",
+"C<sub>17</sub>H<sub>35</sub>COOC<sub>3</sub>H<sub>5</sub>",
+"CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>"
+],
+explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> là trieste của glixerol với axit panmitic → là chất béo."
+}
+]
 
 
             }, /*ex1*/ {
                 type: 'ex2',
                 questions: [
-                    {
-                        question: "Acid béo X có cấu tạo như hình bên thuộc nhóm omega-n (n là số thứ tự vị trí của liên kết đôi đầu tiên tính từ đầu nhóm CH<sub>3</sub>), là một trong những acid béo có lợi cho sức khỏe tim mạch, ngăn ngừa các bệnh về tim, động mạch vành.",
-                        ideas: [
-                            "a) Công thức của chất béo tạo nên từ acid béo X là (C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>.",
-                            "b) Acid béo X có cấu hình ở dạng cis.",
-                            "c) Acid béo X thuộc loại omega-6.",
-                            "d) Hydrogen hóa hoàn toàn acid béo X thu được sản phẩm có tên gọi là palmitic acid."
-                        ],
-                        answers: ["Đúng", "Sai", "Sai", "Sai"],
-                        img: "1.4.3.1.png",
-                        explain: `
-        • Công thức của chất béo tạo nên từ acid béo X là (C<sub>17</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> (chứ không phải C<sub>17</sub>H<sub>33</sub>).<br>
-        • Acid béo X có cấu hình cis đặc trưng cho acid béo không no tự nhiên.<br>
-        • Liên kết đôi đầu tiên ở vị trí thứ 6 từ đầu CH<sub>3</sub> → thuộc nhóm omega-6.<br>
-        • Hydrogen hóa hoàn toàn thu được stearic acid (C<sub>17</sub>H<sub>35</sub>COOH), không phải palmitic acid.`
-                    },
-                    {
-                        question: "Trong thành phần của dầu oliu có chứa một số chất béo, trong đó chủ yếu là chất X có cấu trúc như hình bên.",
-                        ideas: [
-                            "a) Chất X là triester của glycerol với hai gốc oleic acid và một gốc linoleic acid.",
-                            "b) Hydrogen hóa hoàn toàn 1 mol chất béo X trong điều kiện thích hợp thấy có 7 mol H<sub>2</sub> tham gia phản ứng.",
-                            "c) Hydrogen hóa hoàn toàn chất X thu được sản phẩm có chứa 11,56% hydrogen về khối lượng.",
-                            "d) Chất X có nhiệt độ sôi cao hơn so với tristearin trong cùng điều kiện."
-                        ],
-                        answers: ["Đúng", "Sai", "Sai", "Sai"],
-                        img: "none",
-                        explain: `
-        • Trong dầu oliu, X là trieste của glixerol với 2 gốc oleic acid (C<sub>17</sub>H<sub>33</sub>COOH) và 1 gốc linoleic acid (C<sub>17</sub>H<sub>31</sub>COOH).<br>
-        • Tổng cộng có 4 liên kết π → cần 4 mol H<sub>2</sub> để hydrogen hóa hoàn toàn.<br>
-        • Sau hydrogen hóa hoàn toàn, thu được chất béo bão hòa (C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub>, chứa khoảng 12,36% H theo khối lượng.<br>
-        • Chất X là chất béo không no, có nhiệt độ sôi thấp hơn so với tristearin.`
-                    }
-                ]
+    {
+        question: "Acid béo X có cấu tạo như hình bên thuộc nhóm omega-n (n là số thứ tự vị trí của liên kết đôi đầu tiên tính từ đầu nhóm CH₃), là một trong những acid béo có lợi cho sức khỏe tim mạch, ngăn ngừa các bệnh về tim, động mạch vành.",
+        ideas: [
+            "a) Công thức của chất béo tạo nên từ acid béo X là (C₁₇H₃₃COO)₃C₃H₅.",
+            "b) Acid béo X có cấu hình ở dạng cis.",
+            "c) Acid béo X thuộc loại omega-6.",
+            "d) Hydrogen hóa hoàn toàn acid béo X thu được sản phẩm có tên gọi là palmitic acid."
+        ],
+        answers: ["Sai", "Đúng", "Đúng", "Sai"],
+        img: "1.4.3.1.png",
+        explain: `
+• Công thức của chất béo tạo nên từ acid béo X là (C₁₇H₃₁COO)₃C₃H₅ (chứ không phải C₁₇H₃₃).<br>
+• Acid béo X có cấu hình cis đặc trưng cho acid béo không no tự nhiên.<br>
+• Liên kết đôi đầu tiên ở vị trí thứ 6 từ đầu CH₃ → thuộc nhóm omega-6.<br>
+• Hydrogen hóa hoàn toàn thu được stearic acid (C₁₇H₃₅COOH), không phải palmitic acid.`
+    },
+    {
+        question: "Trong thành phần của dầu oliu có chứa một số chất béo, trong đó chủ yếu là chất X có cấu trúc như hình bên.",
+        ideas: [
+            "a) Chất X là triester của glycerol với hai gốc oleic acid và một gốc linoleic acid.",
+            "b) Hydrogen hóa hoàn toàn 1 mol chất béo X trong điều kiện thích hợp thấy có 7 mol H₂ tham gia phản ứng.",
+            "c) Hydrogen hóa hoàn toàn chất X thu được sản phẩm có chứa 11,56% hydrogen về khối lượng.",
+            "d) Chất X có nhiệt độ sôi cao hơn so với tristearin trong cùng điều kiện."
+        ],
+        answers: ["Đúng", "Sai", "Sai", "Sai"],
+        img: "none",
+        explain: `
+• Trong dầu oliu, X là trieste của glixerol với 2 gốc oleic acid (C₁₇H₃₃COOH) và 1 gốc linoleic acid (C₁₇H₃₁COOH).<br>
+• Tổng cộng có 4 liên kết π → cần 4 mol H₂ để hydrogen hóa hoàn toàn.<br>
+• Sau hydrogen hóa hoàn toàn, thu được chất béo bão hòa (C₁₇H₃₅COO)₃C₃H₅, chứa khoảng 12,36% H theo khối lượng.<br>
+• Chất X là chất béo không no, có nhiệt độ sôi thấp hơn so với tristearin.`
+    }
+]
+
 
 
 
@@ -1080,48 +1076,46 @@ export let lessons = [
             }, /*ex2*/ {
                 type: 'ex3',
                 questions: [
-                    {
-                        question: "Câu 1. Cho dãy chất sau: C<sub>6</sub>H<sub>5</sub>OH (phenol), C<sub>2</sub>H<sub>5</sub>OH, HCOOH, CH<sub>2</sub>=CH–CH<sub>2</sub>OH, CH<sub>3</sub>COOCH<sub>3</sub>, HOCH<sub>2</sub>CH<sub>2</sub>OH. Có bao nhiêu chất trong dãy phản ứng được với dung dịch NaOH?",
-                        img: "none",
-                        answer: "3",
-                        explain: `
-        • Chất phản ứng được với NaOH là các chất có nhóm chức <b>–COOH</b>, <b>–COO–</b> hoặc <b>–OH gắn trực tiếp vào vòng benzen</b>.<br>
-        • Các chất thỏa mãn: HCOOH, CH<sub>3</sub>COOCH<sub>3</sub>, C<sub>6</sub>H<sub>5</sub>OH.<br>
-        ➜ <b>Có 3 chất phản ứng với NaOH.</b>`
-                    },
-                    {
-                        question: "Câu 2. Cho các chất: C<sub>6</sub>H<sub>5</sub>OH (phenol), C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOCH<sub>3</sub>, HCOOC<sub>6</sub>H<sub>5</sub>, C<sub>6</sub>H<sub>5</sub>COOH. Có bao nhiêu chất trong dãy phản ứng được với dung dịch NaOH?",
-                        img: "none",
-                        answer: "4",
-                        explain: `
-        • Chất phản ứng được với NaOH là những chất có nhóm <b>–COOH</b>, <b>–COO–</b> hoặc <b>–OH phenol</b>.<br>
-        • Các chất thỏa mãn: C<sub>6</sub>H<sub>5</sub>OH, CH<sub>3</sub>COOCH<sub>3</sub>, HCOOC<sub>6</sub>H<sub>5</sub>, C<sub>6</sub>H<sub>5</sub>COOH.<br>
-        ➜ <b>Có 4 chất phản ứng với NaOH.</b>`
-                    },
-                    {
-                        question: "Câu 3. Cho dãy các este sau:<br>(1) CH<sub>2</sub>=CHCOOCH<sub>3</sub>;<br>(2) CH<sub>3</sub>COOCH=CH<sub>2</sub>;<br>(3) HCOOCH<sub>2</sub>CH=CH<sub>2</sub>;<br>(4) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub>;<br>(5) HCOOC<sub>6</sub>H<sub>5</sub>;<br>(6) HCOOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub>;<br>(7) HCOOCH(CH<sub>3</sub>)<sub>2</sub>.<br>Biết C<sub>6</sub>H<sub>5</sub> là gốc phenyl. Có bao nhiêu este khi tác dụng với dung dịch NaOH, đun nóng thu được alcohol?",
-                        img: "1.4.3.2.png",
-                        answer: "5",
-                        explain: `
-        • Khi thủy phân este, sản phẩm chứa ancol nếu este có dạng RCOOR' (trong đó R' là gốc ancol).<br>
-        • Các este có gốc phenyl (-OC<sub>6</sub>H<sub>5</sub>) hoặc gốc chứa nối đôi trực tiếp vào nhóm –COO– thì không cho ancol.<br>
-        • Các este cho ancol khi thủy phân là:<br>
-        (1) CH<sub>2</sub>=CHCOOCH<sub>3</sub>, (3) HCOOCH<sub>2</sub>CH=CH<sub>2</sub>, (4) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub>, (6) HCOOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub>, (7) HCOOCH(CH<sub>3</sub>)<sub>2</sub>.<br>
-        ➜ <b>Có 5 este thủy phân cho ancol.</b>`
-                    },
-                    {
-                        question: "Câu 4. Cho các phản ứng xảy ra trong điều kiện thích hợp:<br>(a) CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> + NaOH →<br>(b) HCOOCH=CH<sub>2</sub> + NaOH →<br>(c) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> + NaOH →<br>(d) C<sub>6</sub>H<sub>5</sub>COOH + NaOH →<br>(e) CH<sub>3</sub>OOCCH=CH<sub>2</sub> + NaOH →<br>(g) C<sub>6</sub>H<sub>5</sub>COOCH=CH<sub>2</sub> + NaOH →<br>Có bao nhiêu phản ứng thu được sản phẩm có chứa ancol?",
-                        img: "none",
-                        answer: "3",
-                        explain: `
-        • Phản ứng thủy phân este trong môi trường kiềm tạo muối và ancol nếu gốc –OR không bị gắn với vòng benzen hay nối đôi.<br>
-        • Các phản ứng cho sản phẩm có chứa ancol là:<br>
-        (a) CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> + NaOH → CH<sub>3</sub>COONa + C<sub>2</sub>H<sub>5</sub>OH.<br>
-        (c) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> + NaOH → C<sub>6</sub>H<sub>5</sub>COONa + CH<sub>3</sub>OH.<br>
-        (e) CH<sub>3</sub>OOCCH=CH<sub>2</sub> + NaOH → CH<sub>3</sub>OOCCH=CH<sub>2</sub> không bền → CH<sub>3</sub>OH.<br>
-        ➜ <b>Có 3 phản ứng tạo sản phẩm chứa ancol.</b>`
-                    }
-                ]
+    {
+        question: "Câu 1. Cho dãy chất sau: C<sub>6</sub>H<sub>5</sub>OH (phenol), C<sub>2</sub>H<sub>5</sub>OH, HCOOH, CH<sub>2</sub>=CH–CH<sub>2</sub>OH, CH<sub>3</sub>COOCH<sub>3</sub>, HOCH<sub>2</sub>CH<sub>2</sub>OH. Có bao nhiêu chất trong dãy phản ứng được với dung dịch NaOH?",
+        img: "none",
+        answer: "2",
+        explain: `
+• Những chất phản ứng trực tiếp với NaOH (dung dịch) ở điều kiện thường là: acid hữu cơ (–COOH) và phenol (–OH nối vào vòng benzen).<br>
+• Trong dãy: HCOOH và C<sub>6</sub>H<sub>5</sub>OH phản ứng với NaOH; các rượu bậc 1/bậc 2 và este không phản ứng ngay với NaOH (trừ khi đun nóng để xà phòng hóa).<br>
+➜ <b>Có 2 chất phản ứng với NaOH.</b>`
+    },
+    {
+        question: "Câu 2. Cho các chất: C<sub>6</sub>H<sub>5</sub>OH (phenol), C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>OH, CH<sub>3</sub>COOCH<sub>3</sub>, HCOOC<sub>6</sub>H<sub>5</sub>, C<sub>6</sub>H<sub>5</sub>COOH. Có bao nhiêu chất trong dãy phản ứng được với dung dịch NaOH?",
+        img: "none",
+        answer: "2",
+        explain: `
+• Phản ứng được với NaOH (dung dịch) ngay ở điều kiện thường: phenol (C<sub>6</sub>H<sub>5</sub>OH) và acid benzoic (C<sub>6</sub>H<sub>5</sub>COOH).<br>
+• Este (CH<sub>3</sub>COOCH<sub>3</sub>, HCOOC<sub>6</sub>H<sub>5</sub>) hoặc ancol benzyl (C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>OH) không phản ứng ngay với NaOH ở nhiệt độ thường (cần đun nóng để xà phòng hóa hoặc phản ứng khác).<br>
+➜ <b>Có 2 chất phản ứng với NaOH.</b>`
+    },
+    {
+        question: "Câu 3. Cho dãy các este sau:<br>(1) CH<sub>2</sub>=CHCOOCH<sub>3</sub>;<br>(2) CH<sub>3</sub>COOCH=CH<sub>2</sub>;<br>(3) HCOOCH<sub>2</sub>CH=CH<sub>2</sub>;<br>(4) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub>;<br>(5) HCOOC<sub>6</sub>H<sub>5</sub>;<br>(6) HCOOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub>;<br>(7) HCOOCH(CH<sub>3</sub>)<sub>2</sub>.<br>Biết C<sub>6</sub>H<sub>5</sub> là gốc phenyl. Có bao nhiêu este khi tác dụng với dung dịch NaOH, đun nóng thu được alcohol?",
+        img: "1.4.3.2.png",
+        answer: "5",
+        explain: `
+• Khi xà phòng hóa (NaOH, đun nóng), este RCOOR' cho R'–OH nếu R' là gốc ancol (alkyl, benzyl, allyl ...).<br>
+• Không cho ancol (dễ xác lập/loại trừ) nếu R' là vinyl (–O–CH=CH<sub>2</sub> → sản phẩm không ổn định) hoặc R' là phenyl trực tiếp (–OC<sub>6</sub>H<sub>5</sub>, tạo phenol được phân loại khác).<br>
+• Các este cho ancol: (1), (3), (4), (6), (7).<br>
+➜ <b>Có 5 este thủy phân cho ancol.</b>`
+    },
+    {
+        question: "Câu 4. Cho các phản ứng xảy ra trong điều kiện thích hợp:<br>(a) CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> + NaOH →<br>(b) HCOOCH=CH<sub>2</sub> + NaOH →<br>(c) C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> + NaOH →<br>(d) C<sub>6</sub>H<sub>5</sub>COOH + NaOH →<br>(e) CH<sub>3</sub>OOCCH=CH<sub>2</sub> + NaOH →<br>(g) C<sub>6</sub>H<sub>5</sub>COOCH=CH<sub>2</sub> + NaOH →<br>Có bao nhiêu phản ứng thu được sản phẩm có chứa ancol?",
+        img: "none",
+        answer: "3",
+        explain: `
+• Những phản ứng xà phòng hóa/thuỷ phân kiềm tạo ancol khi gốc –OR trong este là gốc ancol bền (không phải vinyl hoặc phenyl trực tiếp).<br>
+• (a) → tạo C<sub>2</sub>H<sub>5</sub>OH ✅; (c) → tạo CH<sub>3</sub>OH ✅; (e) (là este có gốc metyl) → tạo CH<sub>3</sub>OH ✅ (theo đề bài là trường hợp cho ancol).<br>
+• (b) và (g) có gốc vinyl → không thu được ancol bền; (d) là acid hữu cơ → tạo muối, không tạo ancol.<br>
+➜ <b>Có 3 phản ứng tạo sản phẩm chứa ancol.</b>`
+    }
+]
+
 
 
             }, /*ex3*/ {
@@ -1325,7 +1319,19 @@ export let lessons = [
             { /*the*/
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1UJ4Ni4F3gbxPR-3TT_ejM5rMAnOfwYRe/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
-                name: "GIỚI THIỆU VỀ CARBOHYDRATE. GLUCOSE VÀ FRUCTOSEí"
+                name: "GIỚI THIỆU VỀ CARBOHYDRATE. GLUCOSE VÀ FRUCTOSE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=FKdUHY6l7Uw",
+                name: "THÍ NGHIỆM GLUCOSE VỚI COPPERII HYDROXIDE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=AF2uO3Sys8s",
+                name: ""
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=Y2GTUes9w-o",
+                name: ""
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -1563,6 +1569,10 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1GToQ8HK6YMCGpMZqKqj4Yp6o0df6D5Pc/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "SACCHAROSE VÀ MALTOSE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=Xd7a2oTrwtc",
+                name: "THÍ NGHIỆM SACCHAROSE VỚI COPPER(II) HYDROXIDE"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -1815,6 +1825,14 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1scoz-RLxdnW3BKs1TpVG-aprk7wGruK0/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "SACCHAROSE VÀ MALTOSE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=JSP0pBrKcx4",
+                name: ""
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=fLUWy2g5F_Y",
+                name: "THÍ NGHIỆM PHẢN ỨNG THỦY PHÂN TINH BỘT VÀ CELLULOSE"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -6428,6 +6446,10 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1tirs3lCWp4xheNT0wLdqqCt_YF191BRY/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "ĐẠI CƯƠNG VỀ POLYMER"
+            }, { /*other*/
+                type: "other",
+                url: "https://javalab.org/en/standard_reduction_potentials_en/",
+                name: "Thế điện cực và nguồn điện hóa học"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -6957,6 +6979,10 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1WzymgADbiT7MU7PRt40Eg3s_USDJDrAG/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "ĐẠI CƯƠNG VỀ POLYMER"
+            }, { /*vid*/
+                type: "other",
+                url: "https://javalab.org/en/electric_plating_en/",
+                name: "ĐIỆN PHÂN"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -8423,6 +8449,10 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/13eaUJ4bHSsl28CPqPzFMTMV_5hzSbdhM/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=q-fAd5-MIXQ",
+                name: "THÍ NGHIỆM XÁC ĐỊNH HÀM LƯỢNG MUỐI Fe(II) BẰNG DUNG DỊCH THUỐC TÍM"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -8773,6 +8803,18 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1v5ksoYYU7uAlXTusO7IPVlWkE6wjuwyx/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=59m13-yZYiM&t=1s",
+                name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI PHI KIM"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=ymO_GpLB1q8",
+                name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI DUNG DỊCH MUỐI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=ijfk0e8ofbs",
+                name: "THÍ NGHIỆM KIM LOẠI TÁC DỤNG VỚI DUNG DỊCH ACID LOÃNG"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -10916,6 +10958,18 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1wQ7TVfAdqIjY0VNQh6x3RMh3qu2UvkiO/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=8IuD22dNtPI",
+                name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI KHÍ OXYGEN",
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=3Av7I2fKH2s",
+                name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI KHÍ CHLORINE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=2L5j_Gha0jQ",
+                name: "THÍ NGHIỆM KIM LOẠI KIỀM TÁC DỤNG VỚI NƯỚC"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -11280,6 +11334,18 @@ export let lessons = [
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1P3MOTjIjqa7ZN-f4XrZto_PXhxNhpIY5/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=acKADFjYCG4",
+                name: "THÍ NGHIỆM THỬ MÀU NGỌN LỬA KIM LOẠI KIỀM THỔ"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=K8OCBFc937o",
+                name: "THÍ NGHIỆM SO SÁNH ĐỘ TAN GIỮA CALCIUM SULFATE VÀ BARIUM SULFATE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=e1k6565b63k",
+                name: "THÍ NGHIỆM NHẬN BIẾT ION CALCIUM, BARIUM, CARBONATE VÀ SULFATE"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [

@@ -3,10 +3,13 @@ import { lessons } from "../scripts/unit.js";
 const params = new URLSearchParams(window.location.search);
 const unit = params.get('unit');
 const level = Number(params.get('level'));
-const type = params.get('type');
+
+// allow overriding from query, but fallback to lesson[level].type if missing
+let type = params.get('type');
 
 var lesson = lessons[unit - 1].content;
 
+// fallback: nếu url không có type, lấy type từ lesson[level].type (nếu có)
 
 
 /* -------------------------
@@ -508,7 +511,7 @@ if (type === 'theory') {
         explain.innerHTML = '';
         // đảm bảo ẩn lại mỗi lần hiện câu mới
         continueButton.classList.add('hide');
-        // as fallback (in case CSS .hide không được remove properly), reset inline display
+        // as fallback (in case CSS .hide not be removed properly), reset inline display
         continueButton.style.display = 'none';
 
         // Ảnh minh họa
@@ -589,5 +592,137 @@ if (type === 'theory') {
     // initial render
     animateProgressBar(0, maxPoint);
     displayQuestion();
+} else if (type === 'video') {
+    // VIDEO: simple extractor — lấy id bằng cách cắt phần sau "v=" (không normalize, theo đúng yêu cầu)
+    const screen = document.querySelector('.screen');
+
+    // Lấy object video từ lesson[level]
+    const videoEntry = lesson[level + 1];
+    console.log(videoEntry);
+    const rawUrl = videoEntry && videoEntry.url ? videoEntry.url : '';
+    const title = videoEntry && videoEntry.name ? videoEntry.name : 'Bài học video';
+
+    // Simple extraction: lấy phần sau "v=" rồi cắt bỏ phần &... nếu có
+    let id = null;
+    if (rawUrl && rawUrl.indexOf('v=') !== -1) {
+      const afterV = rawUrl.split('v=')[1];
+      id = afterV ? afterV.split('&')[0] : null;
+    }
+
+    // Tạo embed URL nếu có id
+    const embedUrl = id ? `https://www.youtube.com/embed/${id}` : '';
+
+    // Render: nếu có embedUrl -> iframe, else -> show raw link
+    if (screen) {
+      if (embedUrl) {
+        screen.innerHTML = `
+          <div class="header">
+            <h1 class="title">${title}</h1>
+            <div class="footer">
+              <div class="done-btn">Đánh dấu là đã xem</div>
+            </div>
+          </div>
+          <div class="theory-doc">
+            <div class="theory-frame">
+              <iframe
+                src="${embedUrl}"
+                width="100%"
+                height="480"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        `;
+      } else {
+        screen.innerHTML = `
+          <div class="header">
+            <h1 class="title">${title}</h1>
+            <div class="footer">
+              <div class="done-btn">Đánh dấu là đã xem</div>
+            </div>
+          </div>
+          <div class="theory-doc">
+            <div style="padding:16px;">
+              <p>Không tìm thấy phần "v=" trong URL. Mở video trực tiếp trên YouTube:</p>
+              <p><a href="${rawUrl}" target="_blank" rel="noopener">${rawUrl || '—'}</a></p>
+            </div>
+          </div>
+        `;
+      }
+
+      // done-btn behavior (giống theory)
+      const doneBtn = document.querySelector('.done-btn');
+      if (doneBtn) {
+        doneBtn.addEventListener('click', () => {
+          window.location.href = `../learn.html?mark=true&unit=${unit}&level=${level}&type=video`;
+        });
+      }
+    }
+
+    // (Optional) expose debug object for inspection
+    try { window.__LAST_VIDEO_DEBUG = { rawUrl, id, embedUrl, videoEntry, unit, level, type }; } catch(e){}
+} else if (type === 'other') {
+    // OTHER: giao diện giống video nhưng dùng nguyên url làm iframe.src (không lấy id)
+    const screen = document.querySelector('.screen');
+
+    // Lấy object từ lesson[level]
+    const entry = lesson && lesson[level] ? lesson[level + 1] : null;
+    const rawUrl = entry && entry.url ? entry.url : '';
+    const title = entry && entry.name ? entry.name : 'Tài nguyên';
+
+    if (screen) {
+      if (rawUrl) {
+        // thử dùng rawUrl thẳng vào iframe
+        screen.innerHTML = `
+          <div class="header">
+            <h1 class="title">${title}</h1>
+            <div class="footer">
+              <div class="done-btn">Đánh dấu là đã xem</div>
+            </div>
+          </div>
+          <div class="theory-doc">
+            <div class="theory-frame">
+              <iframe
+                src="${rawUrl}"
+                width="100%"
+                height="480"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        `;
+      } else {
+        screen.innerHTML = `
+          <div class="header">
+            <h1 class="title">${title}</h1>
+            <div class="footer">
+              <div class="done-btn">Đánh dấu là đã xem</div>
+            </div>
+          </div>
+          <div class="theory-doc">
+            <div style="padding:16px;">
+              <p>Không tìm thấy đường dẫn. Mở tài nguyên trực tiếp:</p>
+              <p><a href="${rawUrl}" target="_blank" rel="noopener">${rawUrl || '—'}</a></p>
+            </div>
+          </div>
+        `;
+      }
+
+      // done-btn behavior (giống theory)
+      const doneBtn = document.querySelector('.done-btn');
+      if (doneBtn) {
+        doneBtn.addEventListener('click', () => {
+          window.location.href = `../learn.html?mark=true&unit=${unit}&level=${level}&type=other`;
+        });
+      }
+    }
+
+    // (Optional) expose debug object for inspection
+    try { window.__LAST_VIDEO_DEBUG = { rawUrl, entry, unit, level, type: 'other' }; } catch(e){}
 }
+
 
