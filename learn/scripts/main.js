@@ -32,7 +32,7 @@
       'ex3': '../assets/images/ex3-logo.svg',
       'name': '../assets/images/theory-logo.svg'
     }
-    return map[t] || '../../assets/images/lesson-logo.svg'
+    return map[t] || '../assets/images/lesson-logo.svg'
   }
 
   /* ============================
@@ -1783,4 +1783,5 @@
 
 
 })(); // end IIFE
+
 
