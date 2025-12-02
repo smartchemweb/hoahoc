@@ -226,3 +226,112 @@ nav .learn-logo, nav .exercise-logo, nav .link-logo, nav .download-logo{ width:2
 
 /* đảm bảo layout icon + title luôn thẳng hàng */
 .lesson-row > div:first-child{ display:flex; align-items:center; gap:12px; }
+
+/* ===== Type badge (base) ===== */
+.lesson-type-badge,
+.type-pill {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:12px;
+  line-height:1;
+  min-height:30px;
+  display:flex;
+  align-items:center;
+  border:1px solid transparent;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  box-shadow: 0 3px 8px rgba(6,22,33,0.03);
+}
+
+/* small colored dot (left) using pseudo-element */
+.lesson-type-badge::before,
+.type-pill::before {
+  content: "";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  display:inline-block;
+  flex-shrink:0;
+  margin-left:0;
+  margin-right:6px;
+  background: rgba(6,22,33,0.06);
+  box-shadow: none;
+}
+
+/* ===== Per-type styles (uses data-type on .lesson-row) ===== */
+
+/* Lý thuyết */
+.lesson-row[data-type="theory"] .lesson-type-badge,
+.lesson-row[data-type="theory"] .type-pill {
+  background: linear-gradient(180deg, rgba(14,165,160,0.08), rgba(14,165,160,0.03));
+  color: var(--accent-2);
+  border-color: rgba(14,165,160,0.12);
+  box-shadow: 0 6px 18px rgba(14,165,160,0.04);
+}
+.lesson-row[data-type="theory"] .lesson-type-badge::before,
+.lesson-row[data-type="theory"] .type-pill::before {
+  background: var(--accent-2);
+}
+
+/* Video */
+.lesson-row[data-type="video"] .lesson-type-badge,
+.lesson-row[data-type="video"] .type-pill {
+  background: linear-gradient(180deg, rgba(58,123,213,0.08), rgba(58,123,213,0.03));
+  color: #2b6fcf;
+  border-color: rgba(58,123,213,0.12);
+  box-shadow: 0 6px 18px rgba(43,111,207,0.04);
+}
+.lesson-row[data-type="video"] .lesson-type-badge::before,
+.lesson-row[data-type="video"] .type-pill::before {
+  background: #2b6fcf;
+}
+
+/* Tài nguyên / other */
+.lesson-row[data-type="other"] .lesson-type-badge,
+.lesson-row[data-type="other"] .type-pill {
+  background: linear-gradient(180deg, rgba(114,89,255,0.06), rgba(114,89,255,0.02));
+  color: #6f4cff;
+  border-color: rgba(114,89,255,0.10);
+  box-shadow: 0 6px 18px rgba(111,76,255,0.03);
+}
+.lesson-row[data-type="other"] .lesson-type-badge::before,
+.lesson-row[data-type="other"] .type-pill::before {
+  background: #6f4cff;
+}
+
+/* Bài tập (ex1 / ex2 / ex3 grouped) */
+.lesson-row[data-type^="ex"] .lesson-type-badge,
+.lesson-row[data-type^="ex"] .type-pill {
+  background: linear-gradient(180deg, rgba(250,200,80,0.08), rgba(250,200,80,0.03));
+  color: #b76d00;
+  border-color: rgba(214,152,40,0.08);
+  box-shadow: 0 6px 18px rgba(214,152,40,0.03);
+}
+.lesson-row[data-type^="ex"] .lesson-type-badge::before,
+.lesson-row[data-type^="ex"] .type-pill::before {
+  background: #b76d00;
+}
+
+/* Chủ đề / name */
+.lesson-row[data-type="name"] .lesson-type-badge,
+.lesson-row[data-type="name"] .type-pill {
+  background: linear-gradient(180deg, rgba(6,22,33,0.04), rgba(6,22,33,0.01));
+  color: var(--muted);
+  border-color: rgba(6,22,33,0.04);
+  box-shadow: 0 6px 12px rgba(6,22,33,0.03);
+}
+.lesson-row[data-type="name"] .lesson-type-badge::before,
+.lesson-row[data-type="name"] .type-pill::before {
+  background: rgba(6,22,33,0.12);
+}
+
+/* Fallback: any other type (use neutral styling) */
+.lesson-row:not([data-type]) .lesson-type-badge,
+.lesson-row:not([data-type]) .type-pill,
+.lesson-row[data-type=""] .lesson-type-badge,
+.lesson-row[data-type=""] .type-pill {
+  background: rgba(6,22,33,0.03);
+  color: var(--muted);
+  border-color: rgba(6,22,33,0.02);
+}

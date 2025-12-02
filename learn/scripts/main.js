@@ -1778,5 +1778,8 @@
   window.__SmartChem.topicProgress = topicProgress
   window.__SmartChem.unitProgress = unitProgress
   window.__SmartChem.resetAllProgress = resetAllProgress
+  // gọi hàm reset đã tích hợp
+// window.__SmartChem && window.__SmartChem.resetAllProgress();
+
 
 })(); // end IIFE
