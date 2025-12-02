@@ -42,7 +42,7 @@
   if (!rawUnits && window.units) rawUnits = window.units;
 
   // fallback sample (replace with your data if needed)
-  rawUnits = [
+  rawUnits = rawUnits || [
     { id: 1, name: "Ester", levels: [
         {
             name: "Dạng 1. Khái niệm, Danh pháp, Tính chất vật lí",
@@ -1777,7 +1777,7 @@
   window.__SmartChem.otherViewed = otherViewed
   window.__SmartChem.topicProgress = topicProgress
   window.__SmartChem.unitProgress = unitProgress
-  window.__SmartChem.resetAllProgress = resetAllProgress
+  //window.__SmartChem.resetAllProgress = resetAllProgress
   // gọi hàm reset đã tích hợp
 // window.__SmartChem && window.__SmartChem.resetAllProgress();
 
