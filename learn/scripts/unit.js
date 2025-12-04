@@ -340,67 +340,61 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
             }, /*ex2*/ {
                 type: 'ex3',
                 questions: [
-  {
-    question: `Cho các hợp chất: CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A); HCOOCH<sub>3</sub> (B); CH<sub>3</sub>COOH (C); HCOOC<sub>2</sub>H<sub>5</sub> (D); C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> (E) và HOCH<sub>2</sub>CH<sub>2</sub>CHO (F). Số hợp chất ester là bao nhiêu?`,
-    img: 'none',
-    answer: "4",
-    explain: "Các ester trong dãy là A, B, D và E → tổng cộng 4 ester."
-  },
-  {
-    question: `Cho các ester: etyl axetat, etyl fomat, metyl axetat, metyl acrylat. Có bao nhiêu ester no, đơn chức, mạch hở?`,
-    img: 'none',
-    answer: "3",
-    explain: "Các ester no, đơn chức, mạch hở là etyl axetat, etyl fomat và metyl axetat (metyl acrylat có liên kết C=C)."
-  },
-  {
-    question: `Cho các ester: HCOOCH<sub>3</sub>; CH<sub>3</sub>COOCH<sub>3</sub>; (COOCH<sub>3</sub>)<sub>2</sub>; (HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>; CH<sub>2</sub>=CHCOOCH<sub>3</sub>; C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>; CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>. Số ester no, đơn chức, mạch hở là bao nhiêu?`,
-    img: 'none',
-    answer: "3",
-    explain: "Ba ester no, đơn chức, mạch hở là HCOOCH<sub>3</sub>, CH<sub>3</sub>COOCH<sub>3</sub> và C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>."
-  },
-  {
-    question: `Cho các ester: metyl fomat, đimetyl oxalat, vinyl axetat, etyl acrylat, etyl propionat, metyl metacrylat, isopropyl fomat. Có bao nhiêu ester có hai liên kết π trong phân tử?`,
-    img: 'none',
-    answer: "4",
-    explain: "Bốn ester có hai liên kết π là đimetyl oxalat, vinyl axetat, etyl acrylat và metyl metacrylat."
-  },
-  {
-    question: `Số đồng phân ester có công thức phân tử C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> là bao nhiêu?`,
-    img: 'none',
-    answer: "2",
-    explain: "Hai đồng phân ester phổ biến: HCOOCH<sub>2</sub>CH<sub>3</sub> (ethyl formate) và CH<sub>3</sub>COOCH<sub>3</sub> (methyl acetate)."
-  },
-  {
-    question: `Cho các ester có công thức cấu tạo: (1) CH<sub>3</sub>COOCH<sub>3</sub>; (2) CH<sub>3</sub>COOCH=CH<sub>2</sub>; (3) (COOCH<sub>3</sub>)<sub>2</sub>; (4) CH<sub>2</sub>=CHCOOCH<sub>3</sub>. Ester chỉ chứa 1 liên kết π trong phân tử là`,
-    img: 'none',
-    answer: "Đúng",
-    explain: "Ester (2) CH<sub>3</sub>COOCH=CH<sub>2</sub> có một liên kết π (C=O); đáp án theo đề là (2)."
-  }
-]
+    {
+      question: `Cho các hợp chất: CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A); HCOOCH<sub>3</sub> (B); CH<sub>3</sub>COOH (C); HCOOC<sub>2</sub>H<sub>5</sub> (D); C<sub>6</sub>H<sub>5</sub>COOCH<sub>3</sub> (E) và HOCH<sub>2</sub>CH<sub>2</sub>CHO (F). Số hợp chất ester là bao nhiêu?`,
+      img: 'none',
+      answer: "4",
+      explain: "Các ester trong dãy là A, B, D và E → tổng cộng 4 ester."
+    },
+    {
+      question: `Cho các ester: ethyl ethanoate, ethyl methanoate, methyl ethanoate, methyl prop-2-enoate. Có bao nhiêu ester no, đơn chức, mạch hở?`,
+      img: 'none',
+      answer: "3",
+      explain: "Các ester no, đơn chức, mạch hở là ethyl ethanoate, ethyl methanoate và methyl ethanoate. Methyl prop-2-enoate có liên kết C=C."
+    },
+    {
+      question: `Cho các ester: HCOOCH<sub>3</sub>; CH<sub>3</sub>COOCH<sub>3</sub>; (COOCH<sub>3</sub>)<sub>2</sub>; (HCOO)<sub>2</sub>C<sub>2</sub>H<sub>4</sub>; CH<sub>2</sub>=CHCOOCH<sub>3</sub>; C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub>; CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub>. Số ester no, đơn chức, mạch hở là bao nhiêu?`,
+      img: 'none',
+      answer: "3",
+      explain: "Ba ester no, đơn chức, mạch hở: HCOOCH<sub>3</sub> (methyl methanoate), CH<sub>3</sub>COOCH<sub>3</sub> (methyl ethanoate), C<sub>2</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub> (ethyl propanoate)."
+    },
+    {
+      question: `Cho các ester: methyl methanoate, dimethyl ethanedioate, ethenyl ethanoate, ethyl prop-2-enoate, ethyl propanoate, methyl 2-methylprop-2-enoate, isopropyl methanoate. Có bao nhiêu ester có hai liên kết π trong phân tử?`,
+      img: 'none',
+      answer: "4",
+      explain: "Có 4 ester có hai liên kết π: dimethyl ethanedioate, ethenyl ethanoate, ethyl prop-2-enoate và methyl 2-methylprop-2-enoate."
+    },
+    {
+      question: `Số đồng phân ester có công thức phân tử C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> là bao nhiêu?`,
+      img: 'none',
+      answer: "2",
+      explain: "Hai đồng phân: ethyl methanoate và methyl ethanoate."
+    },
+  ]
 
 
 
 
             }, /*ex3*/ {
                 type: "theory",
-                filename: "https://docs.google.com/document/d/1sah4nTO038ZOY4C7Y5kHY6MRNHlca8eD/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true",
+                filename: "https://docs.google.com/document/d/1sah4nTO038ZOY4C7Y5kHY6MRNHlca8eD/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "Khái niệm, danh pháp, tính chất vật lí"
             }, /*the*/ {
                 type: "ex1",
                 questions: [
   {
-    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium acetate?",
+    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium ethanoate (natri etanoat)?",
     img: "none",
     answers: [
-      "CH₃COOC₂H₅",
-      "C₂H₅COOCH₃",
-      "HCOOCH₃",
-      "HCOOC₂H₅"
+      "CH₃COOC₂H₅",  // ethyl ethanoate
+      "C₂H₅COOCH₃",  // methyl propanoate
+      "HCOOCH₃",     // methyl methanoate
+      "HCOOC₂H₅"     // ethyl methanoate
     ],
-    explain: "CH₃COOC₂H₅ (etyl axetat) khi thủy phân trong NaOH cho ra muối CH₃COONa (natri axetat) và ancol etylic."
+    explain: "CH₃COOC₂H₅ (ethyl ethanoate) thủy phân với NaOH tạo muối CH₃COONa (sodium ethanoate)."
   },
   {
-    question: "Trường hợp nào sau đây xảy ra phản ứng với etyl axetat?",
+    question: "Trường hợp nào sau đây xảy ra phản ứng với ethyl ethanoate?",
     img: "none",
     answers: [
       "Dung dịch NaOH (t°)",
@@ -408,43 +402,32 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "Dung dịch [Ag(NH₃)₂]OH",
       "Dung dịch NaCl"
     ],
-    explain: "Etyl axetat phản ứng với dung dịch NaOH khi đun nóng (phản ứng xà phòng hóa)."
+    explain: "Ethyl ethanoate phản ứng với dung dịch NaOH khi đun nóng (phản ứng xà phòng hóa)."
   },
   {
-    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium formate?",
+    question: "Ester nào sau đây tác dụng với dung dịch NaOH thu được sodium methanoate (natri metanoat)?",
     img: "none",
     answers: [
-      "HCOOCH₃",
-      "CH₃COOC₂H₅",
-      "CH₃COOCH₃",
-      "C₂H₅COOC₂H₅"
+      "HCOOCH₃",      // methyl methanoate
+      "CH₃COOC₂H₅",   // ethyl ethanoate
+      "CH₃COOCH₃",    // methyl ethanoate
+      "C₂H₅COOC₂H₅"   // ethyl propanoate
     ],
-    explain: "HCOOCH₃ (metyl fomat) thủy phân trong NaOH tạo muối HCOONa (natri fomat) và CH₃OH."
+    explain: "HCOOCH₃ (methyl methanoate) thủy phân trong NaOH tạo muối HCOONa (sodium methanoate)."
   },
   {
-    question: "Ester nào sau đây tác dụng với NaOH thu được etyl alcohol?",
+    question: "Ester nào sau đây tác dụng với NaOH thu được ethyl alcohol (ethanol)?",
     img: "none",
     answers: [
-      "CH₃COOC₂H₅",
-      "CH₃COOC₃H₇",
-      "C₂H₅COOCH₃",
-      "HCOOCH₃"
+      "CH₃COOC₂H₅",   // ethyl ethanoate
+      "CH₃COOC₃H₇",   // propyl ethanoate
+      "C₂H₅COOCH₃",   // methyl propanoate
+      "HCOOCH₃"       // methyl methanoate
     ],
-    explain: "CH₃COOC₂H₅ (etyl axetat) thủy phân tạo CH₃COONa và ancol etylic (C₂H₅OH)."
+    explain: "CH₃COOC₂H₅ (ethyl ethanoate) thủy phân tạo CH₃COONa và ethanol."
   },
   {
-    question: "Thủy phân hoàn toàn hỗn hợp metyl fomat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
-    img: "none",
-    answers: [
-      "2 muối và 2 ancol",
-      "1 muối và 1 ancol",
-      "1 muối và 2 ancol",
-      "2 muối và 1 ancol"
-    ],
-    explain: "Mỗi ester tạo 1 muối và 1 ancol → tổng cộng 2 muối (HCOONa) và 2 ancol (CH₃OH, C₂H₅OH)."
-  },
-  {
-    question: "Thủy phân hoàn toàn hỗn hợp etyl propionat và etyl fomat trong dung dịch NaOH, thu được sản phẩm gồm:",
+    question: "Thủy phân hoàn toàn hỗn hợp methyl methanoate và ethyl methanoate trong dung dịch NaOH thu được:",
     img: "none",
     answers: [
       "2 muối và 2 ancol",
@@ -452,10 +435,21 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "1 muối và 2 ancol",
       "2 muối và 1 ancol"
     ],
-    explain: "Etyl propionat → C₂H₅COONa + C₂H₅OH; Etyl fomat → HCOONa + C₂H₅OH → 2 muối, 2 ancol."
+    explain: "Mỗi este → 1 muối + 1 ancol → thu được 2 muối (HCOONa) và 2 ancol (CH₃OH và C₂H₅OH)."
   },
   {
-    question: "Một số ester được dùng trong hương liệu, mĩ phẩm, bột giặt là nhờ các ester:",
+    question: "Thủy phân hoàn toàn hỗn hợp ethyl propanoate và ethyl methanoate trong NaOH thu được:",
+    img: "none",
+    answers: [
+      "2 muối và 2 ancol",
+      "1 muối và 1 ancol",
+      "1 muối và 2 ancol",
+      "2 muối và 1 ancol"
+    ],
+    explain: "Ethyl propanoate → C₂H₅COONa + C₂H₅OH; ethyl methanoate → HCOONa + C₂H₅OH."
+  },
+  {
+    question: "Một số ester được dùng trong hương liệu, mĩ phẩm, bột giặt là vì:",
     img: "none",
     answers: [
       "Có mùi thơm, an toàn với người",
@@ -463,21 +457,21 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "Có thể bay hơi nhanh sau khi sử dụng",
       "Đều có nguồn gốc từ thiên nhiên"
     ],
-    explain: "Các ester thường có mùi thơm dễ chịu, an toàn nên được dùng trong hương liệu và mỹ phẩm."
+    explain: "Ester thường có mùi thơm dễ chịu và an toàn nên được dùng trong hương liệu & mỹ phẩm."
   },
   {
-    question: "Ester X được tạo bởi metyl alcohol và axit axetic. Công thức của X là:",
+    question: "Ester X được tạo bởi methanol và ethanoic acid. Công thức của X là:",
     img: "none",
     answers: [
-      "CH₃COOCH₃",
+      "CH₃COOCH₃",  // methyl ethanoate
       "HCOOC₂H₅",
       "CH₃COOC₂H₅",
       "HCOOCH₃"
     ],
-    explain: "Ancol metylic (CH₃OH) + axit axetic (CH₃COOH) → CH₃COOCH₃ (metyl axetat)."
+    explain: "Methanol + ethanoic acid → methyl ethanoate (CH₃COOCH₃)."
   },
   {
-    question: "Ester X có công thức C₄H₈O₂, thủy phân thu được axit propionic và chất hữu cơ Y. Công thức Y là:",
+    question: "Ester X có công thức C₄H₈O₂, thủy phân thu được propanoic acid và chất hữu cơ Y. Công thức Y là:",
     img: "none",
     answers: [
       "CH₃OH",
@@ -485,10 +479,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "CH₃COOH",
       "HCOOH"
     ],
-    explain: "Axit propionic (C₂H₅COOH) → phần axit; phần ancol còn lại là CH₃OH → este là CH₃OOCCH₂CH₃."
+    explain: "Propanoic acid là phần axit → phần ancol là CH₃OH → Y = CH₃OH."
   },
   {
-    question: "Ester X có công thức C₄H₈O₂, thủy phân thu được etyl alcohol và chất hữu cơ Y. Công thức của Y là:",
+    question: "Ester X có công thức C₄H₈O₂, thủy phân tạo ethanol và chất hữu cơ Y. Công thức Y là:",
     img: "none",
     answers: [
       "CH₃COOH",
@@ -496,10 +490,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "C₂H₅COOH",
       "HCOOH"
     ],
-    explain: "Thủy phân cho etanol → gốc axit là CH₃COOH → este là CH₃COOC₂H₅ (etyl axetat)."
+    explain: "Thu được ethanol → gốc axit là ethanoic acid → X = ethyl ethanoate."
   },
   {
-    question: "Công thức nào sau đây có thể là công thức của chất béo?",
+    question: "Công thức nào sau đây có thể là công thức của chất béo (triacylglycerol)?",
     img: "none",
     answers: [
       "C₁₇H₃₅COOC₃H₅",
@@ -507,10 +501,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "(C₁₅H₃₁COO)₃C₃H₅",
       "CH₃COOC₆H₅"
     ],
-    explain: "Chất béo là trieste của glixerol với axit béo mạch dài."
+    explain: "Chất béo là triacylglycerol: trieste của glycerol với các acid béo mạch dài."
   },
   {
-    question: "Công thức phân tử của triglyceride tạo bởi axit linoleic và glixerol là",
+    question: "Công thức phân tử của triglyceride tạo bởi linoleic acid và glycerol là:",
     img: "none",
     answers: [
       "C₅₇H₉₈O₆",
@@ -518,10 +512,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "C₅₃H₉₀O₆",
       "C₅₁H₉₈O₆"
     ],
-    explain: "Triglyceride của axit linoleic có công thức C₅₇H₉₈O₆."
+    explain: "Triglyceride của linoleic acid có công thức C₅₇H₉₈O₆."
   },
   {
-    question: "Tripalmitin có công thức là",
+    question: "Tripalmitin (glyceryl tripalmitate) có công thức là:",
     img: "none",
     answers: [
       "(C₁₅H₃₁COO)₃C₃H₅",
@@ -529,10 +523,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "(C₁₇H₃₅COO)₃C₃H₅",
       "(C₁₇H₃₃COO)₃C₃H₅"
     ],
-    explain: "Tripalmitin là trieste của glixerol và axit panmitic."
+    explain: "Tripalmitin là trieste của glycerol và palmitic acid."
   },
   {
-    question: "Triolein có công thức là",
+    question: "Triolein (glyceryl trioleate) có công thức là:",
     img: "none",
     answers: [
       "(C₁₇H₃₃COO)₃C₃H₅",
@@ -540,10 +534,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "(C₁₅H₃₁COO)₃C₃H₅",
       "(C₁₇H₃₅COO)₃C₃H₅"
     ],
-    explain: "Triolein là trieste của glixerol và axit oleic không no."
+    explain: "Triolein là trieste của glycerol với oleic acid (một acid béo không no)."
   },
   {
-    question: "Glyceryl trioleate có công thức cấu tạo là",
+    question: "Glyceryl trioleate có công thức cấu tạo là:",
     img: "none",
     answers: [
       "(CH₃[CH₂]₇CH=CH[CH₂]₇COO)₃C₃H₅",
@@ -551,9 +545,10 @@ explain: "Nhiệt độ sôi 31,8°C ứng với HCOOCH<sub>3</sub> (ester), 97,
       "(CH₃[CH₂]₇CH=CH[CH₂]₆COO)₃C₃H₅",
       "(CH₃[CH₂]₆CH=CH[CH₂]₈COO)₃C₃H₅"
     ],
-    explain: "Trioleate gồm ba gốc oleat gắn vào glixerol."
+    explain: "Glyceryl trioleate gồm ba gốc oleate nối vào glycerol."
   }
 ]
+
 
 
 
@@ -1324,14 +1319,6 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
                 type: "video",
                 url: "https://www.youtube.com/watch?v=FKdUHY6l7Uw",
                 name: "THÍ NGHIỆM GLUCOSE VỚI COPPERII HYDROXIDE"
-            }, { /*vid*/
-                type: "video",
-                url: "https://www.youtube.com/watch?v=AF2uO3Sys8s",
-                name: ""
-            }, { /*vid*/
-                type: "video",
-                url: "https://www.youtube.com/watch?v=Y2GTUes9w-o",
-                name: ""
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -1573,6 +1560,14 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
                 type: "video",
                 url: "https://www.youtube.com/watch?v=Xd7a2oTrwtc",
                 name: "THÍ NGHIỆM SACCHAROSE VỚI COPPER(II) HYDROXIDE"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=AF2uO3Sys8s",
+                name: ""
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=Y2GTUes9w-o",
+                name: ""
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -6986,117 +6981,117 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Câu 1: Trong quá trình điện phân, những ion âm (anion) di chuyển về\nA. anode, ở đây chúng bị khử\nB. anode, ở đây chúng bị oxi hoá\nC. cathode, ở đây chúng bị khử\nD. cathode, ở đây chúng bị oxi hoá",
-                        img: "none",
-                        answers: [
-                            "anode, ở đây chúng bị oxi hoá",
-                            "anode, ở đây chúng bị khử",
-                            "cathode, ở đây chúng bị khử",
-                            "cathode, ở đây chúng bị oxi hoá"
-                        ],
-                        explain: "Anion bị oxi hoá tại anode nên di chuyển về anode."
-                    },
-                    {
-                        question: "Câu 2: Phát biểu nào sau đây về thứ tự điện phân trong dung dịch của các ion kim loại ở điện cực là đúng?\nA. Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực âm\nB. Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực âm\nC. Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực dương\nD. Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực dương",
-                        img: "none",
-                        answers: [
-                            "Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực âm",
-                            "Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực âm",
-                            "Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực dương",
-                            "Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực dương"
-                        ],
-                        explain: "Kim loại có thế điện cực chuẩn dương hơn sẽ được khử trước ở cathode."
-                    },
-                    {
-                        question: "Câu 3: Nhận xét nào sau đây đúng về quá trình điện phân ở hai điện cực?\nA. Cation nhường electron ở cathode\nB. Anion nhận electron ở anode\nC. Sự oxi hoá xảy ra ở anode\nD. Sự oxi hoá xảy ra ở cathode",
-                        img: "none",
-                        answers: [
-                            "Sự oxi hoá xảy ra ở anode",
-                            "Cation nhường electron ở cathode",
-                            "Anion nhận electron ở anode",
-                            "Sự oxi hoá xảy ra ở cathode"
-                        ],
-                        explain: "Oxi hoá luôn xảy ra ở anode, khử xảy ra ở cathode."
-                    },
-                    {
-                        question: "Câu 4: Ion kim loại nào sau đây bị điện phân trong dung dịch (với điện cực graphite)?\nA. Na+\nB. Cu2+\nC. Ca2+\nD. K+",
-                        img: "none",
-                        answers: [
-                            "Cu2+",
-                            "Na+",
-                            "Ca2+",
-                            "K+"
-                        ],
-                        explain: "Trong dung dịch, Cu2+ dễ bị khử hơn các kim loại kiềm và kiềm thổ nên bị điện phân."
-                    },
-                    {
-                        question: "Câu 5: Ion halide hầu như không bị điện phân trong dung dịch là\nA. Br–\nB. F–\nC. Cl–\nD. I–",
-                        img: "none",
-                        answers: [
-                            "F–",
-                            "Br–",
-                            "Cl–",
-                            "I–"
-                        ],
-                        explain: "F– khó bị oxi hoá hơn các halide khác nên hầu như không bị điện phân."
-                    },
-                    {
-                        question: "Câu 6: Điện phân dung dịch nào sau đây sẽ có khí thoát ra ở cả 2 điện cực ngay lúc mới đầu?\nA. Cu(NO3)2\nB. FeCl2\nC. K2SO4\nD. FeSO4",
-                        img: "none",
-                        answers: [
-                            "K2SO4",
-                            "Cu(NO3)2",
-                            "FeCl2",
-                            "FeSO4"
-                        ],
-                        explain: "K2SO4 là muối trung tính, điện phân nước sẽ tạo khí H2 và O2 ở cả hai điện cực."
-                    },
-                    {
-                        question: "Câu 7: Khi điện phân dung dịch nào sau đây, tại anode xảy ra quá trình oxi hoá nước?\nA. Dung dịch ZnCl2\nB. Dung dịch CuCl2\nC. Dung dịch AgNO3\nD. Dung dịch MgCl2",
-                        img: "none",
-                        answers: [
-                            "Dung dịch ZnCl2",
-                            "Dung dịch CuCl2",
-                            "Dung dịch AgNO3",
-                            "Dung dịch MgCl2"
-                        ],
-                        explain: "ZnCl2 có ion Cl–, nhưng thế oxi hoá của H2O thấp hơn nên nước bị oxi hoá tại anode."
-                    },
-                    {
-                        question: "Câu 8: Trong quá trình điện phân KBr nóng chảy, phản ứng nào xảy ra ở điện cực dương (anode)?\nA. Ion Br– bị khử\nB. Ion Br– bị oxi hoá\nC. Ion K+ bị oxi hoá\nD. Ion K+ bị khử",
-                        img: "none",
-                        answers: [
-                            "Ion Br– bị oxi hoá",
-                            "Ion Br– bị khử",
-                            "Ion K+ bị oxi hoá",
-                            "Ion K+ bị khử"
-                        ],
-                        explain: "Tại anode, Br– bị oxi hoá thành Br2."
-                    },
-                    {
-                        question: "Câu 9: Điện phân CaCl2 nóng chảy, ở cathode xảy ra quá trình nào?\nA. Oxi hoá ion Ca2+\nB. Khử ion Ca2+\nC. Oxi hoá ion Cl–\nD. Khử ion Cl–",
-                        img: "none",
-                        answers: [
-                            "Khử ion Ca2+",
-                            "Oxi hoá ion Ca2+",
-                            "Oxi hoá ion Cl–",
-                            "Khử ion Cl–"
-                        ],
-                        explain: "Cathode là nơi xảy ra khử, Ca2+ nhận electron tạo Ca kim loại."
-                    },
-                    {
-                        question: "Câu 10: Khi điện phân NaCl nóng chảy (điện cực trơ), ở cathode xảy ra\nA. sự khử ion Cl–\nB. sự oxi hoá ion Cl–\nC. sự oxi hoá ion Na+\nD. sự khử ion Na+",
-                        img: "none",
-                        answers: [
-                            "sự khử ion Na+",
-                            "sự khử ion Cl–",
-                            "sự oxi hoá ion Cl–",
-                            "sự oxi hoá ion Na+"
-                        ],
-                        explain: "Tại cathode, Na+ nhận electron bị khử thành Na kim loại."
-                    }
-                ]
+        {
+            question: "Câu 1: Trong quá trình điện phân, những ion âm (anion) di chuyển về\nA. anode, ở đây chúng bị khử\nB. anode, ở đây chúng bị oxi hoá\nC. cathode, ở đây chúng bị khử\nD. cathode, ở đây chúng bị oxi hoá",
+            img: "none",
+            answers: [
+                "anode, ở đây chúng bị oxi hoá",
+                "anode, ở đây chúng bị khử",
+                "cathode, ở đây chúng bị khử",
+                "cathode, ở đây chúng bị oxi hoá"
+            ],
+            explain: "Anion (X⁻) luôn di chuyển về anode và bị oxi hoá."
+        },
+        {
+            question: "Câu 2: Phát biểu nào sau đây về thứ tự điện phân trong dung dịch của các ion kim loại ở điện cực là đúng?\nA. Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực âm\nB. Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực âm\nC. Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực dương\nD. Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực dương",
+            img: "none",
+            answers: [
+                "Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực âm",
+                "Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực âm",
+                "Ion kim loại ứng với thế điện cực chuẩn dương hơn sẽ được điện phân trước ở cực dương",
+                "Ion kim loại ứng với thế điện cực chuẩn âm hơn sẽ được điện phân trước ở cực dương"
+            ],
+            explain: "Ion kim loại có E⁰ lớn hơn (dương hơn) dễ bị khử trước ở cathode."
+        },
+        {
+            question: "Câu 3: Nhận xét nào sau đây đúng về quá trình điện phân ở hai điện cực?\nA. Cation nhường electron ở cathode\nB. Anion nhận electron ở anode\nC. Sự oxi hoá xảy ra ở anode\nD. Sự oxi hoá xảy ra ở cathode",
+            img: "none",
+            answers: [
+                "Sự oxi hoá xảy ra ở anode",
+                "Cation nhường electron ở cathode",
+                "Anion nhận electron ở anode",
+                "Sự oxi hoá xảy ra ở cathode"
+            ],
+            explain: "Oxi hoá xảy ra ở anode, khử xảy ra ở cathode."
+        },
+        {
+            question: "Câu 4: Ion kim loại nào sau đây bị điện phân trong dung dịch (điện cực graphite)?\nA. Na⁺\nB. Cu²⁺\nC. Ca²⁺\nD. K⁺",
+            img: "none",
+            answers: [
+                "Cu²⁺",
+                "Na⁺",
+                "Ca²⁺",
+                "K⁺"
+            ],
+            explain: "Trong dung dịch, Cu²⁺ dễ bị khử thành Cu hơn Na⁺, K⁺, Ca²⁺."
+        },
+        {
+            question: "Câu 5: Ion halide hầu như không bị điện phân trong dung dịch là\nA. Br⁻\nB. F⁻\nC. Cl⁻\nD. I⁻",
+            img: "none",
+            answers: [
+                "F⁻",
+                "Br⁻",
+                "Cl⁻",
+                "I⁻"
+            ],
+            explain: "Ion F⁻ có năng lượng oxi hoá cao → hầu như không bị oxi hoá trong dung dịch."
+        },
+        {
+            question: "Câu 6: Điện phân dung dịch nào sau đây sẽ có khí thoát ra ở cả 2 điện cực ngay lúc mới đầu?\nA. Cu(NO₃)₂\nB. FeCl₂\nC. K₂SO₄\nD. FeSO₄",
+            img: "none",
+            answers: [
+                "K₂SO₄",
+                "Cu(NO₃)₂",
+                "FeCl₂",
+                "FeSO₄"
+            ],
+            explain: "K₂SO₄ không có ion tham gia điện phân → nước bị điện phân tạo H₂ và O₂."
+        },
+        {
+            question: "Câu 7: Khi điện phân dung dịch nào sau đây, tại anode xảy ra quá trình oxi hoá nước?\nA. ZnCl₂\nB. CuCl₂\nC. AgNO₃\nD. MgCl₂",
+            img: "none",
+            answers: [
+                "ZnCl₂",
+                "CuCl₂",
+                "AgNO₃",
+                "MgCl₂"
+            ],
+            explain: "Với ZnCl₂, ion Cl⁻ khó oxi hoá hơn H₂O nên nước bị oxi hoá tại anode."
+        },
+        {
+            question: "Câu 8: Trong quá trình điện phân KBr nóng chảy, phản ứng nào xảy ra ở anode?\nA. Ion Br⁻ bị khử\nB. Ion Br⁻ bị oxi hoá\nC. Ion K⁺ bị oxi hoá\nD. Ion K⁺ bị khử",
+            img: "none",
+            answers: [
+                "Ion Br⁻ bị oxi hoá",
+                "Ion Br⁻ bị khử",
+                "Ion K⁺ bị oxi hoá",
+                "Ion K⁺ bị khử"
+            ],
+            explain: "Anode: 2Br⁻ → Br₂ + 2e⁻ (oxi hoá)."
+        },
+        {
+            question: "Câu 9: Điện phân CaCl₂ nóng chảy, ở cathode xảy ra quá trình nào?\nA. Oxi hoá ion Ca²⁺\nB. Khử ion Ca²⁺\nC. Oxi hoá ion Cl⁻\nD. Khử ion Cl⁻",
+            img: "none",
+            answers: [
+                "Khử ion Ca²⁺",
+                "Oxi hoá ion Ca²⁺",
+                "Oxi hoá ion Cl⁻",
+                "Khử ion Cl⁻"
+            ],
+            explain: "Cathode: Ca²⁺ + 2e⁻ → Ca (bị khử)."
+        },
+        {
+            question: "Câu 10: Khi điện phân NaCl nóng chảy (điện cực trơ), ở cathode xảy ra\nA. sự khử ion Cl⁻\nB. sự oxi hoá ion Cl⁻\nC. sự oxi hoá ion Na⁺\nD. sự khử ion Na⁺",
+            img: "none",
+            answers: [
+                "sự khử ion Na⁺",
+                "sự khử ion Cl⁻",
+                "sự oxi hoá ion Cl⁻",
+                "sự oxi hoá ion Na⁺"
+            ],
+            explain: "Cathode: Na⁺ + e⁻ → Na (ion Na⁺ bị khử)."
+        }
+    ]
 
 
 
@@ -8449,10 +8444,6 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
                 type: "theory",
                 filename: "https://docs.google.com/document/d/13eaUJ4bHSsl28CPqPzFMTMV_5hzSbdhM/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
-            }, { /*vid*/
-                type: "video",
-                url: "https://www.youtube.com/watch?v=q-fAd5-MIXQ",
-                name: "THÍ NGHIỆM XÁC ĐỊNH HÀM LƯỢNG MUỐI Fe(II) BẰNG DUNG DỊCH THUỐC TÍM"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -12725,6 +12716,10 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
                 type: "theory",
                 filename: "https://docs.google.com/document/d/1sbtrqTspuG4DO1c2EBSQLCySabrsN6f7/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true",
                 name: "CẤU TẠO VÀ TÍNH CHẤT VẬT LÍ CỦA KIM LOẠI"
+            }, { /*vid*/
+                type: "video",
+                url: "https://www.youtube.com/watch?v=q-fAd5-MIXQ",
+                name: "THÍ NGHIỆM XÁC ĐỊNH HÀM LƯỢNG MUỐI Fe(II) BẰNG DUNG DỊCH THUỐC TÍM"
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
@@ -13119,67 +13114,117 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Câu 1: Phức chất nào của Cu²⁺ có màu vàng?",
-                        img: "none",
-                        answers: ["[CuCl4]2–", "[Cu(H2O)6]2+", "[Cu(NH3)4(H2O)2]", "[Cu(OH)2(H2O)4]"],
-                        explain: "Đáp án đúng: [CuCl4]2– có màu vàng."
-                    },
-                    {
-                        question: "Câu 2: Trong dung dịch, ion phức chất nào có màu xanh lam?",
-                        img: "none",
-                        answers: ["[Cu(NH3)4(H2O)2]", "[Fe(H2O)]2+", "[Ag(NH3)2]+", "[CuCl4]2–"],
-                        explain: "Đáp án đúng: [Cu(NH3)4(H2O)2] có màu xanh lam."
-                    },
-                    {
-                        question: "Câu 3: Dung dịch phức chất aqua không thể có màu xanh là",
-                        img: "none",
-                        answers: ["[Zn(H2O)4]2+", "[Cr(H2O)6]3+", "[Ni(H2O)2]2+", "[Cu(H2O)6]2+"],
-                        explain: "Đáp án đúng: [Zn(H2O)4]2+ không có màu xanh."
-                    },
-                    {
-                        question: "Câu 4: Màu sắc của [CuCl4]2– và [Cu(H2O)6]2+ lần lượt là",
-                        img: "none",
-                        answers: ["vàng và xanh", "không màu và xanh lam", "xanh và xanh nhạt", "xanh và xanh lam"],
-                        explain: "Đáp án đúng: [CuCl4]2– vàng, [Cu(H2O)6]2+ xanh."
-                    },
-                    {
-                        question: "Câu 5: Màu sắc của các phức chất Cu khác nhau do",
-                        img: "none",
-                        answers: ["phối tử", "nguyên tử trung tâm", "cả nguyên tử trung tâm và phối tử", "số lượng phối tử"],
-                        explain: "Đáp án đúng: Màu sắc khác nhau chủ yếu do phối tử khác nhau."
-                    },
-                    {
-                        question: "Câu 6: Ống nghiệm (1) xanh lam, (2) xanh nhạt. Phức chất lần lượt là",
-                        img: "none",
-                        answers: ["[Cu(NH3)4(H2O)2] và [Cu(H2O)6]2+", "[Cu(H2O)6]2+ và [Cu(NH3)4(H2O)2]", "[Cu(H2O)6]2+ và [CuCl4]2–", "[CuCl4]2– và [Cu(NH3)4(H2O)2]"],
-                        explain: "Đáp án đúng: Xanh lam là [Cu(NH3)4(H2O)2], xanh nhạt là [Cu(H2O)6]2+."
-                    },
-                    {
-                        question: "Câu 7: Thêm HCl đặc vào CuSO4, dấu hiệu tạo [CuCl4]2– là",
-                        img: "none",
-                        answers: ["Đổi màu dung dịch từ xanh sang vàng", "Hoà tan kết tủa", "Xuất hiện kết tủa", "Đổi màu dung dịch từ vàng sang xanh"],
-                        explain: "Đáp án đúng: Màu chuyển từ xanh sang vàng."
-                    },
-                    {
-                        question: "Câu 8: Dung dịch NH3 dư tác dụng với AgCl, đúng là",
-                        img: "none",
-                        answers: ["Kết tủa trắng tan dần, phức [Ag(NH3)2]+ không màu", "Không có hiện tượng gì xảy ra", "Kết tủa trắng tan dần, phức [Ag(NH3)2]+ màu xanh", "Kết tủa trắng tan dần, phức [Ag(NH3)4]+ không màu"],
-                        explain: "Đáp án đúng: [Ag(NH3)2]+ không màu được tạo thành."
-                    },
-                    {
-                        question: "Câu 9: Thêm NaOH loãng vào CuSO4, dấu hiệu tạo [Cu(OH)2(H2O)4] là",
-                        img: "none",
-                        answers: ["Xuất hiện kết tủa màu xanh lam", "Hoà tan kết tủa", "Dung dịch chuyển từ xanh sang vàng", "Xuất hiện kết tủa màu xanh nhạt"],
-                        explain: "Đáp án đúng: Xuất hiện kết tủa màu xanh lam."
-                    },
-                    {
-                        question: "Câu 10: Nhỏ NaOH dư vào AlCl3, dấu hiệu chứng tỏ tạo phức chứa OH– là",
-                        img: "none",
-                        answers: ["kết tủa bị hoà tan", "dung dịch bị chuyển từ không màu sang có màu", "kết tủa keo trắng tạo thành", "dung dịch bị mất màu"],
-                        explain: "Đáp án đúng: Kết tủa Al(OH)3 tan dần khi OH– dư → phức chứa OH–."
-                    }
-                ]
+    {
+      question: "Câu 1: Phức chất nào của Cu²⁺ có màu vàng?",
+      img: "none",
+      answers: [
+        "[CuCl₄]²⁻",
+        "[Cu(H₂O)₆]²⁺",
+        "[Cu(NH₃)₄(H₂O)₂]",
+        "[Cu(OH)₂(H₂O)₄]"
+      ],
+      explain: "Đáp án đúng: [CuCl₄]²⁻ có màu vàng."
+    },
+    {
+      question: "Câu 2: Trong dung dịch, ion phức chất nào có màu xanh lam?",
+      img: "none",
+      answers: [
+        "[Cu(NH₃)₄(H₂O)₂]",
+        "[Fe(H₂O)]²⁺",
+        "[Ag(NH₃)₂]⁺",
+        "[CuCl₄]²⁻"
+      ],
+      explain: "Đáp án đúng: [Cu(NH₃)₄(H₂O)₂] có màu xanh lam."
+    },
+    {
+      question: "Câu 3: Dung dịch phức chất aqua không thể có màu xanh là",
+      img: "none",
+      answers: [
+        "[Zn(H₂O)₄]²⁺",
+        "[Cr(H₂O)₆]³⁺",
+        "[Ni(H₂O)₂]²⁺",
+        "[Cu(H₂O)₆]²⁺"
+      ],
+      explain: "Đáp án đúng: [Zn(H₂O)₄]²⁺ thường không có màu xanh (trắng/kém màu)."
+    },
+    {
+      question: "Câu 4: Màu sắc của [CuCl₄]²⁻ và [Cu(H₂O)₆]²⁺ lần lượt là",
+      img: "none",
+      answers: [
+        "vàng và xanh",
+        "không màu và xanh lam",
+        "xanh và xanh nhạt",
+        "xanh và xanh lam"
+      ],
+      explain: "Đáp án đúng: [CuCl₄]²⁻ vàng, [Cu(H₂O)₆]²⁺ xanh (xanh nhạt/xanh lam tuỳ điều kiện)."
+    },
+    {
+      question: "Câu 5: Màu sắc của các phức chất Cu khác nhau do",
+      img: "none",
+      answers: [
+        "phối tử",
+        "nguyên tử trung tâm",
+        "cả nguyên tử trung tâm và phối tử",
+        "số lượng phối tử"
+      ],
+      explain: "Đáp án đúng: Màu sắc khác nhau chủ yếu do loại phối tử (ligand) khác nhau ảnh hưởng tới mức năng lượng d–d."
+    },
+    {
+      question: "Câu 6: Ống nghiệm (1) xanh lam, (2) xanh nhạt. Phức chất lần lượt là",
+      img: "none",
+      answers: [
+        "[Cu(NH₃)₄(H₂O)₂] và [Cu(H₂O)₆]²⁺",
+        "[Cu(H₂O)₆]²⁺ và [Cu(NH₃)₄(H₂O)₂]",
+        "[Cu(H₂O)₆]²⁺ và [CuCl₄]²⁻",
+        "[CuCl₄]²⁻ và [Cu(NH₃)₄(H₂O)₂]"
+      ],
+      explain: "Đáp án đúng: Xanh lam là [Cu(NH₃)₄(H₂O)₂], xanh nhạt là [Cu(H₂O)₆]²⁺."
+    },
+    {
+      question: "Câu 7: Thêm HCl đặc vào CuSO₄, dấu hiệu tạo [CuCl₄]²⁻ là",
+      img: "none",
+      answers: [
+        "Đổi màu dung dịch từ xanh sang vàng",
+        "Hoà tan kết tủa",
+        "Xuất hiện kết tủa",
+        "Đổi màu dung dịch từ vàng sang xanh"
+      ],
+      explain: "Đáp án đúng: Màu chuyển từ xanh (Cu²⁺ aqua) sang vàng khi hình thành [CuCl₄]²⁻."
+    },
+    {
+      question: "Câu 8: Dung dịch NH₃ dư tác dụng với AgCl, đúng là",
+      img: "none",
+      answers: [
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₂]⁺ không màu",
+        "Không có hiện tượng gì xảy ra",
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₂]⁺ màu xanh",
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₄]⁺ không màu"
+      ],
+      explain: "Đáp án đúng: AgCl kết tủa trắng tan dần trong NH₃ dư, tạo phức [Ag(NH₃)₂]⁺ (không màu)."
+    },
+    {
+      question: "Câu 9: Thêm NaOH loãng vào CuSO₄, dấu hiệu tạo [Cu(OH)₂(H₂O)₄] là",
+      img: "none",
+      answers: [
+        "Xuất hiện kết tủa màu xanh lam",
+        "Hoà tan kết tủa",
+        "Dung dịch chuyển từ xanh sang vàng",
+        "Xuất hiện kết tủa màu xanh nhạt"
+      ],
+      explain: "Đáp án đúng: Xuất hiện kết tủa màu xanh lam (Cu(OH)₂·xH₂O)."
+    },
+    {
+      question: "Câu 10: Nhỏ NaOH dư vào AlCl₃, dấu hiệu chứng tỏ tạo phức chứa OH⁻ là",
+      img: "none",
+      answers: [
+        "kết tủa bị hoà tan",
+        "dung dịch bị chuyển từ không màu sang có màu",
+        "kết tủa keo trắng tạo thành",
+        "dung dịch bị mất màu"
+      ],
+      explain: "Đáp án đúng: Kết tủa Al(OH)₃ ban đầu tan dần khi OH⁻ dư do tạo phức anion như [Al(OH)₄]⁻."
+    }
+  ]
 
 
 
@@ -13197,79 +13242,80 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex2*/ {
                 type: 'ex2',
                 questions: [
-                    {
-                        question: "Câu 1: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phức chất aqua [M(OH2)m]n+?",
-                        ideas: [
-                            "a. Trong nước, cation kim loại M (có hoá trị n) thường tồn tại dạng [M(OH2)m]n+.",
-                            "b. Các phức chất aqua [M(OH2)m]n+ luôn có màu.",
-                            "c. Trong nhiều phức chất aqua, số phối tử thường là 6.",
-                            "d. Phức chất aqua [M(OH2)m]n+ có thể tan hoặc không tan trong nước."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — không phải mọi phức chất aqua đều có màu; d) Sai — phức chất aqua thường tan trong nước."
-                    },
-                    {
-                        question: "Câu 2: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phản ứng tạo phức chất?",
-                        ideas: [
-                            "a. Tạo phức thường kèm biến đổi màu sắc.",
-                            "b. Phức chất tạo thành phải bền hơn chất tham gia.",
-                            "c. Hoà tan CuCl2 trong nước xảy ra tạo phức.",
-                            "d. Hoà tan KMnO4 trong nước xảy ra tạo phức."
-                        ],
-                        answers: ["Đúng", "Đúng", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "d) Sai — KMnO4 hoà tan nhưng không tạo phức chất."
-                    },
-                    {
-                        question: "Câu 3: (OLTN) Mỗi phát biểu sau đây đúng hay sai về cation Mn+ trong dung dịch nước?",
-                        ideas: [
-                            "a. Liên kết trong phức chất là σ giữa M và O của H2O.",
-                            "b. Các phức [M(OH2)4]+ đều có cấu trúc vuông phẳng.",
-                            "c. Trong [M(OH2)6]n+, nguyên tử O có hoá trị III.",
-                            "d. Dung dịch chứa [M(OH2)k]n+ đều có màu."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — không phải lúc nào là vuông phẳng; d) Sai — không phải mọi phức có màu."
-                    },
-                    {
-                        question: "Câu 4: (SBT – KNTT) Mỗi phát biểu sau đây đúng hay sai về phức chất Tetrakis [Pd(P(C6H5)3)4]?",
-                        ideas: [
-                            "a. Tetrakis có 4 phối tử triphenylphosphine (P(C6H5)3).",
-                            "b. Tetrakis có dạng hình học bát diện.",
-                            "c. Pd trung tâm nhận 4 cặp electron của phối tử.",
-                            "d. Nguyên tử trung tâm Pd là Pd2+."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — phức chất có 4 phối tử nên không bát diện; d) Sai — Pd trung tâm ở trạng thái nguyên tử, không phải Pd2+."
-                    },
-                    {
-                        question: "Câu 5: (SBT – KNTT) Màu sắc của các phức chất phụ thuộc vào bản chất nguyên tử trung tâm và phối tử?",
-                        ideas: [
-                            "a. Các phức cùng nguyên tử trung tâm có màu giống nhau.",
-                            "b. Các phức cùng phối tử có màu giống nhau.",
-                            "c. Màu sắc không phụ thuộc bản chất nguyên tử trung tâm và phối tử.",
-                            "d. Màu sắc phụ thuộc bản chất nguyên tử trung tâm và phối tử."
-                        ],
-                        answers: ["Sai", "Sai", "Sai", "Đúng"],
-                        img: "none",
-                        explain: "d) Đúng — màu sắc của phức chất phụ thuộc cả nguyên tử trung tâm và phối tử."
-                    },
-                    {
-                        question: "Câu 6: (SBT – KNTT) Nhận dạng phức chất dựa vào màu dung dịch:",
-                        ideas: [
-                            "a. Lọ không màu chứa [Ag(NH3)2]+.",
-                            "b. Lọ màu da cam chứa [Fe(H2O)6]2+.",
-                            "c. Lọ màu xanh lam chứa [Cu(NH3)4(H2O)2]2+.",
-                            "d. Lọ màu xanh nhạt chứa [CuCl4]2–."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — [Fe(H2O)6]2+ màu lục nhạt; d) Sai — [CuCl4]2– màu vàng."
-                    }
-                ]
+    {
+        question: "Câu 1: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phức chất aqua [M(H₂O)ₘ]ⁿ⁺?",
+        ideas: [
+            "Trong nước, cation kim loại M (hóa trị n) thường tồn tại dạng [M(H₂O)ₘ]ⁿ⁺.",
+            "Các phức chất aqua [M(H₂O)ₘ]ⁿ⁺ luôn có màu.",
+            "Trong nhiều phức chất aqua, số phối tử thường là 6.",
+            "Phức chất aqua [M(H₂O)ₘ]ⁿ⁺ có thể tan hoặc không tan trong nước."
+        ],
+        answers: ["Đúng", "Sai", "Đúng", "Sai"],
+        img: "none",
+        explain: "Phát biểu sai: phức aqua không phải lúc nào cũng có màu; đa số phức aqua đều tan trong nước."
+    },
+    {
+        question: "Câu 2: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phản ứng tạo phức chất?",
+        ideas: [
+            "Tạo phức thường kèm theo sự thay đổi màu sắc của dung dịch.",
+            "Phức chất tạo thành phải bền hơn các cấu tử ban đầu.",
+            "Hòa tan CuCl₂ trong nước có xảy ra tạo phức.",
+            "Hòa tan KMnO₄ trong nước không phải là tạo phức chất."
+        ],
+        answers: ["Đúng", "Đúng", "Đúng", "Sai"],
+        img: "none",
+        explain: "KMnO₄ hòa tan nhưng không hình thành phức chất."
+    },
+    {
+        question: "Câu 3: (OLTN) Mỗi phát biểu sau đây đúng hay sai về cation Mⁿ⁺ trong dung dịch nước?",
+        ideas: [
+            "Liên kết trong phức chất là liên kết σ giữa M và O của H₂O.",
+            "Các phức [M(H₂O)₄]⁺ luôn có cấu trúc vuông phẳng.",
+            "Trong [M(H₂O)₆]ⁿ⁺, nguyên tử O có hóa trị III.",
+            "Dung dịch chứa [M(H₂O)ₖ]ⁿ⁺ luôn có màu."
+        ],
+        answers: ["Đúng", "Sai", "Đúng", "Sai"],
+        img: "none",
+        explain: "Không phải mọi phức đều có màu và không phải phức bốn phối tử nào cũng vuông phẳng."
+    },
+    {
+        question: "Câu 4: (SBT – KNTT) Mỗi phát biểu sau đây đúng hay sai về phức chất Tetrakis [Pd(P(C₆H₅)₃)₄]?",
+        ideas: [
+            "Phức Tetrakis có 4 phối tử triphenylphosphine P(C₆H₅)₃.",
+            "[Pd(P(C₆H₅)₃)₄] có dạng hình học bát diện.",
+            "Nguyên tử Pd trung tâm nhận 4 cặp electron từ 4 phối tử.",
+            "Trong phức, Pd ở trạng thái oxi hóa 0 (Pd⁰), không phải Pd²⁺."
+        ],
+        answers: ["Đúng", "Sai", "Đúng", "Đúng"],
+        img: "none",
+        explain: "4 phối tử không thể tạo dạng bát diện; Pd trong tetrakis ở trạng thái 0."
+    },
+    {
+        question: "Câu 5: (SBT – KNTT) Màu sắc của phức chất phụ thuộc vào bản chất nguyên tử trung tâm và phối tử?",
+        ideas: [
+            "Các phức có cùng nguyên tử trung tâm sẽ luôn có màu giống nhau.",
+            "Các phức có cùng phối tử sẽ luôn có màu giống nhau.",
+            "Màu sắc của phức chất hoàn toàn không phụ thuộc M hay phối tử.",
+            "Màu sắc của phức chất phụ thuộc vào cả nguyên tử trung tâm và phối tử."
+        ],
+        answers: ["Sai", "Sai", "Sai", "Đúng"],
+        img: "none",
+        explain: "Màu phức được quyết định bởi M và các phối tử thông qua mức tách d-orbital."
+    },
+    {
+        question: "Câu 6: (SBT – KNTT) Nhận dạng phức chất dựa vào màu dung dịch:",
+        ideas: [
+            "Dung dịch không màu có thể là [Ag(NH₃)₂]⁺.",
+            "[Fe(H₂O)₆]²⁺ có màu da cam.",
+            "Dung dịch xanh lam là [Cu(NH₃)₄(H₂O)₂]²⁺.",
+            "[CuCl₄]²⁻ có màu xanh nhạt."
+        ],
+        answers: ["Đúng", "Sai", "Đúng", "Sai"],
+        img: "none",
+        explain: "[Fe(H₂O)₆]²⁺ thực tế màu lục nhạt; [CuCl₄]²⁻ màu vàng."
+    }
+]
+
 
 
 
@@ -13286,43 +13332,317 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex3*/ {
                 type: 'ex3',
                 questions: [
-                    {
-                        question: "Câu 1: (HTHH) Cho các phức chất hoặc ion phức chất: [Al(H2O)6]3+, [Ag(NH3)2]+, [CuCl4]2–, [Cu(H2O)6]2+, [Fe(H2O)6]3+. Có bao nhiêu phức chất hoặc ion phức chất có màu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Các phức chất có màu: [CuCl4]2–, [Cu(H2O)6]2+, [Fe(H2O)6]3+."
-                    },
-                    {
-                        question: "Câu 2: (HTHH) Khi thế một phối tử NH3 trong phức chất vuông phẳng [Pt(NH3)4]2+ bởi một phối tử Cl–, thu được phức chất có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Công thức phức chất sau thế: [Pt(NH3)3Cl]+ → điện tích +1."
-                    },
-                    {
-                        question: "Câu 3: (SBT – KNTT) Phức chất [Pt(NH3)4]2+ có thể bị thế bởi 1 phối tử Cl–. Phức chất tạo thành có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Sau thế 1 NH3 bằng Cl–: [Pt(NH3)3Cl]+ → điện tích +1."
-                    },
-                    {
-                        question: "Câu 4: (SBT – KNTT) Cho dung dịch NH3 đặc vào dung dịch phức chất [PtCl4]2– thu được phức chất có điện tích +1. Số lượng phối tử Cl– bị thay thế bởi NH3 là bao nhiêu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Phức chất tạo thành: [Pt(NH3)3Cl]+ → 3 Cl– bị thay thế."
-                    },
-                    {
-                        question: "Câu 5: (HTHH) Khi thế một phối tử Cl– trong phức chất bát diện [PtCl6]2– bởi một phối tử CH3NH2, thu được phức chất có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Phức chất: [Pt(CH3NH2)Cl5]– → điện tích = –1."
-                    },
-                    {
-                        question: "Câu 6: (OLTN) Khi cho phức chất [Cu(H2O)6]2+ tác dụng với dung dịch NH3 đặc, thu được phức chất [Cu(NH3)4(H2O)2]2+. Có bao nhiêu phối tử H2O đã được thay thế bởi NH3?",
-                        img: "none",
-                        answers: ["4"],
-                        explain: "Trong [Cu(NH3)4(H2O)2]2+, 4 H2O đã bị thay thế bởi 4 NH3 → số phối tử H2O thay thế = 4."
-                    }
-                ]
+    {
+        question: "Câu 1: (HTHH) Cho các phức chất hoặc ion phức chất: [Al(H₂O)₆]³⁺, [Ag(NH₃)₂]⁺, [CuCl₄]²⁻, [Cu(H₂O)₆]²⁺, [Fe(H₂O)₆]³⁺. Có bao nhiêu phức chất hoặc ion phức chất có màu?",
+        img: "none",
+        answers: ["3"],
+        explain: "Các phức chất có màu: [CuCl₄]²⁻, [Cu(H₂O)₆]²⁺, [Fe(H₂O)₆]³⁺."
+    },
+    {
+        question: "Câu 2: (HTHH) Khi thế một phối tử NH₃ trong phức chất vuông phẳng [Pt(NH₃)₄]²⁺ bởi một phối tử Cl⁻, thu được phức chất có điện tích là bao nhiêu?",
+        img: "none",
+        answers: ["1"],
+        explain: "Phức chất sau thế: [Pt(NH₃)₃Cl]⁺ → điện tích = +1."
+    },
+    {
+        question: "Câu 3: (SBT – KNTT) Phức chất [Pt(NH₃)₄]²⁺ có thể bị thế bởi 1 phối tử Cl⁻. Phức chất tạo thành có điện tích là bao nhiêu?",
+        img: "none",
+        answers: ["1"],
+        explain: "Sau khi thế 1 NH₃ bằng Cl⁻: [Pt(NH₃)₃Cl]⁺ → điện tích +1."
+    },
+    {
+        question: "Câu 4: (SBT – KNTT) Cho dung dịch NH₃ đặc vào dung dịch phức chất [PtCl₄]²⁻ thu được phức chất có điện tích +1. Số lượng phối tử Cl⁻ bị thay thế bởi NH₃ là bao nhiêu?",
+        img: "none",
+        answers: ["3"],
+        explain: "Phức chất tạo thành là [Pt(NH₃)₃Cl]⁺ → 3 phối tử Cl⁻ bị thay thế."
+    },
+    {
+        question: "Câu 5: (HTHH) Khi thế một phối tử Cl⁻ trong phức chất bát diện [PtCl₆]²⁻ bởi một phối tử CH₃NH₂, thu được phức chất có điện tích là bao nhiêu?",
+        img: "none",
+        answers: ["−1"],
+        explain: "Phức chất mới: [Pt(CH₃NH₂)Cl₅]⁻ → điện tích = −1."
+    },
+    {
+        question: "Câu 6: (OLTN) Khi cho phức chất [Cu(H₂O)₆]²⁺ tác dụng với dung dịch NH₃ đặc, thu được phức chất [Cu(NH₃)₄(H₂O)₂]²⁺. Có bao nhiêu phối tử H₂O đã được thay thế bởi NH₃?",
+        img: "none",
+        answers: ["4"],
+        explain: "Trong [Cu(NH₃)₄(H₂O)₂]²⁺, có 4 phối tử NH₃ thay thế 4 H₂O → số H₂O bị thay thế là 4."
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }, {}, /*ex1*/ {
+                type: "ex1",
+  questions: [
+    {
+      question: "Câu 1: Phức chất nào của Cu²⁺ có màu vàng?",
+      img: "none",
+      answers: [
+        "[CuCl₄]²⁻",
+        "[Cu(H₂O)₆]²⁺",
+        "[Cu(NH₃)₄(H₂O)₂]",
+        "[Cu(OH)₂(H₂O)₄]"
+      ],
+      explain: "Đáp án đúng: [CuCl₄]²⁻ có màu vàng."
+    },
+    {
+      question: "Câu 2: Trong dung dịch, ion phức chất nào có màu xanh lam?",
+      img: "none",
+      answers: [
+        "[Cu(NH₃)₄(H₂O)₂]",
+        "[Fe(H₂O)]²⁺",
+        "[Ag(NH₃)₂]⁺",
+        "[CuCl₄]²⁻"
+      ],
+      explain: "Đáp án đúng: [Cu(NH₃)₄(H₂O)₂] có màu xanh lam."
+    },
+    {
+      question: "Câu 3: Dung dịch phức chất aqua không thể có màu xanh là",
+      img: "none",
+      answers: [
+        "[Zn(H₂O)₄]²⁺",
+        "[Cr(H₂O)₆]³⁺",
+        "[Ni(H₂O)₂]²⁺",
+        "[Cu(H₂O)₆]²⁺"
+      ],
+      explain: "Đáp án đúng: [Zn(H₂O)₄]²⁺ thường không có màu xanh (không màu hoặc kém màu)."
+    },
+    {
+      question: "Câu 4: Màu sắc của [CuCl₄]²⁻ và [Cu(H₂O)₆]²⁺ lần lượt là",
+      img: "none",
+      answers: [
+        "vàng và xanh",
+        "không màu và xanh lam",
+        "xanh và xanh nhạt",
+        "xanh và xanh lam"
+      ],
+      explain: "Đáp án đúng: [CuCl₄]²⁻ vàng, [Cu(H₂O)₆]²⁺ xanh (xanh nhạt/xanh lam tuỳ điều kiện)."
+    },
+    {
+      question: "Câu 5: Màu sắc của các phức chất Cu khác nhau do",
+      img: "none",
+      answers: [
+        "phối tử",
+        "nguyên tử trung tâm",
+        "cả nguyên tử trung tâm và phối tử",
+        "số lượng phối tử"
+      ],
+      explain: "Đáp án đúng: Màu sắc khác nhau chủ yếu do loại phối tử (ligand) làm thay đổi mức năng lượng d–d."
+    },
+    {
+      question: "Câu 6: Ống nghiệm (1) xanh lam, (2) xanh nhạt. Phức chất lần lượt là",
+      img: "none",
+      answers: [
+        "[Cu(NH₃)₄(H₂O)₂] và [Cu(H₂O)₆]²⁺",
+        "[Cu(H₂O)₆]²⁺ và [Cu(NH₃)₄(H₂O)₂]",
+        "[Cu(H₂O)₆]²⁺ và [CuCl₄]²⁻",
+        "[CuCl₄]²⁻ và [Cu(NH₃)₄(H₂O)₂]"
+      ],
+      explain: "Đáp án đúng: Xanh lam là [Cu(NH₃)₄(H₂O)₂], xanh nhạt là [Cu(H₂O)₆]²⁺."
+    },
+    {
+      question: "Câu 7: Thêm HCl đặc vào CuSO₄, dấu hiệu tạo [CuCl₄]²⁻ là",
+      img: "none",
+      answers: [
+        "Đổi màu dung dịch từ xanh sang vàng",
+        "Hoà tan kết tủa",
+        "Xuất hiện kết tủa",
+        "Đổi màu dung dịch từ vàng sang xanh"
+      ],
+      explain: "Đáp án đúng: Màu chuyển từ xanh (phức aqua Cu²⁺) sang vàng khi hình thành [CuCl₄]²⁻."
+    },
+    {
+      question: "Câu 8: Dung dịch NH₃ dư tác dụng với AgCl, đúng là",
+      img: "none",
+      answers: [
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₂]⁺ không màu",
+        "Không có hiện tượng gì xảy ra",
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₂]⁺ màu xanh",
+        "Kết tủa trắng tan dần, phức [Ag(NH₃)₄]⁺ không màu"
+      ],
+      explain: "Đáp án đúng: AgCl kết tủa trắng tan dần trong NH₃ dư, tạo phức [Ag(NH₃)₂]⁺ (không màu)."
+    },
+    {
+      question: "Câu 9: Thêm NaOH loãng vào CuSO₄, dấu hiệu tạo [Cu(OH)₂(H₂O)₄] là",
+      img: "none",
+      answers: [
+        "Xuất hiện kết tủa màu xanh lam",
+        "Hoà tan kết tủa",
+        "Dung dịch chuyển từ xanh sang vàng",
+        "Xuất hiện kết tủa màu xanh nhạt"
+      ],
+      explain: "Đáp án đúng: Xuất hiện kết tủa màu xanh lam (kết tủa Cu(OH)₂·xH₂O)."
+    },
+    {
+      question: "Câu 10: Nhỏ NaOH dư vào AlCl₃, dấu hiệu chứng tỏ tạo phức chứa OH⁻ là",
+      img: "none",
+      answers: [
+        "kết tủa bị hoà tan",
+        "dung dịch bị chuyển từ không màu sang có màu",
+        "kết tủa keo trắng tạo thành",
+        "dung dịch bị mất màu"
+      ],
+      explain: "Đáp án đúng: Kết tủa Al(OH)₃ tan dần khi OH⁻ dư do tạo phức anion như [Al(OH)₄]⁻."
+    }
+  ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }, /*ex2*/ {
+                type: 'ex2',
+                questions: [
+  {
+    question: "Câu 1: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phức chất aqua [M(H₂O)ₘ]ⁿ⁺?",
+    ideas: [
+      "Trong nước, cation kim loại M (có hóa trị n) thường tồn tại dạng [M(H₂O)ₘ]ⁿ⁺.",
+      "Các phức chất aqua [M(H₂O)ₘ]ⁿ⁺ luôn có màu.",
+      "Trong nhiều phức chất aqua, số phối tử thường là 6.",
+      "Phức chất aqua [M(H₂O)ₘ]ⁿ⁺ có thể tan hoặc không tan trong nước."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "Phát biểu sai: không phải mọi phức aqua đều có màu; đa số phức aqua tan trong nước nhưng có trường hợp ngoại lệ."
+  },
+  {
+    question: "Câu 2: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phản ứng tạo phức chất?",
+    ideas: [
+      "Tạo phức thường kèm theo biến đổi màu sắc của dung dịch.",
+      "Phức chất tạo thành phải bền hơn các chất tham gia.",
+      "Hòa tan CuCl₂ trong nước xảy ra tạo phức.",
+      "Hòa tan KMnO₄ trong nước không phải là tạo phức."
+    ],
+    answers: ["Đúng", "Đúng", "Đúng", "Sai"],
+    img: "none",
+    explain: "KMnO₄ hòa tan nhưng không tạo phức; tạo phức thường quan sát được thay đổi màu."
+  },
+  {
+    question: "Câu 3: (OLTN) Mỗi phát biểu sau đây đúng hay sai về cation Mⁿ⁺ trong dung dịch nước?",
+    ideas: [
+      "Liên kết trong phức chất là liên kết σ giữa M và O của H₂O.",
+      "Các phức [M(H₂O)₄]⁺ đều có cấu trúc vuông phẳng.",
+      "Trong [M(H₂O)₆]ⁿ⁺, nguyên tử O của H₂O đóng vai trò phối tử (góp cặp electron).",
+      "Dung dịch chứa [M(H₂O)ₖ]ⁿ⁺ luôn có màu."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "Không phải mọi phức [M(H₂O)₄]⁺ đều vuông phẳng; không phải mọi phức aqua đều có màu."
+  },
+  {
+    question: "Câu 4: (SBT – KNTT) Mỗi phát biểu sau đây đúng hay sai về phức chất Tetrakis [Pd(P(C₆H₅)₃)₄]?",
+    ideas: [
+      "Phức Tetrakis có 4 phối tử triphenylphosphine P(C₆H₅)₃.",
+      "Phức có dạng hình học bát diện.",
+      "Nguyên tử Pd trung tâm nhận 4 cặp electron từ phối tử.",
+      "Nguyên tử trung tâm Pd ở trạng thái oxi hóa 0 (Pd⁰), không phải Pd²⁺."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Đúng"],
+    img: "none",
+    explain: "4 phối tử không tạo bát diện; Pd trong tetrakis thường ở trạng thái Pd⁰."
+  },
+  {
+    question: "Câu 5: (SBT – KNTT) Màu sắc của các phức chất phụ thuộc vào bản chất nguyên tử trung tâm và phối tử?",
+    ideas: [
+      "Các phức có cùng nguyên tử trung tâm sẽ luôn có màu giống nhau.",
+      "Các phức có cùng phối tử sẽ luôn có màu giống nhau.",
+      "Màu sắc của phức hoàn toàn không phụ thuộc nguyên tử trung tâm hay phối tử.",
+      "Màu sắc của phức phụ thuộc cả nguyên tử trung tâm và phối tử."
+    ],
+    answers: ["Sai", "Sai", "Sai", "Đúng"],
+    img: "none",
+    explain: "Màu của phức chịu ảnh hưởng cả bởi nguyên tử trung tâm (loại, trạng thái oxi hóa) và phối tử (khả năng tách mức năng lượng d)."
+  },
+  {
+    question: "Câu 6: (SBT – KNTT) Nhận dạng phức chất dựa vào màu dung dịch:",
+    ideas: [
+      "Dung dịch không màu có thể là [Ag(NH₃)₂]⁺.",
+      "Dung dịch màu da cam là [Fe(H₂O)₆]²⁺.",
+      "Dung dịch màu xanh lam là [Cu(NH₃)₄(H₂O)₂]²⁺.",
+      "Dung dịch xanh nhạt là [CuCl₄]²⁻."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "[Fe(H₂O)₆]²⁺ thường lục nhạt (không da cam); [CuCl₄]²⁻ có màu vàng (không xanh nhạt)."
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }, /*ex3*/ {
+                type: 'ex3',
+                questions: [
+  {
+    question: "Câu 1: (HTHH) Cho các phức chất hoặc ion phức chất: [Al(H₂O)₆]³⁺, [Ag(NH₃)₂]⁺, [CuCl₄]²⁻, [Cu(H₂O)₆]²⁺, [Fe(H₂O)₆]³⁺. Có bao nhiêu phức chất hoặc ion phức chất có màu?",
+    img: "none",
+    answers: ["3"],
+    explain: "Các phức chất có màu là: [CuCl₄]²⁻ (vàng), [Cu(H₂O)₆]²⁺ (xanh lam), [Fe(H₂O)₆]³⁺ (vàng nâu)."
+  },
+  {
+    question: "Câu 2: (HTHH) Khi thế một phối tử NH₃ trong phức chất vuông phẳng [Pt(NH₃)₄]²⁺ bởi một phối tử Cl⁻, thu được phức chất có điện tích là bao nhiêu?",
+    img: "none",
+    answers: ["1"],
+    explain: "Công thức phức chất sau thế: [Pt(NH₃)₃Cl]⁺ → điện tích +1."
+  },
+  {
+    question: "Câu 3: (SBT – KNTT) Phức chất [Pt(NH₃)₄]²⁺ có thể bị thế bởi 1 phối tử Cl⁻. Phức chất tạo thành có điện tích là bao nhiêu?",
+    img: "none",
+    answers: ["1"],
+    explain: "Sau khi thế 1 NH₃ bằng Cl⁻: [Pt(NH₃)₃Cl]⁺ → điện tích +1."
+  },
+  {
+    question: "Câu 4: (SBT – KNTT) Cho dung dịch NH₃ đặc vào dung dịch phức chất [PtCl₄]²⁻, thu được phức chất có điện tích +1. Số lượng phối tử Cl⁻ bị thay thế bởi NH₃ là bao nhiêu?",
+    img: "none",
+    answers: ["3"],
+    explain: "Phức chất tạo thành: [Pt(NH₃)₃Cl]⁺ → 3 phối tử Cl⁻ bị thay thế bởi NH₃."
+  },
+  {
+    question: "Câu 5: (HTHH) Khi thế một phối tử Cl⁻ trong phức chất bát diện [PtCl₆]²⁻ bởi một phối tử CH₃NH₂, thu được phức chất có điện tích là bao nhiêu?",
+    img: "none",
+    answers: ["–1"],
+    explain: "Phức chất sau thế: [Pt(CH₃NH₂)Cl₅]⁻ → điện tích = –1."
+  },
+  {
+    question: "Câu 6: (OLTN) Khi cho phức chất [Cu(H₂O)₆]²⁺ tác dụng với dung dịch NH₃ đặc, thu được phức chất [Cu(NH₃)₄(H₂O)₂]²⁺. Có bao nhiêu phối tử H₂O đã được thay thế bởi NH₃?",
+    img: "none",
+    answers: ["4"],
+    explain: "Trong [Cu(NH₃)₄(H₂O)₂]²⁺, 4 phối tử H₂O đã bị thay thế bởi 4 NH₃ → số phối tử H₂O thay thế = 4."
+  }
+]
+
 
 
 
@@ -13339,287 +13659,68 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, {}, /*ex1*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Câu 1: Phức chất nào của Cu²⁺ có màu vàng?",
-                        img: "none",
-                        answers: ["[CuCl4]2–", "[Cu(H2O)6]2+", "[Cu(NH3)4(H2O)2]", "[Cu(OH)2(H2O)4]"],
-                        explain: "Đáp án đúng: [CuCl4]2– có màu vàng."
-                    },
-                    {
-                        question: "Câu 2: Trong dung dịch, ion phức chất nào có màu xanh lam?",
-                        img: "none",
-                        answers: ["[Cu(NH3)4(H2O)2]", "[Fe(H2O)]2+", "[Ag(NH3)2]+", "[CuCl4]2–"],
-                        explain: "Đáp án đúng: [Cu(NH3)4(H2O)2] có màu xanh lam."
-                    },
-                    {
-                        question: "Câu 3: Dung dịch phức chất aqua không thể có màu xanh là",
-                        img: "none",
-                        answers: ["[Zn(H2O)4]2+", "[Cr(H2O)6]3+", "[Ni(H2O)2]2+", "[Cu(H2O)6]2+"],
-                        explain: "Đáp án đúng: [Zn(H2O)4]2+ không có màu xanh."
-                    },
-                    {
-                        question: "Câu 4: Màu sắc của [CuCl4]2– và [Cu(H2O)6]2+ lần lượt là",
-                        img: "none",
-                        answers: ["vàng và xanh", "không màu và xanh lam", "xanh và xanh nhạt", "xanh và xanh lam"],
-                        explain: "Đáp án đúng: [CuCl4]2– vàng, [Cu(H2O)6]2+ xanh."
-                    },
-                    {
-                        question: "Câu 5: Màu sắc của các phức chất Cu khác nhau do",
-                        img: "none",
-                        answers: ["phối tử", "nguyên tử trung tâm", "cả nguyên tử trung tâm và phối tử", "số lượng phối tử"],
-                        explain: "Đáp án đúng: Màu sắc khác nhau chủ yếu do phối tử khác nhau."
-                    },
-                    {
-                        question: "Câu 6: Ống nghiệm (1) xanh lam, (2) xanh nhạt. Phức chất lần lượt là",
-                        img: "none",
-                        answers: ["[Cu(NH3)4(H2O)2] và [Cu(H2O)6]2+", "[Cu(H2O)6]2+ và [Cu(NH3)4(H2O)2]", "[Cu(H2O)6]2+ và [CuCl4]2–", "[CuCl4]2– và [Cu(NH3)4(H2O)2]"],
-                        explain: "Đáp án đúng: Xanh lam là [Cu(NH3)4(H2O)2], xanh nhạt là [Cu(H2O)6]2+."
-                    },
-                    {
-                        question: "Câu 7: Thêm HCl đặc vào CuSO4, dấu hiệu tạo [CuCl4]2– là",
-                        img: "none",
-                        answers: ["Đổi màu dung dịch từ xanh sang vàng", "Hoà tan kết tủa", "Xuất hiện kết tủa", "Đổi màu dung dịch từ vàng sang xanh"],
-                        explain: "Đáp án đúng: Màu chuyển từ xanh sang vàng."
-                    },
-                    {
-                        question: "Câu 8: Dung dịch NH3 dư tác dụng với AgCl, đúng là",
-                        img: "none",
-                        answers: ["Kết tủa trắng tan dần, phức [Ag(NH3)2]+ không màu", "Không có hiện tượng gì xảy ra", "Kết tủa trắng tan dần, phức [Ag(NH3)2]+ màu xanh", "Kết tủa trắng tan dần, phức [Ag(NH3)4]+ không màu"],
-                        explain: "Đáp án đúng: [Ag(NH3)2]+ không màu được tạo thành."
-                    },
-                    {
-                        question: "Câu 9: Thêm NaOH loãng vào CuSO4, dấu hiệu tạo [Cu(OH)2(H2O)4] là",
-                        img: "none",
-                        answers: ["Xuất hiện kết tủa màu xanh lam", "Hoà tan kết tủa", "Dung dịch chuyển từ xanh sang vàng", "Xuất hiện kết tủa màu xanh nhạt"],
-                        explain: "Đáp án đúng: Xuất hiện kết tủa màu xanh lam."
-                    },
-                    {
-                        question: "Câu 10: Nhỏ NaOH dư vào AlCl3, dấu hiệu chứng tỏ tạo phức chứa OH– là",
-                        img: "none",
-                        answers: ["kết tủa bị hoà tan", "dung dịch bị chuyển từ không màu sang có màu", "kết tủa keo trắng tạo thành", "dung dịch bị mất màu"],
-                        explain: "Đáp án đúng: Kết tủa Al(OH)3 tan dần khi OH– dư → phức chứa OH–."
-                    }
-                ]
+  {
+    question: "Câu 1: Sự hình thành các nguyên tố chuyển tiếp dãy thứ nhất là do có sự sắp xếp lần lượt các electron vào phân lớp",
+    img: "none",
+    answers: ["3d", "4s", "4p", "3p"],
+    explain: "Đáp án đúng: Nguyên tố chuyển tiếp dãy 1 hình thành do electron sắp xếp vào phân lớp 3d."
+  },
+  {
+    question: "Câu 2: Kim loại nào thuộc dãy kim loại chuyển tiếp thứ nhất?",
+    img: "none",
+    answers: ["Ti", "Al", "Ba", "Na"],
+    explain: "Đáp án đúng: Ti là kim loại chuyển tiếp dãy 1."
+  },
+  {
+    question: "Câu 3: Cấu hình electron nào là của kim loại chuyển tiếp dãy thứ nhất?",
+    img: "none",
+    answers: ["[Ar]3d⁶ 4s²", "[Ar]3d¹⁰ 4s² 4p¹", "[Ar]4s²", "[Ar]3d¹⁰ 4s² 4p⁶"],
+    explain: "Đáp án đúng: [Ar]3d⁶ 4s² là cấu hình của kim loại chuyển tiếp (ví dụ Fe)."
+  },
+  {
+    question: "Câu 4: Đồng kim loại được dùng chế tạo dây dẫn, thiết bị điện dựa trên tính chất vật lí nào?",
+    img: "none",
+    answers: ["Dẫn điện tốt", "Tính dẻo", "Dẫn nhiệt tốt", "Ánh kim"],
+    explain: "Đáp án đúng: Đồng dẫn điện tốt."
+  },
+  {
+    question: "Câu 5: Ion nào không có electron trên phân lớp 3d và không màu trong dung dịch nước?",
+    img: "none",
+    answers: ["Sc³⁺", "Fe³⁺", "Cr³⁺", "Ti³⁺"],
+    explain: "Đáp án đúng: Sc³⁺ không có electron 3d → không màu."
+  },
+  {
+    question: "Câu 6: Quá trình khử Fe³⁺ được biểu diễn là",
+    img: "none",
+    answers: ["Fe³⁺ + e⁻ → Fe²⁺", "Fe²⁺ → Fe³⁺ + e⁻", "Fe²⁺ + 2e⁻ → Fe", "Fe → Fe²⁺ + 2e⁻"],
+    explain: "Đáp án đúng: Fe³⁺ nhận 1 electron → Fe²⁺."
+  },
+  {
+    question: "Câu 7: Dung dịch muối Fe²⁺ trong acid để ngoài không khí chuyển màu vàng nâu do",
+    img: "none",
+    answers: ["O₂ trong không khí oxi hoá Fe²⁺ thành Fe³⁺", "Phân huỷ một phần tạo Fe và Fe³⁺", "O₂ oxi hoá thành Fe₂O₃", "O₂ oxi hoá thành Fe(OH)₃"],
+    explain: "Đáp án đúng: O₂ trong không khí oxi hoá Fe²⁺ thành Fe³⁺ màu vàng nâu."
+  },
+  {
+    question: "Câu 8: Chuẩn độ dung dịch Fe²⁺ bằng KMnO₄, nồng độ Fe²⁺ lớn (>0,5 M) không phù hợp vì",
+    img: "none",
+    answers: ["Fe²⁺ dễ bị oxi hoá bởi O₂ không khí", "Tiêu tốn nhiều KMnO₄", "Dung dịch tại điểm tương đương màu vàng đậm", "Fe³⁺ bị oxi hoá tiếp bởi KMnO₄"],
+    explain: "Đáp án đúng: Fe²⁺ nồng độ cao dễ bị oxi hoá bởi O₂ trước khi chuẩn độ."
+  },
+  {
+    question: "Câu 9: Theo thuyết liên kết hoá trị, để trở thành phối tử, phân tử hoặc anion cần có",
+    img: "none",
+    answers: ["cặp electron hoá trị riêng", "các orbital trống", "ít nhất 4 orbital trống", "ít nhất 2 cặp electron hoá trị"],
+    explain: "Đáp án đúng: Phối tử cung cấp cặp electron riêng."
+  },
+  {
+    question: "Câu 10: Số lượng phối tử trong [PtCl₄]²⁻ và [Fe(CO)₅] lần lượt là",
+    img: "none",
+    answers: ["4 và 5", "5 và 6", "2 và 5", "1 và 2"],
+    explain: "Đáp án đúng: [PtCl₄]²⁻ có 4 Cl⁻, [Fe(CO)₅] có 5 CO."
+  }
+]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }, /*ex2*/ {
-                type: 'ex2',
-                questions: [
-                    {
-                        question: "Câu 1: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phức chất aqua [M(OH2)m]n+?",
-                        ideas: [
-                            "a. Trong nước, cation kim loại M (có hoá trị n) thường tồn tại dạng [M(OH2)m]n+.",
-                            "b. Các phức chất aqua [M(OH2)m]n+ luôn có màu.",
-                            "c. Trong nhiều phức chất aqua, số phối tử thường là 6.",
-                            "d. Phức chất aqua [M(OH2)m]n+ có thể tan hoặc không tan trong nước."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — không phải mọi phức chất aqua đều có màu; d) Sai — phức chất aqua thường tan trong nước."
-                    },
-                    {
-                        question: "Câu 2: (SBT – CD) Mỗi phát biểu dưới đây đúng hay sai về phản ứng tạo phức chất?",
-                        ideas: [
-                            "a. Tạo phức thường kèm biến đổi màu sắc.",
-                            "b. Phức chất tạo thành phải bền hơn chất tham gia.",
-                            "c. Hoà tan CuCl2 trong nước xảy ra tạo phức.",
-                            "d. Hoà tan KMnO4 trong nước xảy ra tạo phức."
-                        ],
-                        answers: ["Đúng", "Đúng", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "d) Sai — KMnO4 hoà tan nhưng không tạo phức chất."
-                    },
-                    {
-                        question: "Câu 3: (OLTN) Mỗi phát biểu sau đây đúng hay sai về cation Mn+ trong dung dịch nước?",
-                        ideas: [
-                            "a. Liên kết trong phức chất là σ giữa M và O của H2O.",
-                            "b. Các phức [M(OH2)4]+ đều có cấu trúc vuông phẳng.",
-                            "c. Trong [M(OH2)6]n+, nguyên tử O có hoá trị III.",
-                            "d. Dung dịch chứa [M(OH2)k]n+ đều có màu."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — không phải lúc nào là vuông phẳng; d) Sai — không phải mọi phức có màu."
-                    },
-                    {
-                        question: "Câu 4: (SBT – KNTT) Mỗi phát biểu sau đây đúng hay sai về phức chất Tetrakis [Pd(P(C6H5)3)4]?",
-                        ideas: [
-                            "a. Tetrakis có 4 phối tử triphenylphosphine (P(C6H5)3).",
-                            "b. Tetrakis có dạng hình học bát diện.",
-                            "c. Pd trung tâm nhận 4 cặp electron của phối tử.",
-                            "d. Nguyên tử trung tâm Pd là Pd2+."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — phức chất có 4 phối tử nên không bát diện; d) Sai — Pd trung tâm ở trạng thái nguyên tử, không phải Pd2+."
-                    },
-                    {
-                        question: "Câu 5: (SBT – KNTT) Màu sắc của các phức chất phụ thuộc vào bản chất nguyên tử trung tâm và phối tử?",
-                        ideas: [
-                            "a. Các phức cùng nguyên tử trung tâm có màu giống nhau.",
-                            "b. Các phức cùng phối tử có màu giống nhau.",
-                            "c. Màu sắc không phụ thuộc bản chất nguyên tử trung tâm và phối tử.",
-                            "d. Màu sắc phụ thuộc bản chất nguyên tử trung tâm và phối tử."
-                        ],
-                        answers: ["Sai", "Sai", "Sai", "Đúng"],
-                        img: "none",
-                        explain: "d) Đúng — màu sắc của phức chất phụ thuộc cả nguyên tử trung tâm và phối tử."
-                    },
-                    {
-                        question: "Câu 6: (SBT – KNTT) Nhận dạng phức chất dựa vào màu dung dịch:",
-                        ideas: [
-                            "a. Lọ không màu chứa [Ag(NH3)2]+.",
-                            "b. Lọ màu da cam chứa [Fe(H2O)6]2+.",
-                            "c. Lọ màu xanh lam chứa [Cu(NH3)4(H2O)2]2+.",
-                            "d. Lọ màu xanh nhạt chứa [CuCl4]2–."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — [Fe(H2O)6]2+ màu lục nhạt; d) Sai — [CuCl4]2– màu vàng."
-                    }
-                ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }, /*ex3*/ {
-                type: 'ex3',
-                questions: [
-                    {
-                        question: "Câu 1: (HTHH) Cho các phức chất hoặc ion phức chất: [Al(H2O)6]3+, [Ag(NH3)2]+, [CuCl4]2–, [Cu(H2O)6]2+, [Fe(H2O)6]3+. Có bao nhiêu phức chất hoặc ion phức chất có màu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Các phức chất có màu: [CuCl4]2–, [Cu(H2O)6]2+, [Fe(H2O)6]3+."
-                    },
-                    {
-                        question: "Câu 2: (HTHH) Khi thế một phối tử NH3 trong phức chất vuông phẳng [Pt(NH3)4]2+ bởi một phối tử Cl–, thu được phức chất có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Công thức phức chất sau thế: [Pt(NH3)3Cl]+ → điện tích +1."
-                    },
-                    {
-                        question: "Câu 3: (SBT – KNTT) Phức chất [Pt(NH3)4]2+ có thể bị thế bởi 1 phối tử Cl–. Phức chất tạo thành có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Sau thế 1 NH3 bằng Cl–: [Pt(NH3)3Cl]+ → điện tích +1."
-                    },
-                    {
-                        question: "Câu 4: (SBT – KNTT) Cho dung dịch NH3 đặc vào dung dịch phức chất [PtCl4]2– thu được phức chất có điện tích +1. Số lượng phối tử Cl– bị thay thế bởi NH3 là bao nhiêu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Phức chất tạo thành: [Pt(NH3)3Cl]+ → 3 Cl– bị thay thế."
-                    },
-                    {
-                        question: "Câu 5: (HTHH) Khi thế một phối tử Cl– trong phức chất bát diện [PtCl6]2– bởi một phối tử CH3NH2, thu được phức chất có điện tích là bao nhiêu?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Phức chất: [Pt(CH3NH2)Cl5]– → điện tích = –1."
-                    },
-                    {
-                        question: "Câu 6: (OLTN) Khi cho phức chất [Cu(H2O)6]2+ tác dụng với dung dịch NH3 đặc, thu được phức chất [Cu(NH3)4(H2O)2]2+. Có bao nhiêu phối tử H2O đã được thay thế bởi NH3?",
-                        img: "none",
-                        answers: ["4"],
-                        explain: "Trong [Cu(NH3)4(H2O)2]2+, 4 H2O đã bị thay thế bởi 4 NH3 → số phối tử H2O thay thế = 4."
-                    }
-                ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }, {}, /*ex1*/ {
-                type: "ex1",
-                questions: [
-                    {
-                        question: "Câu 1: Sự hình thành các nguyên tố chuyển tiếp dãy thứ nhất là do có sự sắp xếp lần lượt các electron vào phân lớp",
-                        img: "none",
-                        answers: ["3d", "4s", "4p", "3p"],
-                        explain: "Đáp án đúng: Nguyên tố chuyển tiếp dãy 1 hình thành do electron sắp xếp vào phân lớp 3d."
-                    },
-                    {
-                        question: "Câu 2: Kim loại nào thuộc dãy kim loại chuyển tiếp thứ nhất?",
-                        img: "none",
-                        answers: ["Ti", "Al", "Ba", "Na"],
-                        explain: "Đáp án đúng: Ti là kim loại chuyển tiếp dãy 1."
-                    },
-                    {
-                        question: "Câu 3: Cấu hình electron nào là của kim loại chuyển tiếp dãy thứ nhất?",
-                        img: "none",
-                        answers: ["[Ar]3d6 4s2", "[Ar]3d10 4s2 4p1", "[Ar]4s2", "[Ar]3d10 4s2 4p6"],
-                        explain: "Đáp án đúng: [Ar]3d6 4s2 là cấu hình kim loại chuyển tiếp (ví dụ Fe)."
-                    },
-                    {
-                        question: "Câu 4: Đồng kim loại được dùng chế tạo dây dẫn, thiết bị điện dựa trên tính chất vật lí nào?",
-                        img: "none",
-                        answers: ["Dẫn điện tốt", "Tính dẻo", "Dẫn nhiệt tốt", "Ánh kim"],
-                        explain: "Đáp án đúng: Đồng dẫn điện tốt."
-                    },
-                    {
-                        question: "Câu 5: Ion nào không có electron trên phân lớp 3d và không màu trong dung dịch nước?",
-                        img: "none",
-                        answers: ["Sc3+", "Fe3+", "Cr3+", "Ti3+"],
-                        explain: "Đáp án đúng: Sc3+ không có electron 3d → không màu."
-                    },
-                    {
-                        question: "Câu 6: Quá trình khử Fe3+ được biểu diễn là",
-                        img: "none",
-                        answers: ["Fe3+ + e → Fe2+", "Fe2+ → Fe3+ + e", "Fe2+ + 2e → Fe", "Fe → Fe2+ + 2e"],
-                        explain: "Đáp án đúng: Fe3+ nhận 1 electron → Fe2+."
-                    },
-                    {
-                        question: "Câu 7: Dung dịch muối Fe2+ trong acid để ngoài không khí chuyển màu vàng nâu do",
-                        img: "none",
-                        answers: ["Oxygen trong không khí oxi hoá thành iron(III)", "Phân huỷ một phần tạo Fe và iron(III)", "Oxygen oxi hoá thành Fe2O3", "Oxygen oxi hoá thành Fe(OH)3"],
-                        explain: "Đáp án đúng: O2 trong không khí oxi hoá Fe2+ thành Fe3+ màu vàng nâu."
-                    },
-                    {
-                        question: "Câu 8: Chuẩn độ dung dịch Fe2+ bằng KMnO4, nồng độ Fe2+ lớn (>0,5 M) không phù hợp vì",
-                        img: "none",
-                        answers: ["Fe2+ dễ bị oxi hoá bởi oxygen không khí", "Tiêu tốn nhiều KMnO4", "Dung dịch tại điểm tương đương màu vàng đậm", "Fe3+ bị oxi hoá tiếp bởi KMnO4"],
-                        explain: "Đáp án đúng: Fe2+ nồng độ cao dễ bị oxi hoá bởi O2 trước khi chuẩn độ."
-                    },
-                    {
-                        question: "Câu 9: Theo thuyết liên kết hoá trị, để trở thành phối tử, phân tử hoặc anion cần có",
-                        img: "none",
-                        answers: ["cặp electron hoá trị riêng", "các orbital trống", "ít nhất 4 orbital trống", "ít nhất 2 cặp electron hoá trị"],
-                        explain: "Đáp án đúng: Phối tử cung cấp cặp electron riêng."
-                    },
-                    {
-                        question: "Câu 10: Số lượng phối tử trong [PtCl4]2– và [Fe(CO)5] lần lượt là",
-                        img: "none",
-                        answers: ["4 và 5", "5 và 6", "2 và 5", "1 và 2"],
-                        explain: "Đáp án đúng: [PtCl4]2– có 4 Cl, [Fe(CO)5] có 5 CO."
-                    }
-                ]
 
 
 
@@ -13638,55 +13739,56 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex2*/ {
                 type: 'ex2',
                 questions: [
-                    {
-                        question: "Câu 19: (SBT – KNTT) Mỗi phát biểu dưới đây đúng hay sai về nguyên tử chromium (Cr)?",
-                        ideas: [
-                            "a. Chromium thuộc chu kì 4, nhóm VIB trong bảng tuần hoàn.",
-                            "b. Chromium là kim loại nhẹ, có nhiệt độ nóng chảy thấp.",
-                            "c. Chromium là kim loại chuyển tiếp dãy thứ nhất.",
-                            "d. Nguyên tử chromium có số oxi hoá cao nhất là +3 trong các hợp chất."
-                        ],
-                        answers: ["Đúng", "Sai", "Đúng", "Sai"],
-                        img: "none",
-                        explain: "b) Sai — Cr là kim loại cứng, nhiệt độ nóng chảy cao; d) Sai — Cr có số oxi hoá cao nhất là +6."
-                    },
-                    {
-                        question: "Câu 20: (SBT – KNTT) Chuẩn độ Fe2+ bằng dung dịch KMnO4 xảy ra theo phương trình: 10FeSO4 + 2KMnO4 + 8H2SO4 → 5Fe2(SO4)3 + K2SO4 + 2MnSO4 + 8H2O. Đúng hay sai?",
-                        ideas: [
-                            "a. Dung dịch KMnO4 được cho vào bình tam giác khi chuẩn độ.",
-                            "b. Dung dịch muối Fe2+ được cho vào burette.",
-                            "c. Phản ứng là phản ứng oxi hoá – khử.",
-                            "d. Khi kết thúc chuẩn độ, dung dịch hồng tồn tại bền ~20 giây do lượng nhỏ KMnO4 dư."
-                        ],
-                        answers: ["Sai", "Sai", "Đúng", "Đúng"],
-                        img: "none",
-                        explain: "a, b) Sai — dung dịch KMnO4 được cho vào burette, Fe2+ trong bình chuẩn độ; c) Đúng — đây là phản ứng oxi hoá khử; d) Đúng — màu hồng tạm thời do KMnO4 dư rất ít."
-                    },
-                    {
-                        question: "Câu 21: (SBT – KNTT) Mỗi phát biểu về phức chất aqua của Fe3+ đúng hay sai?",
-                        ideas: [
-                            "a. Công thức phức chất là [Fe(H2O)6]2+.",
-                            "b. Phức chất có điện tích +2.",
-                            "c. Số phối tử trong phức chất là 6.",
-                            "d. Liên kết hình thành do H2O cho cặp electron chưa liên kết vào Fe3+."
-                        ],
-                        answers: ["Sai", "Sai", "Đúng", "Đúng"],
-                        img: "none",
-                        explain: "a, b) Sai — phức chất của Fe3+ là [Fe(H2O)6]3+, điện tích +3; c, d) Đúng — 6 phối tử H2O liên kết σ với Fe3+."
-                    },
-                    {
-                        question: "Câu 22: (SBT – KNTT) Xét phản ứng: [Cu(H2O)6]2+ + NH3 → [Cu(NH3)(H2O)5]2+. Đúng hay sai?",
-                        ideas: [
-                            "a. Phản ứng là oxi hoá – khử.",
-                            "b. 1 phối tử H2O bị thế bởi 1 phối tử NH3.",
-                            "c. Dấu hiệu phức chất tạo thành là kết tủa.",
-                            "d. Phức chất mới có tổng 6 phối tử."
-                        ],
-                        answers: ["Sai", "Đúng", "Sai", "Đúng"],
-                        img: "none",
-                        explain: "a) Sai — đây là phản ứng thế phối tử; b) Đúng — NH3 thay thế 1 H2O; c) Sai — không có kết tủa; d) Đúng — tổng 6 phối tử."
-                    }
-                ]
+  {
+    question: "Câu 19: (SBT – KNTT) Mỗi phát biểu dưới đây đúng hay sai về nguyên tử chromium (Cr)?",
+    ideas: [
+      "Chromium thuộc chu kì 4, nhóm VIB trong bảng tuần hoàn.",
+      "Chromium là kim loại nhẹ, có nhiệt độ nóng chảy thấp.",
+      "Chromium là kim loại chuyển tiếp dãy thứ nhất.",
+      "Nguyên tử chromium có số oxi hoá cao nhất là +3 trong các hợp chất."
+    ],
+    answers: ["Đúng", "Sai", "Đúng", "Sai"],
+    img: "none",
+    explain: "Phát biểu 2 sai — Cr là kim loại cứng, nhiệt độ nóng chảy cao; phát biểu 4 sai — Cr có số oxi hoá cao nhất là +6."
+  },
+  {
+    question: "Câu 20: (SBT – KNTT) Chuẩn độ Fe²⁺ bằng dung dịch KMnO₄ xảy ra theo phương trình: 10FeSO₄ + 2KMnO₄ + 8H₂SO₄ → 5Fe₂(SO₄)₃ + K₂SO₄ + 2MnSO₄ + 8H₂O. Đúng hay sai?",
+    ideas: [
+      "Dung dịch KMnO₄ được cho vào bình tam giác khi chuẩn độ.",
+      "Dung dịch muối Fe²⁺ được cho vào burette.",
+      "Phản ứng là phản ứng oxi hoá – khử.",
+      "Khi kết thúc chuẩn độ, dung dịch hồng tồn tại bền ~20 giây do lượng nhỏ KMnO₄ dư."
+    ],
+    answers: ["Sai", "Sai", "Đúng", "Đúng"],
+    img: "none",
+    explain: "Phát biểu 1, 2 sai — dung dịch KMnO₄ được cho vào burette, Fe²⁺ trong bình chuẩn độ; 3 đúng — phản ứng oxi hoá khử; 4 đúng — màu hồng tạm thời do KMnO₄ dư rất ít."
+  },
+  {
+    question: "Câu 21: (SBT – KNTT) Mỗi phát biểu về phức chất aqua của Fe³⁺ đúng hay sai?",
+    ideas: [
+      "Công thức phức chất là [Fe(H₂O)₆]²⁺.",
+      "Phức chất có điện tích +2.",
+      "Số phối tử trong phức chất là 6.",
+      "Liên kết hình thành do H₂O cho cặp electron chưa liên kết vào Fe³⁺."
+    ],
+    answers: ["Sai", "Sai", "Đúng", "Đúng"],
+    img: "none",
+    explain: "Phát biểu 1, 2 sai — phức chất của Fe³⁺ là [Fe(H₂O)₆]³⁺, điện tích +3; 3, 4 đúng — 6 phối tử H₂O liên kết σ với Fe³⁺."
+  },
+  {
+    question: "Câu 22: (SBT – KNTT) Xét phản ứng: [Cu(H₂O)₆]²⁺ + NH₃ → [Cu(NH₃)(H₂O)₅]²⁺. Đúng hay sai?",
+    ideas: [
+      "Phản ứng là oxi hoá – khử.",
+      "1 phối tử H₂O bị thế bởi 1 phối tử NH₃.",
+      "Dấu hiệu phức chất tạo thành là kết tủa.",
+      "Phức chất mới có tổng 6 phối tử."
+    ],
+    answers: ["Sai", "Đúng", "Sai", "Đúng"],
+    img: "none",
+    explain: "Phát biểu 1 sai — đây là phản ứng thế phối tử; 2 đúng — NH₃ thay thế 1 H₂O; 3 sai — không có kết tủa; 4 đúng — tổng 6 phối tử."
+  }
+]
+
 
 
 
@@ -13704,43 +13806,44 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex3*/ {
                 type: 'ex3',
                 questions: [
-                    {
-                        question: "Câu 23: (SBT – CD) Số electron độc thân của nguyên tử cobalt (Z = 27) là bao nhiêu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Cấu hình Co: 1s2 2s2 2p6 3s2 3p6 3d7 4s2 → có 3 electron độc thân trong 3d7."
-                    },
-                    {
-                        question: "Câu 24: (SBT – KNTT) Cho dung dịch NH3 đặc vào dung dịch phức chất [PtCl4]2– thu được phức chất có điện tích +1. Số lượng phối tử Cl– đã bị thay thế bởi NH3 là bao nhiêu?",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Phức chất tạo thành: [Pt(NH3)3Cl]+ → 3 Cl– bị thay thế."
-                    },
-                    {
-                        question: "Câu 25: (HTHH) Chuẩn độ 5,00 mL dung dịch FeSO4 nồng độ a M trong H2SO4 cần vừa đủ 4,50 mL dung dịch KMnO4 0,02 M. Giá trị của a là bao nhiêu?",
-                        img: "none",
-                        answers: ["0.09"],
-                        explain: "Tính n_FeSO4 từ n_KMnO4 và tỉ lệ phản ứng → a ≈ 0,09 M."
-                    },
-                    {
-                        question: "Câu 26: (OLTN) Phức chất [Co(NH3)6]Cl3. Nguyên tử trung tâm cobalt có số oxi hoá +x. Xác định giá trị của x.",
-                        img: "none",
-                        answers: ["3"],
-                        explain: "Phức [Co(NH3)6]Cl3: 3 Cl– → Co3+."
-                    },
-                    {
-                        question: "Câu 27: (HTHH) Cho các phức chất hoặc ion phức chất của platinum: [Pt(H2O)4]2+, [Pt(NH3)4]2+, [PtCl2(NH3)2], [PtCl6]2–. Có bao nhiêu phức chất có dạng hình học bát diện?",
-                        img: "none",
-                        answers: ["1"],
-                        explain: "Chỉ [Pt(H2O)4]2+ có dạng hình học bát diện (octahedral)."
-                    },
-                    {
-                        question: "Câu 28: (OLTN) Mỗi mmol KMnO4 chênh lệch giữa thí nghiệm 1 và thí nghiệm 2 tương ứng với bao nhiêu mg NO3– trong nước?",
-                        img: "none",
-                        answers: ["38.8"],
-                        explain: "Từ phản ứng khử NO3– → tính khối lượng NO3– tương ứng với 1 mmol KMnO4 → 38,8 mg."
-                    }
-                ]
+  {
+    question: "Câu 23: (SBT – CD) Số electron độc thân của nguyên tử cobalt (Z = 27) là bao nhiêu?",
+    img: "none",
+    answers: ["3"],
+    explain: "Cấu hình Co: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁷ 4s² → có 3 electron độc thân trong 3d⁷,"
+  },
+  {
+    question: "Câu 24: (SBT – KNTT) Cho dung dịch NH₃ đặc vào dung dịch phức chất [PtCl₄]²⁻ thu được phức chất có điện tích +1. Số lượng phối tử Cl⁻ đã bị thay thế bởi NH₃ là bao nhiêu?",
+    img: "none",
+    answers: ["3"],
+    explain: "Phức chất tạo thành: [Pt(NH₃)₃Cl]⁺ → 3 Cl⁻ bị thay thế,"
+  },
+  {
+    question: "Câu 25: (HTHH) Chuẩn độ 5,00 mL dung dịch FeSO₄ nồng độ a M trong H₂SO₄ cần vừa đủ 4,50 mL dung dịch KMnO₄ 0,02 M. Giá trị của a là bao nhiêu?",
+    img: "none",
+    answers: ["0,09"],
+    explain: "Tính n_FeSO₄ từ n_KMnO₄ và tỉ lệ phản ứng → a ≈ 0,09 M,"
+  },
+  {
+    question: "Câu 26: (OLTN) Phức chất [Co(NH₃)₆]Cl₃. Nguyên tử trung tâm cobalt có số oxi hoá +x. Xác định giá trị của x.",
+    img: "none",
+    answers: ["3"],
+    explain: "Phức [Co(NH₃)₆]Cl₃: 3 Cl⁻ → Co³⁺,"
+  },
+  {
+    question: "Câu 27: (HTHH) Cho các phức chất hoặc ion phức chất của platinum: [Pt(H₂O)₄]²⁺, [Pt(NH₃)₄]²⁺, [PtCl₂(NH₃)₂], [PtCl₆]²⁻. Có bao nhiêu phức chất có dạng hình học bát diện?",
+    img: "none",
+    answers: ["1"],
+    explain: "Chỉ [Pt(H₂O)₄]²⁺ có dạng hình học bát diện (octahedral),"
+  },
+  {
+    question: "Câu 28: (OLTN) Mỗi mmol KMnO₄ chênh lệch giữa thí nghiệm 1 và thí nghiệm 2 tương ứng với bao nhiêu mg NO₃⁻ trong nước?",
+    img: "none",
+    answers: ["38,8"],
+    explain: "Từ phản ứng khử NO₃⁻ → tính khối lượng NO₃⁻ tương ứng với 1 mmol KMnO₄ → 38,8 mg,"
+  }
+]
+
 
 
 

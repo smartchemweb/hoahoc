@@ -102,8 +102,8 @@ body {
 }
 
 .exit-btn img {
-	height: 22px;
-	width: 22px
+	height: 40px;
+	width: 40px
 }
 
 .progress-container {
@@ -111,7 +111,7 @@ body {
 	max-width: 760px;
 	width: 100%;
 	height: var(--progress-height);
-	background: linear-gradient(180deg, rgba(6, 22, 33, 0.02), rgba(6, 22, 33, 0.01));
+	background: linear-gradient(180deg, rgba(34, 36, 37, 0.02), rgba(6, 22, 33, 0.01));
 	border-radius: 999px;
 	padding: 4px;
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.6);

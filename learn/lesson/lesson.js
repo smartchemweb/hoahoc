@@ -539,7 +539,7 @@ if (type === 'theory') {
                 return;
             }
 
-            const correctAnswer = q.answer.toString().trim();
+            const correctAnswer = q.answers[0].toString().trim();
             const isCorrect = userAnswer === correctAnswer;
 
             // Phát âm thanh đúng / sai
@@ -597,10 +597,12 @@ if (type === 'theory') {
     const screen = document.querySelector('.screen');
 
     // Lấy object video từ lesson[level]
-    const videoEntry = lesson[level + 1];
+    const videoEntry = lesson[level];
     console.log(videoEntry);
     const rawUrl = videoEntry && videoEntry.url ? videoEntry.url : '';
     const title = videoEntry && videoEntry.name ? videoEntry.name : 'Bài học video';
+
+    console.log(rawUrl);
 
     // Simple extraction: lấy phần sau "v=" rồi cắt bỏ phần &... nếu có
     let id = null;
@@ -668,9 +670,11 @@ if (type === 'theory') {
     const screen = document.querySelector('.screen');
 
     // Lấy object từ lesson[level]
-    const entry = lesson && lesson[level] ? lesson[level + 1] : null;
+    const entry = lesson[level];
     const rawUrl = entry && entry.url ? entry.url : '';
     const title = entry && entry.name ? entry.name : 'Tài nguyên';
+
+    console.log(entry);
 
     if (screen) {
       if (rawUrl) {
