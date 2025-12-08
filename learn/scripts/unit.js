@@ -11829,117 +11829,118 @@ explain: "(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub
             }, /*ex1*/ {
                 type: "ex1",
                 questions: [
-                    {
-                        question: "Câu 1: Kim loại nhóm IA khi tác dụng với nước tạo ra sản phẩm nào?",
-                        img: "none",
-                        answers: [
-                            "Kim loại hydroxide và khí H2",
-                            "Kim loại oxide và CO2",
-                            "Kim loại halide và HCl",
-                            "Kim loại peroxide và O2"
-                        ],
-                        explain: "Kim loại kiềm (IA) tác dụng với nước tạo hydroxide và khí H2: 2M + 2H2O → 2MOH + H2↑."
-                    },
-                    {
-                        question: "Câu 2: Kim loại nhóm IIA khi tác dụng với nước lạnh tạo ra sản phẩm nào?",
-                        img: "none",
-                        answers: [
-                            "Hydroxide và H2",
-                            "Oxide và O2",
-                            "Halide và HCl",
-                            "Peroxide và O2"
-                        ],
-                        explain: "Kim loại kiềm thổ (IIA) tác dụng với nước tạo hydroxide và khí H2, mức độ phản ứng tăng dần từ Be → Ba."
-                    },
-                    {
-                        question: "Câu 3: Chọn sơ đồ phản ứng đúng khi đốt cháy K trong khí O2:",
-                        img: "none",
-                        answers: [
-                            "4K + O2 → 2K2O",
-                            "2K + O2 → 2KO2",
-                            "K + O2 → K2O2",
-                            "2K + O2 → 2KOH"
-                        ],
-                        explain: "K tác dụng với O2 tạo oxide: 4K + O2 → 2K2O."
-                    },
-                    {
-                        question: "Câu 4: Phản ứng giữa NaOH và CO2 tạo ra hợp chất nào?",
-                        img: "none",
-                        answers: [
-                            "NaHCO3",
-                            "Na2CO3",
-                            "NaCl",
-                            "NaClO"
-                        ],
-                        explain: "NaOH + CO2 → NaHCO3."
-                    },
-                    {
-                        question: "Câu 5: Trong sơ đồ 2NaOH + CO2 → Na2CO3 + H2O, Na2CO3 là sản phẩm nào?",
-                        img: "none",
-                        answers: [
-                            "Muối của Na",
-                            "Hydroxide của Na",
-                            "Peroxide của Na",
-                            "Acid của Na"
-                        ],
-                        explain: "Na2CO3 là muối carbonat của Na."
-                    },
-                    {
-                        question: "Câu 6: Cho sơ đồ: 2KCl + 2H2O → 2KOH + Cl2 + H2. Xác định chất X2 trong sơ đồ.",
-                        img: "none",
-                        answers: [
-                            "KOH",
-                            "KClO",
-                            "K2O",
-                            "H2O2"
-                        ],
-                        explain: "Trong phản ứng điện phân nóng chảy KCl, KOH là sản phẩm ở cực âm."
-                    },
-                    {
-                        question: "Câu 7: Phản ứng NaHCO3 + Ca(OH)2 → CaCO3 + NaOH + H2O thuộc loại phản ứng nào?",
-                        img: "none",
-                        answers: [
-                            "Phản ứng trao đổi",
-                            "Phản ứng oxi hóa khử",
-                            "Phản ứng nhiệt phân",
-                            "Phản ứng kết hợp"
-                        ],
-                        explain: "Đây là phản ứng trao đổi giữa muối và hydroxide."
-                    },
-                    {
-                        question: "Câu 8: Trong sơ đồ: 2NaOH + Cl2 → NaCl + NaClO + H2O, X5 là chất nào?",
-                        img: "none",
-                        answers: [
-                            "NaClO",
-                            "NaOH",
-                            "Cl2",
-                            "NaCl"
-                        ],
-                        explain: "Phản ứng giữa NaOH và Cl2 tạo NaCl và NaClO → X5 là NaClO."
-                    },
-                    {
-                        question: "Câu 9: Khi Ba(HCO3)2 tác dụng với H2SO4 loãng, sản phẩm chính là gì?",
-                        img: "none",
-                        answers: [
-                            "BaSO4 kết tủa và CO2",
-                            "Ba(OH)2 và H2",
-                            "BaSO4 và H2O2",
-                            "BaCO3 và SO2"
-                        ],
-                        explain: "Ba(HCO3)2 + H2SO4 → BaSO4↓ + CO2 + H2O."
-                    },
-                    {
-                        question: "Câu 10: Trong sơ đồ phản ứng: CaCO3 → CaO + CO2, chất X1 là gì?",
-                        img: "none",
-                        answers: [
-                            "CaO",
-                            "CaCO3",
-                            "CO2",
-                            "Ca(OH)2"
-                        ],
-                        explain: "Phản ứng nhiệt phân CaCO3 → CaO + CO2, X1 là CaO."
-                    }
-                ]
+{
+question: "Câu 1: Kim loại nhóm IA khi tác dụng với nước tạo ra sản phẩm nào?",
+img: "none",
+answers: [
+"Kim loại hydroxide và khí H₂",
+"Kim loại oxide và CO₂",
+"Kim loại halide và HCl",
+"Kim loại peroxide và O₂"
+],
+explain: "Kim loại kiềm (IA) tác dụng với nước tạo hydroxide và khí H<sub>2</sub>: 2M + 2H<sub>2</sub>O → 2MOH + H<sub>2</sub>."
+},
+{
+question: "Câu 2: Kim loại nhóm IIA khi tác dụng với nước lạnh tạo ra sản phẩm nào?",
+img: "none",
+answers: [
+"Hydroxide và H₂",
+"Oxide và O₂",
+"Halide và HCl",
+"Peroxide và O₂"
+],
+explain: "Kim loại kiềm thổ (IIA) phản ứng với nước tạo hydroxide và H<sub>2</sub>, mức độ phản ứng tăng dần từ Be → Ba."
+},
+{
+question: "Câu 3: Chọn sơ đồ phản ứng đúng khi đốt cháy K trong khí O₂:",
+img: "none",
+answers: [
+"2K + O₂ → 2KO₂",
+"4K + O₂ → 2K₂O",
+"K + O₂ → K₂O₂",
+"2K + O₂ → 2KOH"
+],
+explain: "K phản ứng với O<sub>2</sub> tạo superoxide KO<sub>2</sub>: 2K + O<sub>2</sub> → 2KO<sub>2</sub>."
+},
+{
+question: "Câu 4: Phản ứng giữa NaOH và CO₂ tạo ra hợp chất nào?",
+img: "none",
+answers: [
+"NaHCO₃",
+"Na₂CO₃",
+"NaCl",
+"NaClO"
+],
+explain: "NaOH + CO<sub>2</sub> → NaHCO<sub>3</sub> (khi CO<sub>2</sub> ít hoặc phản ứng một bước)."
+},
+{
+question: "Câu 5: Trong sơ đồ 2NaOH + CO₂ → Na₂CO₃ + H₂O, Na₂CO₃ là sản phẩm nào?",
+img: "none",
+answers: [
+"Muối cacbonat của Na",
+"Hydroxide của Na",
+"Peroxide của Na",
+"Acid của Na"
+],
+explain: "Na₂CO₃ là muối cacbonat của Na, hình thành khi CO<sub>2</sub> dư: 2NaOH + CO<sub>2</sub> → Na<sub>2</sub>CO<sub>3</sub> + H<sub>2</sub>O."
+},
+{
+question: "Câu 6: Cho sơ đồ: 2KCl + 2H₂O → 2KOH + Cl₂ + H₂. Xác định chất X2 trong sơ đồ.",
+img: "none",
+answers: [
+"KOH",
+"KClO",
+"K₂O",
+"H₂O₂"
+],
+explain: "Trong điện phân dung dịch muối (có H<sub>2</sub>O) sản phẩm ở cathode là KOH (và H<sub>2</sub> ở cực âm, Cl₂ ở cực dương)."
+},
+{
+question: "Câu 7: Phản ứng NaHCO₃ + Ca(OH)₂ → CaCO₃ + NaOH + H₂O thuộc loại phản ứng nào?",
+img: "none",
+answers: [
+"Phản ứng trao đổi",
+"Phản ứng oxi hóa khử",
+"Phản ứng nhiệt phân",
+"Phản ứng kết hợp"
+],
+explain: "Đây là phản ứng trao đổi (trao đổi ion giữa muối và base) tạo CaCO<sub>3</sub> kết tủa."
+},
+{
+question: "Câu 8: Trong sơ đồ: 2NaOH + Cl₂ → NaCl + NaClO + H₂O, X5 là chất nào?",
+img: "none",
+answers: [
+"NaClO",
+"NaOH",
+"Cl₂",
+"NaCl"
+],
+explain: "NaOH phản ứng với Cl<sub>2</sub> tạo NaCl và NaClO (sản phẩm oxy hóa-chlorine): X5 là NaClO."
+},
+{
+question: "Câu 9: Khi Ba(HCO₃)₂ tác dụng với H₂SO₄ loãng, sản phẩm chính là gì?",
+img: "none",
+answers: [
+"BaSO₄ kết tủa và CO₂",
+"Ba(OH)₂ và H₂",
+"BaSO₄ và H₂O₂",
+"BaCO₃ và SO₂"
+],
+explain: "Ba(HCO<sub>3</sub>)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> → BaSO<sub>4</sub>↓ + CO<sub>2</sub> + H<sub>2</sub>O."
+},
+{
+question: "Câu 10: Trong sơ đồ phản ứng: CaCO₃ → CaO + CO₂, chất X1 là gì?",
+img: "none",
+answers: [
+"CaO",
+"CaCO₃",
+"CO₂",
+"Ca(OH)₂"
+],
+explain: "Phản ứng nhiệt phân: CaCO<sub>3</sub> → CaO + CO<sub>2</sub>, nên X1 là CaO."
+}
+]
+
 
 
 

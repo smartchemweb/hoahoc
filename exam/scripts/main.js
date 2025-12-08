@@ -1,7 +1,9 @@
 // scripts/main.js (index) — show "Chưa làm" if not done; live update via storage event
 // + added "Thoát" button linking to ../learn/learn.html
 
-import { exam1 as defaultExam1, exam2 as defaultExam2 } from "./exam.js";
+import { exam1 as defaultExam1, exam2 as defaultExam2,
+         exam3 as defaultExam3, exam4 as defaultExam4, exam5 as defaultExam5,
+ } from "./exam.js";
 
 const STORAGE_KEY = "examApp.data.v2";
 
@@ -11,7 +13,8 @@ const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
 
 let io = null;
-let data = loadData() || { lists: [structuredClone(defaultExam1), structuredClone(defaultExam2)] };
+let data = loadData() || { lists: [structuredClone(defaultExam1), structuredClone(defaultExam2), structuredClone(defaultExam3), structuredClone(defaultExam4), structuredClone(defaultExam5),]};
+data = { lists: [structuredClone(defaultExam1), structuredClone(defaultExam2), structuredClone(defaultExam3), structuredClone(defaultExam4), structuredClone(defaultExam5),]};
 
 function loadData(){
   try{

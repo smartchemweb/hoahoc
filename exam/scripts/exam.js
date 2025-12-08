@@ -301,6 +301,300 @@ export var exam2 = {
             ans3: [
                 '6', '0,08', '4', '104', '1,5', '48,7'
             ]
+        }, { // 3
+            id: 3,
+            name: 'Đề thi thử giữa kì I (đề số 3)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1WVjqbG9VxvHBX-XolTgzHNvbKvE-dPQh/edit?usp=drive_web&ouid=106265925099932943627&rtpof=true',
+            ansLink: 'https://docs.google.com/document/d/1fFfUxmK0EfLK6Hs2CLXJlFwTWIF1g_2S/edit',
+            ans1: [
+                'C', 'A', 'C', 'B', 'B', 'C', 'C', 'C', 'C', 'A',
+                'C', 'D', 'A', 'C', 'C', 'C', 'D', 'C'
+            ],
+
+            ans2: [
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'Đ', 'Đ', 'S'],
+                ['Đ', 'Đ', 'S', 'S']
+            ],
+
+            ans3: [
+                '9167', '3', '88', '40,2', '5', '15'
+            ]
+        }, { // 4
+            id: 4,
+            name: 'Đề thi thử giữa kì I (đề số 4)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1tcljKmmuhkkyyVEsJ-8Z7VT90kcONQMq/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1DfugBrECW9-DMulRG55W3JzmfuSmzYzB/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'C', 'B', 'A', 'A', 'D', 'A', 'B', 'D', 'D',
+                'D', 'D', 'D', 'C', 'B', 'A', 'B', 'B'
+            ],
+
+            ans2: [
+                ['Đ', 'Đ', 'S', 'Đ'],
+                ['S', 'S', 'Đ', 'Đ'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'Đ', 'Đ']
+            ],
+
+            ans3: [
+                '168', '4', '15', '668', '2', '0,1'
+            ]
+        }, { // 5
+            id: 5,
+            name: 'Đề thi thử giữa kì I (đề số 5)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/12WSXJ8UUqsuiGL0sFsbPN_Qcb1ufMoQD/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1OSGv3wQ2yJVoNM4FABXm7DScBlFjPNiC/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'D', 'A', 'C', 'B', 'B', 'A', 'C', 'D', 'D', 'C',
+                'D', 'D', 'A', 'B', 'B', 'D', 'B', 'D'
+            ],
+
+            ans2: [
+                ['S', 'Đ', 'S', 'Đ'],
+                ['Đ', 'Đ', 'Đ', 'Đ'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'Đ', 'S']
+            ],
+
+            ans3: [
+                '2', '10', '14,1', '169', '0,34', '51,3'
+            ]
         },
     ],
+};
+
+export var exam3 = {
+    name: "Đề thi thử cuối kì I",
+    exams: [ // Đề thi thử cuối kì I
+        { // 1
+            id: 1,
+            name: 'Đề thi thử cuối kì I (đề số 1)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1OdK6NXdf-KktXB_W8eQCHG6_Y072SIUV/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1_c-BZKW6Q0pZv3pH5Pv7vh2H4bVb8XXo/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'A', 'C', 'B', 'D', 'B', 'B', 'D', 'D', 'D', 'C',
+                'D', 'C', 'B', 'A', 'D', 'A', 'D', 'B',
+            ],
+            ans2: [
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'Đ', 'Đ', 'S'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'Đ', 'S', 'Đ']
+            ],
+            ans3: [
+                '4', '177', '0,02', '55,6', '13,4', '4,16'
+            ]
+        }, { // 2
+            id: 2,
+            name: 'Đề thi thử cuối kì I (đề số 2)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1-Zyju7YaDF-flEsiN9HN6yiyQcij6vXS/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1sSux0tYTCO6vytNf0so1MRxx_TXL05OI/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'A', 'B', 'D', 'A', 'B', 'C', 'A', 'B', 'B',
+                'A', 'A', 'B', 'A', 'D', 'C', 'D', 'D',
+            ],
+            ans2: [
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'Đ', 'Đ'],
+                ['Đ', 'Đ', 'S', 'S'],
+                ['Đ', 'Đ', 'S', 'S']
+            ],
+            ans3: [
+                '3', '233', '321', '48', '1,24', '4037'
+            ]
+        }, { // 3
+            id: 3,
+            name: 'Đề thi thử cuối kì I (đề số 3)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/16z5G5YKeL182Y7xrZeYIBS2KZbdPEjKc/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1mFqHOfhQtHIj7MEAlEaLX5NzORm5q1MW/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'B', 'A', 'B', 'D', 'C', 'B', 'D', 'B', 'D', 'B',
+                'C', 'A', 'C', 'A', 'B', 'A', 'A', 'A',
+            ],
+            ans2: [
+                ['Đ', 'Đ', 'S', 'S'],
+                ['S', 'Đ', 'Đ', 'S'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'S', 'S']
+            ],
+            ans3: [
+                '4', '56,4', '1200', '2', '124', '14,5'
+            ]
+        }, { // 4
+            id: 4,
+            name: 'Đề thi thử cuối kì I (đề số 4)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1nvzI5-4MK9Y1VioHtPXjGFnu0LwT6t3E/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1wNZxqCKFN0cGauOFHJFn_AiBuVFubPIJ/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'B', 'B', 'C', 'D', 'C', 'C', 'D', 'D', 'D', 'B',
+                'B', 'C', 'C', 'C', 'D', 'A', 'B', 'B',
+            ],
+            ans2: [
+                ['Đ', 'S', 'S', 'S'],
+                ['S', 'Đ', 'Đ', 'Đ'],
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'S', 'S', 'Đ']
+            ],
+            ans3: [
+                '3', '15,44', '120', '435,8', '198,5', '9'
+            ]
+        }, { // 5
+            id: 5,
+            name: 'Đề thi thử cuối kì I (đề số 5)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1aMyWL56W83igAn63Ix7q-CXoDL3KSAMb/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1jkYgRfPyTb350jbItffFo89QMXqtCx0U/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'D', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'D', 'A',
+                'A', 'C', 'A', 'A', 'A', 'B', 'B', 'C',
+            ],
+            ans2: [
+                ['S', 'Đ', 'S', 'S'],
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'S', 'Đ', 'Đ'],
+                ['Đ', 'S', 'Đ', 'S']
+            ],
+            ans3: [
+                '9', '3', '2', '83,3', '96,7', '15,4'
+            ]
+        },
+    ]
+};
+
+export var exam4 = {
+    name: "Đề thi thử giữa kì II",
+    exams: [ // Đề thi thử giữa kì II
+        { // 1
+            id: 1,
+            name: 'Đề thi thử giữa kì II (đề số 1)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1kTubQfFFiyX9tP3kY8uBO5EmPxfq4AXg/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1d4DGnhI8Yk65MaAXwaEbgd6czba6o6fR/edit?usp=sharing&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'A', 'A', 'C', 'A', 'C', 'B', 'C', 'C', 'C', 'C',
+                'A', 'B',
+            ],
+            ans2: [
+                ['S', 'Đ', 'Đ', 'Đ'],
+                ['Đ', 'S', 'S', 'S'],
+                ['Đ', 'Đ', 'S', 'S'],
+                ['Đ', 'Đ', 'S', 'S']
+            ],
+            ans3: [
+                '1,1', '4', '1930', '13', '3935', '4'
+            ]
+        }, { // 2
+            id: 2,
+            name: 'Đề thi thử giữa kì II (đề số 2)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1rPhS8NWt-jHDaKbbgDybb_OAg3Pt1ssp/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1rwvOfZKYGPKZ595r-SLM2BzYYkwtilh-/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'A', 'B', 'C', 'C', 'C', 'A', 'D', 'A', 'D', 'D',
+                'A', 'C', 'B', 'B', 'D', 'C', 'A', 'D',
+            ],
+            ans2: [
+                ['Đ', 'S', 'S', 'S'],
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'Đ', 'S', 'Đ']
+            ],
+            ans3: [
+                '4', '3', '3', '13', '3', '3'
+            ]
+        }, { // 3
+            id: 3,
+            name: 'Đề thi thử giữa kì II (đề số 3)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1ofH4PqYz8Xy5KSA5myk8EE-atJepv5Zc/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1edUDnJTkeCcVZVCwhepv-WCKUyMb6f9s/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'A', 'A', 'C', 'D', 'B', 'A', 'B', 'A', 'B',
+                'B', 'C', 'B', 'B', 'D', 'C', 'D', 'B',
+            ],
+            ans2: [
+                ['Đ', 'Đ', 'Đ', 'S'],
+                ['S', 'S', 'Đ', 'Đ'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'Đ', 'S']
+            ],
+            ans3: [
+                '4', '29,4', '29,3', '3', '0,13', '2'
+            ]
+        },
+    ]
+};
+
+
+export var exam5 = {
+    name: "Đề thi thử cuối kì II",
+    exams: [ // Đề thi thử cuối kì II
+        { // 1
+            id: 1,
+            name: 'Đề thi thử cuối kì II (đề số 1)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1SyKunXWSyf8ah_KXIoZ_EL2NiIGnIP9a/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/12FLksRk5CZ23RyNUPWik_TgCqe_teV4-/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'C', 'D', 'B', 'A', 'A', 'D', 'B', 'C', 'D',
+                'D', 'C', 'A', 'C', 'A', 'C', 'D', 'C',
+            ],
+            ans2: [
+                ['Đ', 'S', 'Đ', 'S'],
+                ['Đ', 'S', 'Đ', 'Đ'],
+                ['Đ', 'S', 'S', 'Đ'],
+                ['Đ', 'S', 'Đ', 'Đ']
+            ],
+            ans3: [
+                '1,9', '19', '41,9', '6,2', '3', '98,8'
+            ]
+        }, { // 2
+            id: 2,
+            name: 'Đề thi thử cuối kì II (đề số 2)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1UX_1kaMRH55Sa4j8GaDKDGtcQqhtSssJ/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1xqySCbfqUbitQ92-lxVXm9kPisMGzT8Q/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'C', 'A', 'C', 'D', 'A', 'D', 'D', 'C', 'C',
+                'D', 'A', 'A', 'A', 'C', 'B', 'D', 'D',
+            ],
+            ans2: [
+                ['Đ', 'Đ', 'Đ', 'S'],
+                ['Đ', 'Đ', 'S', 'Đ'],
+                ['Đ', 'Đ', 'S', 'Đ'],
+                ['S', 'Đ', 'Đ', 'S']
+            ],
+            ans3: [
+                '3', '4', '1260', '991', '6', '38,8'
+            ]
+        }, { // 3
+            id: 3,
+            name: 'Đề thi thử cuối kì II (đề số 3)',
+            isDone: false,
+            link: 'https://docs.google.com/document/d/1kYBNDRFVK87tqjdznIA7kUAy5ouj_Ufp/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ansLink: 'https://docs.google.com/document/d/1p0lXlXOZSsEdSU3LLBg-WpAEOO7P55zg/edit?usp=drive_link&ouid=106265925099932943627&rtpof=true&sd=true',
+            ans1: [
+                'C', 'B', 'C', 'C', 'D', 'B', 'A', 'B', 'C', 'A',
+                'C', 'C', 'C', 'B', 'C', 'A', 'B', 'A',
+            ],
+            ans2: [
+                ['Đ', 'Đ', 'S', 'Đ'],
+                ['S', 'S', 'Đ', 'S'],
+                ['Đ', 'S', 'S', 'S'],
+                ['Đ', 'Đ', 'S', 'S']
+            ],
+            ans3: [
+                '4', '89', '4', '29', '0,1', '4'
+            ]
+        },
+    ]
 };
