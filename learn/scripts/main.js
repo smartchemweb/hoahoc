@@ -22,15 +22,16 @@
      =========================== */
   function iconForType(type) {
     const t = (type || '').toString().trim().toLowerCase();
+    console.log(t);
     const map = {
-      'video': 'assets/images/video-logo.svg',
-      'other': 'assets/images/other-logo.svg',
-      'ex1': 'assets/images/ex1-logo.svg',
-      'ex2': 'assets/images/ex2-logo.svg',
-      'ex3': 'assets/images/ex3-logo.svg',
-      'name': 'assets/images/theory-logo.svg'
+      'video': '../assets/images/video-logo.svg',
+      'other': '../assets/images/other-logo.svg',
+      'ex1': '../assets/images/ex1-logo.svg',
+      'ex2': '../assets/images/ex2-logo.svg',
+      'ex3': '../assets/images/ex3-logo.svg',
+      'name': '../assets/images/theory-logo.svg'
     };
-    return map[t] || 'assets/images/lesson-logo.svg';
+    return map[t] || '../assets/images/theory-logo.svg';
   }
 
   /* ===========================
@@ -1620,7 +1621,7 @@
 
           const iconWrap = document.createElement('div'); iconWrap.className = 'lesson-icon';
           const img = document.createElement('img'); img.className = 'lesson-icon-img'; img.alt = '';
-          const iconKey = isVideo ? 'video' : (isTheory ? 'theory' : (isOther ? 'other' : (isExercise ? (lType || 'ex') : (lType || 'name'))));
+          const iconKey = isVideo ? 'video' : (isTheory ? 'theory' : (isOther ? 'other' : (isExercise ? (lType || 'ex') : (lType || 'theory'))));
           img.src = iconForType(iconKey);
           iconWrap.appendChild(img);
 
