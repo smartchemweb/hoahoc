@@ -24,14 +24,14 @@
     const t = (type || '').toString().trim().toLowerCase();
     console.log(t);
     const map = {
-      'video': '../assets/images/video-logo.svg',
-      'other': '../assets/images/other-logo.svg',
-      'ex1': '../assets/images/ex1-logo.svg',
-      'ex2': '../assets/images/ex2-logo.svg',
-      'ex3': '../assets/images/ex3-logo.svg',
-      'name': '../assets/images/theory-logo.svg'
+      'video': '../../assets/images/video-logo.svg',
+      'other': '../../assets/images/other-logo.svg',
+      'ex1': '../../assets/images/ex1-logo.svg',
+      'ex2': '../../assets/images/ex2-logo.svg',
+      'ex3': '../../assets/images/ex3-logo.svg',
+      'name': '../../assets/images/theory-logo.svg'
     };
-    return map[t] || '../assets/images/theory-logo.svg';
+    return map[t] || '../../assets/images/theory-logo.svg';
   }
 
   /* ===========================
