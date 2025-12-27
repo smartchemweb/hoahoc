@@ -65,14 +65,14 @@ nav{
   z-index:1000;
   backdrop-filter: blur(8px) saturate(1.05);
 }
-nav > div{ display:flex; align-items:center; gap:10px; padding:9px; border-radius:10px; cursor:pointer; transition: transform var(--transition), background var(--transition), box-shadow var(--transition); }
+nav > div, nav > a{ display:flex; align-items:center; gap:10px; padding:9px; border-radius:10px; cursor:pointer; transition: transform var(--transition), background var(--transition), box-shadow var(--transition); }
 nav > div:hover{ transform: translateX(6px) translateZ(0); background: rgba(255,255,255,0.9); box-shadow: var(--shadow-1); }
-nav > div:active{ transform: translateX(2px) }
+nav > div:active, nav > a:active{ transform: translateX(2px) }
 .favicon{ width:30px; height:30px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.06)); }
 .logo-title{ font-weight:700; color: rgba(0,145,113,0.9); letter-spacing:0.2px }
 
 /* small icon label styles */
-nav .learn-logo, nav .exercise-logo, nav .link-logo, nav .download-logo{ width:22px; height:22px }
+nav .learn-logo, nav .exercise-logo, nav .link-logo, nav .download-logo, .chatbot-logo{ width:22px; height:22px }
 
 /* ========== MID / layout ========== */
 .mid-section{ min-height:100vh; display:flex; align-items:flex-start; justify-content:center; padding:30px 36px; }

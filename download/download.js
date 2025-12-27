@@ -1,5 +1,11 @@
 var versions = [
     {
+        version: '2025.3',
+        date: '27-12-2025',
+        name: 'SmartChem3',
+        os: 'Android',
+        app: '../app-versions/smartchem-2025-3.apk'
+    }, {
         version: '2025.2',
         date: '02-12-2025',
         name: 'SmartChem2',
